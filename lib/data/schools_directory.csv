@@ -1,0 +1,2511 @@
+name,campus,city,state,ipeds_id,domain
+Alabama A & M University,,Normal,AL,100654,aamu.edu
+University of Alabama at Birmingham,,Birmingham,AL,100663,uab.edu
+Amridge University,,Montgomery,AL,100690,amridgeuniversity.edu
+University of Alabama in Huntsville,,Huntsville,AL,100706,uah.edu
+Alabama State University,,Montgomery,AL,100724,alasu.edu
+University of Alabama System Office,,Tuscaloosa,AL,100733,uasystem.edu
+The University of Alabama,,Tuscaloosa,AL,100751,ua.edu
+Athens State University,,Athens,AL,100812,athens.edu
+Auburn University at Montgomery,,Montgomery,AL,100830,aum.edu
+Auburn University,,Auburn,AL,100858,auburn.edu
+Birmingham-Southern College,,Birmingham,AL,100937,bsc.edu
+Faulkner University,,Montgomery,AL,101189,faulkner.edu
+Herzing University-Birmingham,,Birmingham,AL,101365,herzing.edu
+Huntingdon College,,Montgomery,AL,101435,huntingdon.edu
+Heritage Christian University,,Florence,AL,101453,hcu.edu
+Jacksonville State University,,Jacksonville,AL,101480,jsu.edu
+University of West Alabama,,Livingston,AL,101587,uwa.edu
+Miles College,,Fairfield,AL,101675,miles.edu
+University of Mobile,,Mobile,AL,101693,umobile.edu
+University of Montevallo,,Montevallo,AL,101709,montevallo.edu
+University of North Alabama,,Florence,AL,101879,una.edu
+Oakwood University,,Huntsville,AL,101912,oakwood.edu
+Samford University,,Birmingham,AL,102049,samford.edu
+Selma University,,Selma,AL,102058,selmau.edu
+University of South Alabama,,Mobile,AL,102094,southalabama.edu
+Spring Hill College,,Mobile,AL,102234,shc.edu
+Stillman College,,Tuscaloosa,AL,102270,stillman.edu
+Talladega College,,Talladega,AL,102298,talladega.edu
+Troy University,,Troy,AL,102368,troy.edu
+Tuskegee University,,Tuskegee,AL,102377,tuskegee.edu
+United States Sports Academy,,Daphne,AL,102395,ussa.edu
+University of Alaska Anchorage,,Anchorage,AK,102553,uaa.alaska.edu
+Alaska Bible College,,Palmer,AK,102580,akbible.edu
+University of Alaska Fairbanks,,Fairbanks,AK,102614,uaf.edu
+University of Alaska Southeast,,Juneau,AK,102632,uas.alaska.edu
+Alaska Pacific University,,Anchorage,AK,102669,alaskapacific.edu
+University of Alaska System of Higher Education,,Fairbanks,AK,103529,alaska.edu
+Arizona State University Campus Immersion,,Tempe,AZ,104151,asu.edu
+University of Arizona,,Tucson,AZ,104179,arizona.edu
+Embry-Riddle Aeronautical University-Prescott,,Prescott,AZ,104586,prescott.erau.edu
+The School of Architecture,,Scottsdale,AZ,104665,tsoa.edu
+Glendale Community College,,Glendale,AZ,104708,gccaz.edu
+GateWay Community College,,Phoenix,AZ,105145,gatewaycc.edu
+Dine College,,Tsaile,AZ,105297,dinecollege.edu
+Northern Arizona University,,Flagstaff,AZ,105330,nau.edu
+Prescott College,,Prescott,AZ,105589,prescott.edu
+Rio Salado College,,Tempe,AZ,105668,rio.maricopa.edu
+Arizona Christian University,,Glendale,AZ,105899,arizonachristian.edu
+Yavapai College,,Prescott,AZ,106148,yc.edu
+University of Arkansas at Little Rock,,Little Rock,AR,106245,ualr.edu
+University of Arkansas for Medical Sciences,,Little Rock,AR,106263,uams.edu
+Arkansas Baptist College,,Little Rock,AR,106306,arkansasbaptist.edu
+Lyon College,,Batesville,AR,106342,lyon.edu
+University of Arkansas,,Fayetteville,AR,106397,uark.edu
+University of Arkansas at Pine Bluff,,Pine Bluff,AR,106412,uapb.edu
+Arkansas State University,,Jonesboro,AR,106458,astate.edu
+Arkansas Tech University,,Russellville,AR,106467,atu.edu
+University of Arkansas at Monticello,,Monticello,AR,106485,uamont.edu
+University of Central Arkansas,,Conway,AR,106704,uca.edu
+Central Baptist College,,Conway,AR,106713,cbc.edu
+Crowley's Ridge College,,Paragould,AR,106810,crc.edu
+Harding University,,Searcy,AR,107044,harding.edu
+Henderson State University,,Arkadelphia,AR,107071,hsu.edu
+Hendrix College,,Conway,AR,107080,hendrix.edu
+John Brown University,,Siloam Springs,AR,107141,jbu.edu
+Ouachita Baptist University,,Arkadelphia,AR,107512,obu.edu
+University of the Ozarks,,Clarksville,AR,107558,ozarks.edu
+Philander Smith University,,Little Rock,AR,107600,philander.edu
+Williams Baptist University,,Walnut Ridge,AR,107877,williamsbaptistuniversity.com
+Southern Arkansas University Main Campus,,Magnolia,AR,107983,saumag.edu
+University of Arkansas System Office,,Little Rock,AR,108056,uasys.edu
+University of Arkansas-Fort Smith,,Fort Smith,AR,108092,uafs.edu
+Academy of Chinese Culture and Health Sciences,,Oakland,CA,108269,acchs.edu
+Berkeley School of Theology,,Berkeley,CA,108861,bst.edu
+American Film Institute Conservatory,,Los Angeles,CA,108870,afi.com
+Antelope Valley Community College District,,Lancaster,CA,109350,avc.edu
+Art Center College of Design,,Pasadena,CA,109651,artcenter.edu
+Azusa Pacific University,,Azusa,CA,109785,apu.edu
+Bakersfield College,,Bakersfield,CA,109819,bakersfieldcollege.edu
+Bethesda University,,Anaheim,CA,110060,buc.edu
+Biola University,,La Mirada,CA,110097,biola.edu
+California Institute of Integral Studies,,San Francisco,CA,110316,ciis.edu
+California Baptist University,,Riverside,CA,110361,calbaptist.edu
+California College of the Arts,,San Francisco,CA,110370,cca.edu
+University of California College of the Law-San Francisco,,San Francisco,CA,110398,uclawsf.edu
+California Institute of Technology,,Pasadena,CA,110404,caltech.edu
+California Lutheran University,,Thousand Oaks,CA,110413,callutheran.edu
+California Polytechnic State University-San Luis Obispo,,San Luis Obispo,CA,110422,calpoly.edu
+California State University-Bakersfield,,Bakersfield,CA,110486,csub.edu
+California State University-Stanislaus,,Turlock,CA,110495,csustan.edu
+California State University-Chancellors Office,,Long Beach,CA,110501,calstate.edu
+California State University-San Bernardino,,San Bernardino,CA,110510,csusb.edu
+California State Polytechnic University-Pomona,,Pomona,CA,110529,cpp.edu
+California State University-Chico,,Chico,CA,110538,csuchico.edu
+California State University-Dominguez Hills,,Carson,CA,110547,csudh.edu
+California State University-Fresno,,Fresno,CA,110556,fresnostate.edu
+California State University-Fullerton,,Fullerton,CA,110565,fullerton.edu
+California State University-East Bay,,Hayward,CA,110574,csueastbay.edu
+California State University-Long Beach,,Long Beach,CA,110583,csulb.edu
+California State University-Los Angeles,,Los Angeles,CA,110592,calstatela.edu
+California State University-Northridge,,Northridge,CA,110608,csun.edu
+California State University-Sacramento,,Sacramento,CA,110617,csus.edu
+University of California-Berkeley,,Berkeley,CA,110635,berkeley.edu
+University of California-Davis,,Davis,CA,110644,ucdavis.edu
+University of California-Irvine,,Irvine,CA,110653,uci.edu
+University of California-Los Angeles,,Los Angeles,CA,110662,ucla.edu
+University of California-Riverside,,Riverside,CA,110671,ucr.edu
+University of California-San Diego,,La Jolla,CA,110680,ucsd.edu
+University of California-San Francisco,,San Francisco,CA,110699,ucsf.edu
+University of California-Santa Barbara,,Santa Barbara,CA,110705,ucsb.edu
+University of California-Santa Cruz,,Santa Cruz,CA,110714,ucsc.edu
+California Christian College,,Fresno,CA,110918,calchristiancollege.edu
+Haven University,,Garden Grove,CA,111045,haven.edu
+California Institute of the Arts,,Valencia,CA,111081,calarts.edu
+California State University Maritime Academy,,Vallejo,CA,111188,csum.edu
+California Western School of Law,,San Diego,CA,111391,cwsl.edu
+Casa Loma College-Los Angeles,,Sherman Oaks,CA,111638,casalomacollege.edu
+Chapman University,,Orange,CA,111948,chapman.edu
+Charles R Drew University of Medicine and Science,,Los Angeles,CA,111966,cdrewu.edu
+Concordia University-Irvine,,Irvine,CA,112075,cui.edu
+San Diego Christian College,,Santee,CA,112084,sdcc.edu
+Church Divinity School of the Pacific,,Berkeley,CA,112127,cdsp.edu
+Claremont Graduate University,,Claremont,CA,112251,cgu.edu
+Claremont McKenna College,,Claremont,CA,112260,cmc.edu
+Western University of Health Sciences,,Pomona,CA,112525,westernu.edu
+California College of ASU,,Los Angeles,CA,112570,columbiacollege.edu
+Cypress College,,Cypress,CA,113236,cypresscollege.edu
+Dharma Realm Buddhist University,,Ukiah,CA,113616,drbu.edu
+Dominican University of California,,San Rafael,CA,113698,dominican.edu
+Dominican School of Philosophy & Theology,,Berkeley,CA,113704,dspt.edu
+Feather River Community College District,,Quincy,CA,114433,frc.edu
+Fielding Graduate University,,Santa Barbara,CA,114549,fielding.edu
+Foothill College,,Los Altos Hills,CA,114716,foothill.edu
+Franciscan School of Theology,,San Diego,CA,114734,fst.edu
+Fresno Pacific University,,Fresno,CA,114813,fresno.edu
+Foothill-De Anza Community College District,,Los Altos Hills,CA,114831,fhda.edu
+Fuller Theological Seminary,,Pasadena,CA,114840,fuller.edu
+Golden Gate University,,San Francisco,CA,115083,ggu.edu
+Graduate Theological Union,,Berkeley,CA,115214,gtu.edu
+Harvey Mudd College,,Claremont,CA,115409,hmc.edu
+Holy Names University,,Oakland,CA,115728,
+California State Polytechnic University-Humboldt,,Arcata,CA,115755,humboldt.edu
+Humphreys University-Stockton and Modesto Campuses,,Stockton,CA,115773,humphreys.edu
+American Jewish University,,Los Angeles,CA,116846,aju.edu
+Life Pacific University,,San Dimas,CA,117104,lifepacific.edu
+University of La Verne,,La Verne,CA,117140,laverne.edu
+Laguna College of Art and Design,,Laguna Beach,CA,117168,lcad.edu
+Latin American Bible Institute,,La Puente,CA,117283,labi.edu
+Life Chiropractic College West,,Hayward,CA,117520,lifewest.edu
+Lincoln University,,Oakland,CA,117557,lincolnuca.edu
+Southern California Seminary,,El Cajon,CA,117575,socalsem.edu
+La Sierra University,,Riverside,CA,117627,lasierra.edu
+Loma Linda University,,Loma Linda,CA,117636,llu.edu
+Southern California University of Health Sciences,,Whittier,CA,117672,scuhs.edu
+Los Angeles Community College District Office,,Los Angeles,CA,117681,laccd.edu
+The Master's University and Seminary,,Santa Clarita,CA,117751,masters.edu
+Loyola Marymount University,,Los Angeles,CA,117946,lmu.edu
+Menlo College,,Atherton,CA,118693,menlo.edu
+Northeastern University Oakland,,Oakland,CA,118888,oakland.northeastern.edu
+MiraCosta College,,Oceanside,CA,118912,miracosta.edu
+Modesto Junior College,,Modesto,CA,118976,mjc.edu
+Middlebury Institute of International Studies at Monterey,,Monterey,CA,119058,middlebury.edu
+Mount Saint Mary's University,,Los Angeles,CA,119173,msmu.edu
+National University,,San Diego,CA,119605,nu.edu
+Naval Postgraduate School,,Monterey,CA,119678,nps.edu
+North Orange County Community College District,,Anaheim,CA,120023,nocccd.edu
+San Francisco Bay University,,Fremont,CA,120166,sfbu.edu
+Notre Dame de Namur University,,Belmont,CA,120184,ndnu.edu
+Occidental College,,Los Angeles,CA,120254,oxy.edu
+Otis College of Art and Design,,Los Angeles,CA,120403,otis.edu
+Hope International University,,Fullerton,CA,120537,hiu.edu
+Palo Alto University,,Palo Alto,CA,120698,paloaltou.edu
+Pacific Oaks College,,Pasadena,CA,120768,pacificoaks.edu
+Pacific School of Religion,,Berkeley,CA,120795,psr.edu
+Pacific States University,,Los Angeles,CA,120838,psuca.edu
+Pacific Union College,,Angwin,CA,120865,puc.edu
+University of the Pacific,,Stockton,CA,120883,pacific.edu
+Pepperdine University,,Malibu,CA,121150,pepperdine.edu
+Pitzer College,,Claremont,CA,121257,pitzer.edu
+Point Loma Nazarene University,,San Diego,CA,121309,pointloma.edu
+Pomona College,,Claremont,CA,121345,pomona.edu
+Santa Ana College,,Santa Ana,CA,121619,sac.edu
+Pardee RAND Graduate School,,Santa Monica,CA,121628,pardeerand.edu
+University of Redlands,,Redlands,CA,121691,redlands.edu
+Rio Hondo College,,Whittier,CA,121886,riohondo.edu
+Dongguk University Los Angeles,,Los Angeles,CA,122117,dula.edu
+Samuel Merritt University,,Oakland,CA,122296,samuelmerritt.edu
+San Diego Community College District-District Office,,San Diego,CA,122320,sdccd.edu
+San Diego Mesa College,,San Diego,CA,122375,sdmesa.edu
+San Diego State University,,San Diego,CA,122409,sdsu.edu
+University of San Diego,,San Diego,CA,122436,sandiego.edu
+San Francisco Conservatory of Music,,San Francisco,CA,122506,sfcm.edu
+San Francisco State University,,San Francisco,CA,122597,sfsu.edu
+University of San Francisco,,San Francisco,CA,122612,usfca.edu
+San Joaquin College of Law,,Clovis,CA,122649,sjcl.edu
+William Jessup University,,Rocklin,CA,122728,jessup.edu
+San Jose State University,,San Jose,CA,122755,sjsu.edu
+San Mateo County Community College District Office,,San Mateo,CA,122782,smccd.edu
+Santa Clara University,,Santa Clara,CA,122931,scu.edu
+Santa Monica College,,Santa Monica,CA,122977,smc.edu
+Saybrook University,,Pasadena,CA,123095,saybrook.edu
+Scripps College,,Claremont,CA,123165,scrippscollege.edu
+Shasta Bible College and Graduate School,,Redding,CA,123280,shasta.edu
+Shasta College,,Redding,CA,123299,shastacollege.edu
+Trinity Law School,,Santa Ana,CA,123448,tiu.edu
+Simpson University,,Redding,CA,123457,simpsonu.edu
+Skyline College,,San Bruno,CA,123509,skylinecollege.edu
+Saint Mary's College of California,,Moraga,CA,123554,stmarys-ca.edu
+Solano Community College,,Fairfield,CA,123563,welcome.solano.edu
+Sonoma State University,,Rohnert Park,CA,123572,sonoma.edu
+South Baylo University,,Anaheim,CA,123633,southbaylo.edu
+Vanguard University of Southern California,,Costa Mesa,CA,123651,vanguard.edu
+Starr King School for the Ministry,,Oakland,CA,123916,sksm.edu
+Marshall B Ketchum University,,Fullerton,CA,123943,ketchum.edu
+Southern California Institute of Architecture,,Los Angeles,CA,123952,sciarc.edu
+University of Southern California,,Los Angeles,CA,123961,usc.edu
+Southwestern Law School,,Los Angeles,CA,123970,swlaw.edu
+Claremont School of Theology,,Claremont,CA,124283,cst.edu
+Thomas Aquinas College,,Santa Paula,CA,124292,thomasaquinas.edu
+Epic Bible College & Graduate School,,Sacramento,CA,124487,epic.edu
+University of California-System Administration Central Office,,Oakland,CA,124557,ucop.edu
+The Colleges of Law at Ventura,,Ventura,CA,125037,collegesoflaw.edu
+West Los Angeles College,,Culver City,CA,125471,wlac.edu
+Westminster Theological Seminary in California,,Escondido,CA,125718,wscal.edu
+Westmont College,,Santa Barbara,CA,125727,westmont.edu
+Whittier College,,Whittier,CA,125763,whittier.edu
+Woodbury University,,Burbank,CA,125897,woodbury.edu
+The Wright Institute,,Berkeley,CA,126012,wi.edu
+Thomas Jefferson School of Law,,San Diego,CA,126049,tjsl.edu
+Yeshiva Ohr Elchonon Chabad West Coast Talmudical Seminary,,Los Angeles,CA,126076,yoec.edu
+Yosemite Community College District Office,,Modesto,CA,126100,yosemite.edu
+Adams State University,,Alamosa,CO,126182,adams.edu
+Aims Community College,,Greeley,CO,126207,aims.edu
+Arapahoe Community College,,Littleton,CO,126289,arapahoe.edu
+University of Colorado Denver/Anschutz Medical Campus,,Denver,CO,126562,ucdenver.edu
+University of Colorado Colorado Springs,,Colorado Springs,CO,126580,uccs.edu
+University of Colorado Boulder,,Boulder,CO,126614,colorado.edu
+Colorado Christian University,,Lakewood,CO,126669,ccu.edu
+Colorado College,,Colorado Springs,CO,126678,coloradocollege.edu
+Colorado Mountain College,,Glenwood Springs,CO,126711,coloradomtn.edu
+Colorado School of Mines,,Golden,CO,126775,mines.edu
+Colorado State University-Fort Collins,,Fort Collins,CO,126818,colostate.edu
+Community College of Denver,,Denver,CO,126942,ccd.edu
+Denver Seminary,,Littleton,CO,126979,denverseminary.edu
+University of Denver,,Denver,CO,127060,du.edu
+Fort Lewis College,,Durango,CO,127185,fortlewis.edu
+Front Range Community College,,Westminster,CO,127200,frontrange.edu
+Iliff School of Theology,,Denver,CO,127273,iliff.edu
+Colorado Mesa University,,Grand Junction,CO,127556,coloradomesa.edu
+Metropolitan State University of Denver,,Denver,CO,127565,msudenver.edu
+Morgan Community College,,Fort  Morgan,CO,127617,morgancc.edu
+Naropa University,,Boulder,CO,127653,naropa.edu
+Nazarene Bible College,,Colorado Springs,CO,127714,nbc.edu
+University of Northern Colorado,,Greeley,CO,127741,unco.edu
+Pikes Peak State College,,Colorado Springs,CO,127820,pikespeak.edu
+Pueblo Community College,,Pueblo,CO,127884,pueblocc.edu
+Red Rocks Community College,,Lakewood,CO,127909,rrcc.edu
+Regis University,,Denver,CO,127918,regis.edu
+Montessori Education Center of the Rockies,,Denver,CO,127954,mecr.edu
+Colorado State University Pueblo,,Pueblo,CO,128106,csupueblo.edu
+Trinidad State College,,Trinidad,CO,128258,trinidadstate.edu
+University of Colorado System Office,,Denver,CO,128300,cu.edu
+United States Air Force Academy,,USAF Academy,CO,128328,usafa.edu
+Western Colorado University,,Gunnison,CO,128391,western.edu
+Albertus Magnus College,,New Haven,CT,128498,albertus.edu
+Bais Binyomin Academy,,Monsey,NY,128586,baisbinyominacademy.com
+University of Bridgeport,,Bridgeport,CT,128744,bridgeport.edu
+Central Connecticut State University,,New Britain,CT,128771,ccsu.edu
+Charter Oak State College,,New Britain,CT,128780,charteroak.edu
+Connecticut College,,New London,CT,128902,conncoll.edu
+University of Connecticut,,Storrs,CT,129020,uconn.edu
+Goodwin University,,East Hartford,CT,129154,goodwin.edu
+Eastern Connecticut State University,,Willimantic,CT,129215,easternct.edu
+Fairfield University,,Fairfield,CT,129242,fairfield.edu
+Rensselaer at Hartford,,Hartford,CT,129428,ewp.rpi.edu
+Hartford International University for Religion and Peace,,Hartford,CT,129491,hartfordinternational.edu
+University of Hartford,,West Hartford,CT,129525,hartford.edu
+Holy Apostles College and Seminary,,Cromwell,CT,129534,holyapostles.edu
+Mitchell College,,New London,CT,129774,mitchell.edu
+University of New Haven,,West Haven,CT,129941,newhaven.edu
+Quinnipiac University,,Hamden,CT,130226,qu.edu
+Sacred Heart University,,Fairfield,CT,130253,sacredheart.edu
+University of Saint Joseph,,West Hartford,CT,130314,usj.edu
+Southern Connecticut State University,,New Haven,CT,130493,southernct.edu
+Trinity College,,Hartford,CT,130590,trincoll.edu
+United States Coast Guard Academy,,New London,CT,130624,uscga.edu
+Wesleyan University,,Middletown,CT,130697,wesleyan.edu
+Western Connecticut State University,,Danbury,CT,130776,wcsu.edu
+Yale University,,New Haven,CT,130794,yale.edu
+Delaware Technical Community College-Central Office,,Dover,DE,130882,dtcc.edu
+Delaware Technical Community College-Terry,,Dover,DE,130907,dtcc.edu
+Delaware State University,,Dover,DE,130934,desu.edu
+University of Delaware,,Newark,DE,130943,udel.edu
+Goldey-Beacom College,,Wilmington,DE,130989,gbc.edu
+Wilmington University,,New Castle,DE,131113,wilmu.edu
+American University,,Washington,DC,131159,american.edu
+The Catholic University of America,,Washington,DC,131283,catholic.edu
+University of the District of Columbia,,Washington,DC,131399,udc.edu
+Pontifical Faculty of the Immaculate Conception at the Dominican House of Studies,,Washington,DC,131405,dhs.edu
+Gallaudet University,,Washington,DC,131450,gallaudet.edu
+George Washington University,,Washington,DC,131469,gwu.edu
+Georgetown University,,Washington,DC,131496,georgetown.edu
+Howard University,,Washington,DC,131520,howard.edu
+Trinity Washington University,,Washington,DC,131876,trinitydc.edu
+Wesley Theological Seminary,,Washington,DC,131973,wesleyseminary.edu
+Baptist University of Florida,,Graceville,FL,132408,buf.edu
+Barry University,,Miami,FL,132471,barry.edu
+Bethune-Cookman University,,Daytona Beach,FL,132602,cookman.edu
+Lynn University,,Boca Raton,FL,132657,lynn.edu
+Eastern Florida State College,,Melbourne,FL,132693,easternflorida.edu
+Broward College,,Fort Lauderdale,FL,132709,broward.edu
+Albizu University-Miami,,Miami,FL,132842,albizu.edu
+College of Central Florida,,Ocala,FL,132851,cf.edu
+Johnson University Florida,,Kissimmee,FL,132879,johnsonu.edu
+University of Central Florida,,Orlando,FL,132903,ucf.edu
+Chipola College,,Marianna,FL,133021,chipola.edu
+Daytona State College,,Daytona Beach,FL,133386,daytonastate.edu
+Eckerd College,,Saint Petersburg,FL,133492,eckerd.edu
+Florida SouthWestern State College,,Fort Myers,FL,133508,fsw.edu
+Edward Waters University,,Jacksonville,FL,133526,ew.edu
+Embry-Riddle Aeronautical University-Daytona Beach,,Daytona Beach,FL,133553,daytonabeach.erau.edu
+Florida Agricultural and Mechanical University,,Tallahassee,FL,133650,famu.edu
+Florida Atlantic University,,Boca Raton,FL,133669,fau.edu
+Florida State College at Jacksonville,,Jacksonville,FL,133702,fscj.edu
+Flagler College,,Saint Augustine,FL,133711,flagler.edu
+Florida College,,Temple Terrace,FL,133809,floridacollege.edu
+AdventHealth University,,Orlando,FL,133872,ahu.edu
+Florida Institute of Technology,,Melbourne,FL,133881,fit.edu
+Florida International University,,Miami,FL,133951,fiu.edu
+The College of the Florida Keys,,Key West,FL,133960,cfk.edu
+Florida Memorial University,,Miami Gardens,FL,133979,fmuniv.edu
+Florida Southern College,,Lakeland,FL,134079,flsouthern.edu
+Florida State University,,Tallahassee,FL,134097,fsu.edu
+University of Florida,,Gainesville,FL,134130,ufl.edu
+Gulf Coast State College,,Panama City,FL,134343,gulfcoast.edu
+Hillsborough Community College,,Tampa,FL,134495,hccfl.edu
+Hobe Sound Bible College,,Hobe Sound,FL,134510,hsbc.edu
+Indian River State College,,Fort Pierce,FL,134608,irsc.edu
+Jacksonville University,,Jacksonville,FL,134945,ju.edu
+Keiser University-Ft Lauderdale,,Fort Lauderdale,FL,135081,keiseruniversity.edu
+Florida Gateway College,,Lake City,FL,135160,fgc.edu
+Lake-Sumter State College,,Leesburg,FL,135188,lssc.edu
+Luther Rice College & Seminary,,Lithonia,GA,135364,lutherrice.edu
+State College of Florida-Manatee-Sarasota,,Bradenton,FL,135391,scf.edu
+Trinity International University-Florida,,Miami,FL,135610,tiu.edu
+Miami Dade College,,Miami,FL,135717,mdc.edu
+University of Miami,,Coral Gables,FL,135726,miami.edu
+North Florida College,,Madison,FL,136145,nfc.edu
+University of North Florida,,Jacksonville,FL,136172,unf.edu
+Nova Southeastern University,,Fort Lauderdale,FL,136215,nova.edu
+Northwest Florida State College,,Niceville,FL,136233,nwfsc.edu
+Palm Beach Atlantic University,,West Palm Beach,FL,136330,pba.edu
+Palm Beach State College,,Lake Worth,FL,136358,palmbeachstate.edu
+Pasco-Hernando State College,,New Port Richey,FL,136400,phsc.edu
+Pensacola State College,,Pensacola,FL,136473,pensacolastate.edu
+Polk State College,,Winter Haven,FL,136516,polk.edu
+Saint Vincent de Paul Regional Seminary,,Boynton Beach,FL,136701,svdp.edu
+Ringling College of Art and Design,,Sarasota,FL,136774,ringling.edu
+Rollins College,,Winter Park,FL,136950,rollins.edu
+Saint Leo University,,Saint Leo,FL,137032,saintleo.edu
+St Petersburg College,,St. Petersburg,FL,137078,spcollege.edu
+Santa Fe College,,Gainesville,FL,137096,sfcollege.edu
+Seminole State College of Florida,,Sanford,FL,137209,seminolestate.edu
+St. John Vianney College Seminary,,Miami,FL,137272,sjvcs.edu
+Saint Johns River State College,,Palatka,FL,137281,sjrstate.edu
+South Florida State College,,Avon Park,FL,137315,southflorida.edu
+University of South Florida,,Tampa,FL,137351,usf.edu
+St. Thomas University,,Miami Gardens,FL,137476,stu.edu
+Stetson University,,DeLand,FL,137546,stetson.edu
+Southeastern University,,Lakeland,FL,137564,seu.edu
+Tallahassee Community College,,Tallahassee,FL,137759,tcc.fl.edu
+Talmudic College of Florida,,Miami Beach,FL,137777,talmudicu.edu
+The University of Tampa,,Tampa,FL,137847,ut.edu
+Trinity Baptist College,,Jacksonville,FL,137953,tbc.edu
+Trinity College of Florida,,Trinity,FL,137962,trinitycollege.edu
+Valencia College,,Orlando,FL,138187,valenciacollege.edu
+Warner University,,Lake Wales,FL,138275,warner.edu
+Webber International University,,Babson Park,FL,138293,webber.edu
+University of West Florida,,Pensacola,FL,138354,uwf.edu
+Abraham Baldwin Agricultural College,,Tifton,GA,138558,abac.edu
+Agnes Scott College,,Decatur,GA,138600,agnesscott.edu
+Albany State University,,Albany,GA,138716,asurams.edu
+Andrew College,,Cuthbert,GA,138761,andrewcollege.edu
+Point University,,West Point,GA,138868,point.edu
+Atlanta Metropolitan State College,,Atlanta,GA,138901,atlm.edu
+Clark Atlanta University,,Atlanta,GA,138947,cau.edu
+Berry College,,Mount Berry,GA,139144,berry.edu
+Beulah Heights University,,Atlanta,GA,139153,beulah.edu
+Brenau University,,Gainesville,GA,139199,brenau.edu
+Brewton-Parker College,,Mount Vernon,GA,139205,bpc.edu
+College of Coastal Georgia,,Brunswick,GA,139250,ccga.edu
+Clayton  State University,,Morrow,GA,139311,clayton.edu
+Columbia Theological Seminary,,Decatur,GA,139348,ctsnet.edu
+Columbus State University,,Columbus,GA,139366,columbusstate.edu
+Covenant College,,Lookout Mountain,GA,139393,covenant.edu
+Dalton State College,,Dalton,GA,139463,daltonstate.edu
+East Georgia State College,,Swainsboro,GA,139621,ega.edu
+Emmanuel University,,Franklin Springs,GA,139630,ec.edu
+Emory University,,Atlanta,GA,139658,emory.edu
+Georgia Highlands College,,Rome,GA,139700,highlands.edu
+Fort Valley State University,,Fort Valley,GA,139719,fvsu.edu
+Georgia Institute of Technology-Main Campus,,Atlanta,GA,139755,gatech.edu
+Georgia Southwestern State University,,Americus,GA,139764,gsw.edu
+Georgia College & State University,,Milledgeville,GA,139861,gcsu.edu
+Georgia Southern University,,Statesboro,GA,139931,georgiasouthern.edu
+Georgia State University,,Atlanta,GA,139940,gsu.edu
+University of Georgia,,Athens,GA,139959,uga.edu
+Gordon State College,,Barnesville,GA,139968,gordonstate.edu
+Interdenominational Theological Center,,Atlanta,GA,140146,itc.edu
+LaGrange College,,Lagrange,GA,140234,lagrange.edu
+Life University,,Marietta,GA,140252,life.edu
+Herzing University-Atlanta,,Atlanta,GA,140340,herzing.edu
+Mercer University,,Macon,GA,140447,mercer.edu
+Morehouse College,,Atlanta,GA,140553,morehouse.edu
+Morehouse School of Medicine,,Atlanta,GA,140562,msm.edu
+Morris Brown College,,Atlanta,GA,140571,morrisbrown.edu
+Oglethorpe University,,Atlanta,GA,140696,oglethorpe.edu
+Paine College,,Augusta,GA,140720,paine.edu
+Piedmont University,,Demorest,GA,140818,piedmont.edu
+Reinhardt University,,Waleska,GA,140872,reinhardt.edu
+Savannah College of Art and Design,,Savannah,GA,140951,scad.edu
+Savannah State University,,Savannah,GA,140960,savannahstate.edu
+Shorter University,,Rome,GA,140988,shorter.edu
+Spelman College,,Atlanta,GA,141060,spelman.edu
+Thomas University,,Thomasville,GA,141167,thomasu.edu
+Toccoa Falls College,,Toccoa Falls,GA,141185,tfc.edu
+Truett McConnell University,,Cleveland,GA,141237,truett.edu
+Valdosta State University,,Valdosta,GA,141264,valdosta.edu
+Wesleyan College,,Macon,GA,141325,wesleyancollege.edu
+University of West Georgia,,Carrollton,GA,141334,westga.edu
+Young Harris College,,Young Harris,GA,141361,yhc.edu
+Chaminade University of Honolulu,,Honolulu,HI,141486,chaminade.edu
+University of Hawaii at Hilo,,Hilo,HI,141565,hilo.hawaii.edu
+University of Hawaii at Manoa,,Honolulu,HI,141574,manoa.hawaii.edu
+Hawaii Pacific University,,Honolulu,HI,141644,hpu.edu
+University of Hawaii Maui College,,Kahului,HI,141839,maui.hawaii.edu
+University of Hawaii System Office,,Honolulu,HI,141963,hawaii.edu
+University of Hawaii-West Oahu,,Kapolei,HI,141981,westoahu.hawaii.edu
+Boise Bible College,,Boise,ID,142090,boisebible.edu
+Boise State University,,Boise,ID,142115,boisestate.edu
+Idaho State University,,Pocatello,ID,142276,isu.edu
+University of Idaho,,Moscow,ID,142285,uidaho.edu
+The College of Idaho,,Caldwell,ID,142294,collegeofidaho.edu
+Lewis-Clark State College,,Lewiston,ID,142328,lcsc.edu
+Northwest Nazarene University,,Nampa,ID,142461,nnu.edu
+Brigham Young University-Idaho,,Rexburg,ID,142522,byui.edu
+College of Southern Idaho,,Twin Falls,ID,142559,csi.edu
+Adler University,,Chicago,IL,142832,adler.edu
+American Islamic College,,Chicago,IL,142957,aicusa.edu
+School of the Art Institute of Chicago,,Chicago,IL,143048,saic.edu
+Augustana College,,Rock Island,IL,143084,augustana.edu
+Aurora University,,Aurora,IL,143118,aurora.edu
+Bethany Theological Seminary,,Richmond,IN,143233,bethanyseminary.edu
+Blackburn College,,Carlinville,IL,143288,blackburn.edu
+Blessing Rieman College of Nursing and Health Sciences,,Quincy,IL,143297,brcn.edu
+Bradley University,,Peoria,IL,143358,bradley.edu
+Catholic Theological Union at Chicago,,Chicago,IL,143659,ctu.edu
+Midwestern University-Downers Grove,,Downers Grove,IL,143853,midwestern.edu
+The Chicago School at Chicago,,Chicago,IL,143978,thechicagoschool.edu
+Chicago State University,,Chicago,IL,144005,csu.edu
+Chicago Theological Seminary,,Chicago,IL,144014,ctschicago.edu
+University of Chicago,,Chicago,IL,144050,uchicago.edu
+Columbia College Chicago,,Chicago,IL,144281,colum.edu
+Concordia University-Chicago,,River Forest,IL,144351,cuchicago.edu
+DePaul University,,Chicago,IL,144740,depaul.edu
+East-West University,,Chicago,IL,144883,eastwest.edu
+Eastern Illinois University,,Charleston,IL,144892,eiu.edu
+Elmhurst University,,Elmhurst,IL,144962,elmhurst.edu
+Eureka College,,Eureka,IL,144971,eureka.edu
+Garrett-Evangelical Theological Seminary,,Evanston,IL,145275,garrett.edu
+Governors State University,,University Park,IL,145336,govst.edu
+Greenville University,,Greenville,IL,145372,greenville.edu
+Hebrew Theological College,,Skokie,IL,145497,htc.edu
+Rosalind Franklin University of Medicine and Science,,North Chicago,IL,145558,rosalindfranklin.edu
+University of Illinois Chicago,,Chicago,IL,145600,uic.edu
+Benedictine University,,Lisle,IL,145619,ben.edu
+Illinois College of Optometry,,Chicago,IL,145628,ico.edu
+University of Illinois Urbana-Champaign,,Champaign,IL,145637,illinois.edu
+Illinois Wesleyan University,,Bloomington,IL,145646,iwu.edu
+Illinois College,,Jacksonville,IL,145691,ic.edu
+Illinois Institute of Technology,,Chicago,IL,145725,iit.edu
+Illinois State University,,Normal,IL,145813,illinoisstate.edu
+Institute for Clinical Social Work,,Chicago,IL,145886,icsw.edu
+Judson University,,Elgin,IL,146339,judsonu.edu
+Knox College,,Galesburg,IL,146427,knox.edu
+Lake Forest College,,Lake Forest,IL,146481,lakeforest.edu
+Lake Forest Graduate School of Management,,Lake Forest,IL,146490,lfgsm.edu
+Lakeview College of Nursing,,Danville,IL,146533,lcn.edu
+Lewis University,,Romeoville,IL,146612,lewisu.edu
+Lincoln Christian University,,Lincoln,IL,146667,lincolnchristian.edu
+Loyola University Chicago,,Chicago,IL,146719,luc.edu
+Lutheran School of Theology at Chicago,,Chicago,IL,146728,lstc.edu
+Trinity College of Nursing & Health Sciences,,Rock Island,IL,146755,trinitycollegeqc.edu
+McCormick Theological Seminary,,Chicago,IL,146977,mccormick.edu
+McKendree University,,Lebanon,IL,147013,mckendree.edu
+Meadville Theological School of Lombard College,,Chicago,IL,147031,meadville.edu
+Methodist College,,Peoria,IL,147129,methodistcol.edu
+Millikin University,,Decatur,IL,147244,millikin.edu
+Monmouth College,,Monmouth,IL,147341,monmouthcollege.edu
+Moody Bible Institute,,Chicago,IL,147369,moody.edu
+National Louis University,,Chicago,IL,147536,nl.edu
+National University of Health Sciences,,Lombard,IL,147590,nuhs.edu
+North Central College,,Naperville,IL,147660,northcentralcollege.edu
+North Park University,,Chicago,IL,147679,northpark.edu
+Northern Baptist Theological Seminary,,Lisle,IL,147697,seminary.edu
+Northern Illinois University,,Dekalb,IL,147703,niu.edu
+Northwestern University,,Evanston,IL,147767,northwestern.edu
+Northeastern Illinois University,,Chicago,IL,147776,neiu.edu
+Olivet Nazarene University,,Bourbonnais,IL,147828,olivet.edu
+Principia College,,Elsah,IL,148016,principiacollege.edu
+Quincy University,,Quincy,IL,148131,quincy.edu
+Rockford University,,Rockford,IL,148405,rockford.edu
+Roosevelt University,,Chicago,IL,148487,roosevelt.edu
+Dominican University,,River Forest,IL,148496,dom.edu
+Rush University,,Chicago,IL,148511,rushu.rush.edu
+Saint Francis Medical Center College of Nursing,,Peoria,IL,148575,sfmccon.edu
+University of St Francis,,Joliet,IL,148584,stfrancis.edu
+St. John's College-Department of Nursing,,Springfield,IL,148593,hshs.org
+Saint Xavier University,,Chicago,IL,148627,sxu.edu
+University of Illinois Springfield,,Springfield,IL,148654,uis.edu
+St. Augustine College,,Chicago,IL,148876,staugustine.edu
+University of Saint Mary of the Lake,,Mundelein,IL,148885,usml.edu
+Spertus College,,Chicago,IL,148982,spertus.edu
+Saint Anthony College of Nursing,,Rockford,IL,149028,sacn.edu
+Southern Illinois University-Carbondale,,Carbondale,IL,149222,siu.edu
+Southern Illinois University-Edwardsville,,Edwardsville,IL,149231,siue.edu
+Southern Illinois University-System Office,,Carbondale,IL,149240,siusystem.edu
+Telshe Yeshiva-Chicago,,Chicago,IL,149329,telsheyeshivachicago.com
+Trinity Christian College,,Palos Heights,IL,149505,trnty.edu
+Trinity International University-Illinois,,Deerfield,IL,149514,tiu.edu
+University of Illinois System Offices,,Urbana,IL,149587,uillinois.edu
+VanderCook College of Music,,Chicago,IL,149639,vandercook.edu
+Oak Point University,,Oak Brook,IL,149763,oakpoint.edu
+Western Illinois University,,Macomb,IL,149772,wiu.edu
+Wheaton College,,Wheaton,IL,149781,wheaton.edu
+Anderson University,,Anderson,IN,150066,anderson.edu
+Ball State University,,Muncie,IN,150136,bsu.edu
+Bethel University,,Mishawaka,IN,150145,betheluniversity.edu
+Butler University,,Indianapolis,IN,150163,butler.edu
+Calumet College of Saint Joseph,,Whiting,IN,150172,ccsj.edu
+Christian Theological Seminary,,Indianapolis,IN,150215,cts.edu
+Concordia Theological Seminary,,Fort Wayne,IN,150288,ctsfw.edu
+DePauw University,,Greencastle,IN,150400,depauw.edu
+Earlham College,,Richmond,IN,150455,earlham.edu
+University of Evansville,,Evansville,IN,150534,evansville.edu
+Franklin College,,Franklin,IN,150604,franklincollege.edu
+Goshen College,,Goshen,IN,150668,goshen.edu
+Grace College and Theological Seminary,,Winona Lake,IN,150677,grace.edu
+Hanover College,,Hanover,IN,150756,hanover.edu
+Holy Cross College,,Notre Dame,IN,150774,hcc-nd.edu
+Huntington University,,Huntington,IN,150941,huntington.edu
+Purdue University Fort Wayne,,Fort Wayne,IN,151102,pfw.edu
+Indiana University-Indianapolis,,Indianapolis,IN,151111,indianapolis.iu.edu
+University of Indianapolis,,Indianapolis,IN,151263,uindy.edu
+Indiana Institute of Technology,,Fort Wayne,IN,151290,indianatech.edu
+University of Southern Indiana,,Evansville,IN,151306,usi.edu
+Indiana State University,,Terre Haute,IN,151324,indstate.edu
+Indiana University-Kokomo,,Kokomo,IN,151333,iuk.edu
+Indiana University-South Bend,,South Bend,IN,151342,iusb.edu
+Indiana University-Bloomington,,Bloomington,IN,151351,indiana.edu
+Indiana University-Northwest,,Gary,IN,151360,iun.edu
+Indiana University-Southeast,,New Albany,IN,151379,ius.edu
+Indiana University-East,,Richmond,IN,151388,iue.edu
+Manchester University,,North Manchester,IN,151777,manchester.edu
+Marian University,,Indianapolis,IN,151786,marian.edu
+Indiana Wesleyan University-Marion,,Marion,IN,151801,indwes.edu
+Martin University,,Indianapolis,IN,151810,martin.edu
+Anabaptist Mennonite Biblical Seminary,,Elkhart,IN,151865,ambs.edu
+Mid-America College of Funeral Service,,Jeffersonville,IN,151962,mid-america.edu
+University of Notre Dame,,Notre Dame,IN,152080,nd.edu
+Oakland City University,,Oakland City,IN,152099,oak.edu
+Rose-Hulman Institute of Technology,,Terre Haute,IN,152318,rose-hulman.edu
+University of Saint Francis-Fort Wayne,,Fort Wayne,IN,152336,sf.edu
+Saint Mary-of-the-Woods College,,Saint Mary of the Woods,IN,152381,smwc.edu
+Saint Mary's College,,Notre Dame,IN,152390,saintmarys.edu
+Saint Meinrad School of Theology,,St. Meinrad,IN,152451,saintmeinrad.edu
+Taylor University,,Upland,IN,152530,taylor.edu
+Trine University,,Angola,IN,152567,trine.edu
+Valparaiso University,,Valparaiso,IN,152600,valpo.edu
+Vincennes University,,Vincennes,IN,152637,vinu.edu
+Wabash College,,Crawfordsville,IN,152673,wabash.edu
+Allen College,,Waterloo,IA,152798,allencollege.edu
+Briar Cliff University,,Sioux City,IA,152992,briarcliff.edu
+Buena Vista University,,Storm Lake,IA,153001,bvu.edu
+Central College,,Pella,IA,153108,central.edu
+Clarke University,,Dubuque,IA,153126,clarke.edu
+Coe College,,Cedar Rapids,IA,153144,coe.edu
+Cornell College,,Mount Vernon,IA,153162,cornellcollege.edu
+Divine Word College,,Epworth,IA,153241,dwci.edu
+Dordt University,,Sioux Center,IA,153250,dordt.edu
+Drake University,,Des Moines,IA,153269,drake.edu
+University of Dubuque,,Dubuque,IA,153278,dbq.edu
+Emmaus Bible College,,Dubuque,IA,153302,emmaus.edu
+Faith Baptist Bible College and Theological Seminary,,Ankeny,IA,153320,faith.edu
+Graceland University-Lamoni,,Lamoni,IA,153366,graceland.edu
+Grand View University,,Des Moines,IA,153375,grandview.edu
+Grinnell College,,Grinnell,IA,153384,grinnell.edu
+Iowa State University,,Ames,IA,153603,iastate.edu
+Iowa Wesleyan University,,Mount Pleasant,IA,153621,
+University of Iowa,,Iowa City,IA,153658,uiowa.edu
+Loras College,,Dubuque,IA,153825,loras.edu
+Luther College,,Decorah,IA,153834,luther.edu
+Maharishi International University,,Fairfield,IA,153861,miu.edu
+Mercy College of Health Sciences,,Des Moines,IA,153977,mchs.edu
+Morningside University,,Sioux City,IA,154004,morningside.edu
+Mount Mercy University,,Cedar Rapids,IA,154013,mtmercy.edu
+University of Northern Iowa,,Cedar Falls,IA,154095,uni.edu
+Northwestern College,,Orange City,IA,154101,nwciowa.edu
+Des Moines University-Osteopathic Medical Center,,West Des Moines,IA,154156,dmu.edu
+Palmer College of Chiropractic,,Davenport,IA,154174,palmer.edu
+Saint Ambrose University,,Davenport,IA,154235,sau.edu
+St Luke's College,,Sioux City,IA,154262,stlukescollege.edu
+Simpson College,,Indianola,IA,154350,simpson.edu
+Upper Iowa University,,Fayette,IA,154493,uiu.edu
+Wartburg College,,Waverly,IA,154527,wartburg.edu
+Wartburg Theological Seminary,,Dubuque,IA,154536,wartburgseminary.edu
+William Penn University,,Oskaloosa,IA,154590,wmpenn.edu
+Baker University,,Baldwin City,KS,154688,bakeru.edu
+Benedictine College,,Atchison,KS,154712,benedictine.edu
+Bethany College,,Lindsborg,KS,154721,bethanylb.edu
+Bethel College-North Newton,,North Newton,KS,154749,bethelks.edu
+Central Christian College of Kansas,,McPherson,KS,154855,centralchristian.edu
+Donnelly College,,Kansas City,KS,155007,donnelly.edu
+Emporia State University,,Emporia,KS,155025,emporia.edu
+Fort Hays State University,,Hays,KS,155061,fhsu.edu
+Barclay College,,Haviland,KS,155070,barclaycollege.edu
+Friends University,,Wichita,KS,155089,friends.edu
+Haskell Indian Nations University,,Lawrence,KS,155140,haskell.edu
+Hesston College,,Hesston,KS,155177,hesston.edu
+Kansas Christian College,,Overland Park,KS,155308,kansaschristian.edu
+University of Kansas,,Lawrence,KS,155317,ku.edu
+Newman University,,Wichita,KS,155335,newmanu.edu
+Kansas State University,,Manhattan,KS,155399,k-state.edu
+Kansas Wesleyan University,,Salina,KS,155414,kwu.edu
+Manhattan Christian College,,Manhattan,KS,155496,mccks.edu
+McPherson College,,McPherson,KS,155511,mcpherson.edu
+MidAmerica Nazarene University,,Olathe,KS,155520,mnu.edu
+Ottawa University-Ottawa,,Ottawa,KS,155627,ottawa.edu
+Ottawa University-Kansas City,,Overland Park,KS,155636,ottawa.edu
+Pittsburg State University,,Pittsburg,KS,155681,pittstate.edu
+University of Saint Mary,,Leavenworth,KS,155812,stmary.edu
+Southwestern College,,Winfield,KS,155900,sckans.edu
+Sterling College,,Sterling,KS,155937,sterling.edu
+Tabor College,,Hillsboro,KS,155973,tabor.edu
+Washburn University,,Topeka,KS,156082,washburn.edu
+Wichita State University,,Wichita,KS,156125,wichita.edu
+Alice Lloyd College,,Pippa Passes,KY,156189,alc.edu
+Asbury University,,Wilmore,KY,156213,asbury.edu
+Asbury Theological Seminary,,Wilmore,KY,156222,asburyseminary.edu
+Bellarmine University,,Louisville,KY,156286,bellarmine.edu
+Berea College,,Berea,KY,156295,berea.edu
+Brescia University,,Owensboro,KY,156356,brescia.edu
+Campbellsville University,,Campbellsville,KY,156365,campbellsville.edu
+Centre College,,Danville,KY,156408,centre.edu
+Clear Creek Baptist Bible College,,Pineville,KY,156417,ccbbc.edu
+University of the Cumberlands,,Williamsburg,KY,156541,ucumberlands.edu
+Eastern Kentucky University,,Richmond,KY,156620,eku.edu
+Frontier Nursing University,,Versailles,KY,156727,frontier.edu
+Georgetown College,,Georgetown,KY,156745,georgetowncollege.edu
+Kentucky Mountain Bible College,,Jackson,KY,157030,kmbc.edu
+Kentucky State University,,Frankfort,KY,157058,kysu.edu
+Kentucky Wesleyan College,,Owensboro,KY,157076,kwc.edu
+University of Kentucky,,Lexington,KY,157085,uky.edu
+Kentucky Christian University,,Grayson,KY,157100,kcu.edu
+Lexington Theological Seminary,,Lexington,KY,157207,lextheo.edu
+Lindsey Wilson College,,Columbia,KY,157216,lindsey.edu
+University of Louisville,,Louisville,KY,157289,louisville.edu
+Louisville Presbyterian Theological Seminary,,Louisville,KY,157298,lpts.edu
+Midway University,,Midway,KY,157377,midway.edu
+Morehead State University,,Morehead,KY,157386,moreheadstate.edu
+Murray State University,,Murray,KY,157401,murraystate.edu
+Northern Kentucky University,,Highland Heights,KY,157447,nku.edu
+University of Pikeville,,Pikeville,KY,157535,upike.edu
+The Southern Baptist Theological Seminary,,Louisville,KY,157748,sbts.edu
+Spalding University,,Louisville,KY,157757,spalding.edu
+Thomas More University,,Crestview Hills,KY,157809,thomasmore.edu
+Transylvania University,,Lexington,KY,157818,transy.edu
+Union College,,Barbourville,KY,157863,unionky.edu
+Western Kentucky University,,Bowling Green,KY,157951,wku.edu
+Centenary College of Louisiana,,Shreveport,LA,158477,centenary.edu
+Dillard University,,New Orleans,LA,158802,dillard.edu
+Grambling State University,,Grambling,LA,159009,gram.edu
+Louisiana State University Health Sciences Center-New Orleans,,New Orleans,LA,159373,lsuhsc.edu
+Louisiana State University-Alexandria,,Alexandria,LA,159382,lsua.edu
+Louisiana State University and Agricultural & Mechanical College,,Baton Rouge,LA,159391,lsu.edu
+Louisiana State University-Shreveport,,Shreveport,LA,159416,lsus.edu
+Louisiana Christian University,,Pineville,LA,159568,lcuniversity.edu
+Louisiana Tech University,,Ruston,LA,159647,latech.edu
+Loyola University New Orleans,,New Orleans,LA,159656,loyno.edu
+McNeese State University,,Lake Charles,LA,159717,mcneese.edu
+University of New Orleans,,New Orleans,LA,159939,new.uno.edu
+New Orleans Baptist Theological Seminary,,New Orleans,LA,159948,nobts.edu
+Nicholls State University,,Thibodaux,LA,159966,nicholls.edu
+University of Louisiana at Monroe,,Monroe,LA,159993,ulm.edu
+Northwestern State University of Louisiana,,Natchitoches,LA,160038,nsula.edu
+University of Holy Cross,,New Orleans,LA,160065,uhcno.edu
+Franciscan Missionaries of Our Lady University,,Baton Rouge,LA,160074,franu.edu
+Saint Joseph Seminary College,,St. Benedict,LA,160409,sjasc.edu
+Southern University-Board and System,,Baton Rouge,LA,160533,sus.edu
+Southeastern Louisiana University,,Hammond,LA,160612,southeastern.edu
+Southern University and A & M College,,Baton Rouge,LA,160621,subr.edu
+Southern University at New Orleans,,New Orleans,LA,160630,suno.edu
+University of Louisiana at Lafayette,,Lafayette,LA,160658,louisiana.edu
+Tulane University of Louisiana,,New Orleans,LA,160755,tulane.edu
+Xavier University of Louisiana,,New Orleans,LA,160904,xula.edu
+College of the Atlantic,,Bar Harbor,ME,160959,coa.edu
+Bates College,,Lewiston,ME,160977,bates.edu
+Bowdoin College,,Brunswick,ME,161004,bowdoin.edu
+Maine College of Health Professions,,Lewiston,ME,161022,mchp.edu
+Colby College,,Waterville,ME,161086,colby.edu
+University of Maine at Augusta,,Augusta,ME,161217,uma.edu
+University of Maine at Farmington,,Farmington,ME,161226,umf.maine.edu
+University of Maine at Fort Kent,,Fort Kent,ME,161235,umfk.maine.edu
+University of Maine,,Orono,ME,161253,umaine.edu
+University of Maine-System Central Office,,Orono,ME,161280,maine.edu
+Maine Maritime Academy,,Castine,ME,161299,mainemaritime.edu
+University of Maine at Presque Isle,,Presque Isle,ME,161341,umpi.edu
+University of New England,,Biddeford,ME,161457,une.edu
+Maine College of Art & Design,,Portland,ME,161509,meca.edu
+Saint Joseph's College of Maine,,Standish,ME,161518,sjcme.edu
+University of Southern Maine,,Portland,ME,161554,usm.maine.edu
+Thomas College,,Waterville,ME,161563,thomas.edu
+Unity Environmental University,,New Gloucester,ME,161572,unity.edu
+University of Baltimore,,Baltimore,MD,161873,ubalt.edu
+Bowie State University,,Bowie,MD,162007,bowiestate.edu
+Capitol Technology University,,Laurel,MD,162061,captechu.edu
+Washington Adventist University,,Takoma Park,MD,162210,wau.edu
+Coppin State University,,Baltimore,MD,162283,coppin.edu
+Frostburg State University,,Frostburg,MD,162584,frostburg.edu
+Goucher College,,Baltimore,MD,162654,goucher.edu
+Hood College,,Frederick,MD,162760,hood.edu
+Johns Hopkins University,,Baltimore,MD,162928,jhu.edu
+Loyola University Maryland,,Baltimore,MD,163046,loyola.edu
+University of Maryland Global Campus,,Adelphi,MD,163204,umgc.edu
+"University of Maryland, Baltimore",,Baltimore,MD,163259,umaryland.edu
+University of Maryland-Baltimore County,,Baltimore,MD,163268,umbc.edu
+University of Maryland-College Park,,College Park,MD,163286,umd.edu
+Maryland Institute College of Art,,Baltimore,MD,163295,mica.edu
+University of Maryland Eastern Shore,,Princess Anne,MD,163338,wwwcp.umes.edu
+Morgan State University,,Baltimore,MD,163453,morgan.edu
+Mount St. Mary's University,,Emmitsburg,MD,163462,msmary.edu
+Ner Israel Rabbinical College,,Baltimore,MD,163532,nirc.edu
+Notre Dame of Maryland University,,Baltimore,MD,163578,ndm.edu
+Salisbury University,,Salisbury,MD,163851,salisbury.edu
+St. Mary's College of Maryland,,St. Mary's City,MD,163912,smcm.edu
+St. John's College,,Annapolis,MD,163976,sjc.edu
+Towson University,,Towson,MD,164076,towson.edu
+Maryland University of Integrative Health,,Laurel,MD,164085,muih.edu
+University System of Maryland,,Baltimore,MD,164146,usmd.edu
+United States Naval Academy,,Annapolis,MD,164155,usna.edu
+Stevenson University,,Owings Mills,MD,164173,stevenson.edu
+Washington College,,Chestertown,MD,164216,washcoll.edu
+McDaniel College,,Westminster,MD,164270,mcdaniel.edu
+Hult International Business School,,Cambridge,MA,164368,hult.edu
+American International College,,Springfield,MA,164447,aic.edu
+Amherst College,,Amherst,MA,164465,amherst.edu
+Anna Maria College,,Paxton,MA,164492,annamaria.edu
+Assumption University,,Worcester,MA,164562,assumption.edu
+Babson College,,Wellesley,MA,164580,babson.edu
+Boston Baptist College,,Boston,MA,164614,boston.edu
+Bay Path University,,Longmeadow,MA,164632,baypath.edu
+Bentley University,,Waltham,MA,164739,bentley.edu
+Berklee College of Music,,Boston,MA,164748,berklee.edu
+Boston Architectural College,,Boston,MA,164872,the-bac.edu
+Boston Graduate School of Psychoanalysis Inc,,Brookline,MA,164915,bgsp.edu
+Boston College,,Chestnut Hill,MA,164924,bc.edu
+Boston University,,Boston,MA,164988,bu.edu
+Brandeis University,,Waltham,MA,165015,brandeis.edu
+Bridgewater State University,,Bridgewater,MA,165024,bridgew.edu
+Cambridge College,,Boston,MA,165167,cambridgecollege.edu
+Laboure College of Healthcare,,Milton,MA,165264,laboure.edu
+Clark University,,Worcester,MA,165334,clarku.edu
+Conway School of Landscape Design,,Northampton,MA,165495,csld.edu
+Curry College,,Milton,MA,165529,curry.edu
+Dean College,,Franklin,MA,165574,dean.edu
+Eastern Nazarene College,,Quincy,MA,165644,enc.edu
+Emerson College,,Boston,MA,165662,emerson.edu
+Emmanuel College,,Boston,MA,165671,emmanuel.edu
+Endicott College,,Beverly,MA,165699,endicott.edu
+Fisher College,,Boston,MA,165802,fisher.edu
+Fitchburg State University,,Fitchburg,MA,165820,fitchburgstate.edu
+Framingham State University,,Framingham,MA,165866,framingham.edu
+Benjamin Franklin Cummings Institute of Technology,,Boston,MA,165884,bfit.edu
+Gordon College,,Wenham,MA,165936,gordon.edu
+Gordon-Conwell Theological Seminary,,South Hamilton,MA,165945,gordonconwell.edu
+Hampshire College,,Amherst,MA,166018,hampshire.edu
+Harvard University,,Cambridge,MA,166027,harvard.edu
+Hebrew College,,Newton,MA,166045,hebrewcollege.edu
+Hellenic College-Holy Cross Greek Orthodox School of Theology,,Brookline,MA,166054,hchc.edu
+College of the Holy Cross,,Worcester,MA,166124,holycross.edu
+Lasell University,,Newton,MA,166391,lasell.edu
+Lesley University,,Cambridge,MA,166452,lesley.edu
+Longy School of Music of Bard College,,Cambridge,MA,166489,longy.edu
+University of Massachusetts-Lowell,,Lowell,MA,166513,uml.edu
+University of Massachusetts-Amherst,,Amherst,MA,166629,umass.edu
+University of Massachusetts-Boston,,Boston,MA,166638,umb.edu
+MCPHS University,,Boston,MA,166656,mcphs.edu
+University of Massachusetts-Central Office,,Boston,MA,166665,massachusetts.edu
+Massachusetts College of Art and Design,,Boston,MA,166674,massart.edu
+Massachusetts Institute of Technology,,Cambridge,MA,166683,web.mit.edu
+Massachusetts Maritime Academy,,Buzzards Bay,MA,166692,maritime.edu
+University of Massachusetts Chan Medical School,,Worcester,MA,166708,umassmed.edu
+William James College,,Newton,MA,166717,williamjames.edu
+Merrimack College,,North Andover,MA,166850,merrimack.edu
+MGH Institute of Health Professions,,Boston,MA,166869,mghihp.edu
+Montserrat College of Art,,Beverly,MA,166911,montserrat.edu
+Mount Holyoke College,,South Hadley,MA,166939,mtholyoke.edu
+The New England Conservatory of Music,,Boston,MA,167057,necmusic.edu
+New England College of Optometry,,Boston,MA,167093,neco.edu
+New England Law-Boston,,Boston,MA,167215,nesl.edu
+Nichols College,,Dudley,MA,167260,nichols.edu
+Massachusetts College of Liberal Arts,,North Adams,MA,167288,mcla.edu
+Northeastern University,,Boston,MA,167358,northeastern.edu
+College of Our Lady of the Elms,,Chicopee,MA,167394,elms.edu
+Pope St John XXIII National Seminary,,Weston,MA,167464,psjs.edu
+Quincy College,,Quincy,MA,167525,quincycollege.edu
+Regis College,,Weston,MA,167598,regiscollege.edu
+Saint John's Seminary,,Brighton,MA,167677,sjs.edu
+Salem State University,,Salem,MA,167729,salemstate.edu
+Simmons University,,Boston,MA,167783,simmons.edu
+Bard College at Simon's Rock,,Great Barrington,MA,167792,simons-rock.edu
+Smith College,,Northampton,MA,167835,smith.edu
+Springfield College,,Springfield,MA,167899,springfield.edu
+University of Massachusetts-Dartmouth,,North Dartmouth,MA,167987,umassd.edu
+Stonehill College,,Easton,MA,167996,stonehill.edu
+Suffolk University,,Boston,MA,168005,suffolk.edu
+Tufts University,,Medford,MA,168148,tufts.edu
+Wellesley College,,Wellesley,MA,168218,wellesley.edu
+Wentworth Institute of Technology,,Boston,MA,168227,wit.edu
+Western New England University,,Springfield,MA,168254,wne.edu
+Westfield State University,,Westfield,MA,168263,westfield.ma.edu
+Wheaton College (Massachusetts),,Norton,MA,168281,wheatoncollege.edu
+Williams College,,Williamstown,MA,168342,williams.edu
+Worcester Polytechnic Institute,,Worcester,MA,168421,wpi.edu
+Worcester State University,,Worcester,MA,168430,worcester.edu
+Adrian College,,Adrian,MI,168528,adrian.edu
+Albion College,,Albion,MI,168546,albion.edu
+Alma College,,Alma,MI,168591,alma.edu
+Alpena Community College,,Alpena,MI,168607,alpenacc.edu
+Andrews University,,Berrien Springs,MI,168740,andrews.edu
+Aquinas College,,Grand Rapids,MI,168786,aquinas.edu
+Baker College,,Owosso,MI,168847,baker.edu
+Calvin University,,Grand Rapids,MI,169080,calvin.edu
+Calvin Theological Seminary,,Grand Rapids,MI,169099,calvinseminary.edu
+Michigan School of Psychology,,Farmington Hills,MI,169220,msp.edu
+Central Michigan University,,Mount Pleasant,MI,169248,cmich.edu
+Cleary University,,Howell,MI,169327,cleary.edu
+Concordia University Ann Arbor,,Ann Arbor,MI,169363,cuaa.edu
+Cranbrook Academy of Art,,Bloomfield Hills,MI,169424,cranbrookart.edu
+College for Creative Studies,,Detroit,MI,169442,collegeforcreativestudies.edu
+Davenport University,,Grand Rapids,MI,169479,davenport.edu
+University of Detroit Mercy,,Detroit,MI,169716,udmercy.edu
+Eastern Michigan University,,Ypsilanti,MI,169798,emich.edu
+Ferris State University,,Big Rapids,MI,169910,ferris.edu
+Kettering University,,Flint,MI,169983,kettering.edu
+Grace Christian University,,Wyoming,MI,170000,gracechristian.edu
+Cornerstone University,,Grand Rapids,MI,170037,cornerstone.edu
+Grand Valley State University,,Allendale,MI,170082,gvsu.edu
+Great Lakes Christian College,,Lansing,MI,170091,glcc.edu
+Henry Ford College,,Dearborn,MI,170240,hfcc.edu
+Hillsdale College,,Hillsdale,MI,170286,hillsdale.edu
+Hope College,,Holland,MI,170301,hope.edu
+Jackson College,,Jackson,MI,170444,jccmi.edu
+Kalamazoo College,,Kalamazoo,MI,170532,kzoo.edu
+Lake Superior State University,,Sault Ste Marie,MI,170639,lssu.edu
+Lawrence Technological University,,Southfield,MI,170675,ltu.edu
+Madonna University,,Livonia,MI,170806,madonna.edu
+Rochester University,,Rochester Hills,MI,170967,rochesteru.edu
+University of Michigan-Ann Arbor,,Ann Arbor,MI,170976,umich.edu
+Michigan State University,,East Lansing,MI,171100,msu.edu
+Michigan Technological University,,Houghton,MI,171128,mtu.edu
+University of Michigan-Dearborn,,Dearborn,MI,171137,umdearborn.edu
+University of Michigan-Flint,,Flint,MI,171146,umflint.edu
+Northern Michigan University,,Marquette,MI,171456,nmu.edu
+Northwestern Michigan College,,Traverse City,MI,171483,nmc.edu
+Northwood University,,Midland,MI,171492,northwood.edu
+Oakland University,,Rochester Hills,MI,171571,oakland.edu
+The University of Olivet,,Olivet,MI,171599,uolivet.edu
+Kuyper College,,Grand Rapids,MI,171881,kuyper.edu
+Sacred Heart Major Seminary,,Detroit,MI,172033,shms.edu
+Saginaw Valley State University,,University Center,MI,172051,svsu.edu
+Schoolcraft Community College District,,Livonia,MI,172200,schoolcraft.edu
+Siena Heights University,,Adrian,MI,172264,sienaheights.edu
+Spring Arbor University,,Spring Arbor,MI,172334,arbor.edu
+Finlandia University,,Hancock,MI,172440,
+Thomas M Cooley Law School,,Lansing,MI,172477,cooley.edu
+Walsh College,,Troy,MI,172608,walshcollege.edu
+Wayne State University,,Detroit,MI,172644,wayne.edu
+Western Michigan University,,Kalamazoo,MI,172699,wmich.edu
+Western Theological Seminary,,Holland,MI,172705,westernsem.edu
+Augsburg University,,Minneapolis,MN,173045,augsburg.edu
+Bemidji State University,,Bemidji,MN,173124,bemidjistate.edu
+Bethany Lutheran College,,Mankato,MN,173142,blc.edu
+Bethel University,,Saint Paul,MN,173160,bethel.edu
+Carleton College,,Northfield,MN,173258,carleton.edu
+Concordia College at Moorhead,,Moorhead,MN,173300,concordiacollege.edu
+Concordia University-Saint Paul,,Saint Paul,MN,173328,csp.edu
+Martin Luther College,,New Ulm,MN,173452,mlc-wels.edu
+Gustavus Adolphus College,,Saint Peter,MN,173647,gustavus.edu
+Hamline University,,Saint Paul,MN,173665,hamline.edu
+Hazelden Betty Ford Graduate School,,Center City,MN,173683,hazeldenbettyford.org
+Luther Seminary,,Saint Paul,MN,173896,luthersem.edu
+Macalester College,,Saint Paul,MN,173902,macalester.edu
+Minnesota State University-Mankato,,Mankato,MN,173920,mnsu.edu
+Mayo Clinic College of Medicine and Science,,Rochester,MN,173957,college.mayo.edu
+Metropolitan State University,,Saint Paul,MN,174020,metrostate.edu
+University of Minnesota-Twin Cities,,Minneapolis,MN,174066,twin-cities.umn.edu
+University of Minnesota-Crookston,,Crookston,MN,174075,crk.umn.edu
+Minneapolis College of Art and Design,,Minneapolis,MN,174127,mcad.edu
+Herzing University-Minneapolis,,St. Louis Park,MN,174154,herzing.edu
+University of Minnesota-Duluth,,Duluth,MN,174233,d.umn.edu
+University of Minnesota-Morris,,Morris,MN,174251,morris.umn.edu
+Minnesota State University Moorhead,,Moorhead,MN,174358,mnstate.edu
+North Central University,,Minneapolis,MN,174437,northcentral.edu
+University of Northwestern-St Paul,,Saint Paul,MN,174491,unwsp.edu
+Northwestern Health Sciences University,,Bloomington,MN,174507,nwhealth.edu
+Oak Hills Christian College,,Bemidji,MN,174525,oakhills.edu
+College of Saint Benedict,,Saint Joseph,MN,174747,csbsju.edu
+Saint Cloud State University,,Saint Cloud,MN,174783,stcloudstate.edu
+Saint Johns University,,Collegeville,MN,174792,csbsju.edu
+Saint Mary's University of Minnesota,,Winona,MN,174817,smumn.edu
+St Olaf College,,Northfield,MN,174844,wp.stolaf.edu
+Crown College,,Saint Bonifacius,MN,174862,crown.edu
+The College of Saint Scholastica,,Duluth,MN,174899,css.edu
+University of St Thomas,,Saint Paul,MN,174914,stthomas.edu
+St Catherine University,,Saint Paul,MN,175005,stkate.edu
+Southwest Minnesota State University,,Marshall,MN,175078,smsu.edu
+United Theological Seminary of the Twin Cities,,St. Paul,MN,175139,unitedseminary.edu
+Dunwoody College of Technology,,Minneapolis,MN,175227,dunwoody.edu
+Winona State University,,Winona,MN,175272,winona.edu
+Mitchell Hamline School of Law,,Saint Paul,MN,175281,mitchellhamline.edu
+Alcorn State University,,Alcorn State,MS,175342,alcorn.edu
+Belhaven University,,Jackson,MS,175421,belhaven.edu
+Blue Mountain Christian University,,Blue Mountain,MS,175430,bmc.edu
+Delta State University,,Cleveland,MS,175616,deltastate.edu
+Jackson State University,,Jackson,MS,175856,jsums.edu
+Millsaps College,,Jackson,MS,175980,millsaps.edu
+Board of Trustees-Mississippi State Institutions of Higher Learning,,Jackson,MS,175999,mississippi.edu
+University of Mississippi,,University,MS,176017,olemiss.edu
+Mississippi University for Women,,Columbus,MS,176035,muw.edu
+Mississippi Valley State University,,Itta Bena,MS,176044,mvsu.edu
+Mississippi College,,Clinton,MS,176053,mc.edu
+Mississippi State University,,Mississippi State,MS,176080,msstate.edu
+Rust College,,Holly Springs,MS,176318,rustcollege.edu
+Southeastern Baptist College,,Laurel,MS,176336,southeasternbaptist.edu
+University of Southern Mississippi,,Hattiesburg,MS,176372,usm.edu
+Tougaloo College,,Tougaloo,MS,176406,tougaloo.edu
+Wesley Biblical Seminary,,Ridgeland,MS,176451,wbs.edu
+William Carey University,,Hattiesburg,MS,176479,wmcarey.edu
+Aquinas Institute of Theology,,Saint Louis,MO,176600,ai.edu
+Avila University,,Kansas City,MO,176628,avila.edu
+Mission University,,Springfield,MO,176664,mission.edu
+Cox College,,Springfield,MO,176770,coxcollege.edu
+Calvary University,,Kansas City,MO,176789,calvary.edu
+Central Christian College of the Bible,,Moberly,MO,176910,cccb.edu
+Central Methodist University-College of Liberal Arts and Sciences,,Fayette,MO,176947,centralmethodist.edu
+University of Central Missouri,,Warrensburg,MO,176965,ucmo.edu
+Cleveland University-Kansas City,,Overland Park,KS,177038,cleveland.edu
+Columbia College,,Columbia,MO,177065,ccis.edu
+Conception Seminary College,,Conception,MO,177083,conception.edu
+Concordia Seminary,,Saint Louis,MO,177092,csl.edu
+Cottey College,,Nevada,MO,177117,cottey.edu
+Covenant Theological Seminary,,Saint Louis,MO,177126,covenantseminary.edu
+Culver-Stockton College,,Canton,MO,177144,culver.edu
+Drury University,,Springfield,MO,177214,drury.edu
+Eden Theological Seminary,,Webster Groves,MO,177278,eden.edu
+Evangel University,,Springfield,MO,177339,evangel.edu
+Fontbonne University,,Saint Louis,MO,177418,fontbonne.edu
+Ozarks Technical Community College,,Springfield,MO,177472,otc.edu
+Hannibal-LaGrange University,,Hannibal,MO,177542,hlg.edu
+Harris-Stowe State University,,Saint Louis,MO,177551,hssu.edu
+Barnes-Jewish College Goldfarb School of Nursing,,Saint Louis,MO,177719,barnesjewishcollege.edu
+Kansas City Art Institute,,Kansas City,MO,177746,kcai.edu
+Kenrick Glennon Seminary,,Saint Louis,MO,177816,kenrick.edu
+A T Still University of Health Sciences,,Kirksville,MO,177834,atsu.edu
+Lincoln University,,Jefferson City,MO,177940,lincolnu.edu
+Lindenwood University,,Saint Charles,MO,177968,lindenwood.edu
+Logan University,,Chesterfield,MO,177986,logan.edu
+Maryville University of Saint Louis,,Saint Louis,MO,178059,maryville.edu
+Midwestern Baptist Theological Seminary,,Kansas City,MO,178208,mbts.edu
+Missouri Baptist University,,Saint Louis,MO,178244,mobap.edu
+Missouri Southern State University,,Joplin,MO,178341,mssu.edu
+Missouri Valley College,,Marshall,MO,178369,moval.edu
+Missouri Western State University,,Saint Joseph,MO,178387,missouriwestern.edu
+University of Missouri-Columbia,,Columbia,MO,178396,missouri.edu
+University of Missouri-Kansas City,,Kansas City,MO,178402,umkc.edu
+Missouri University of Science and Technology,,Rolla,MO,178411,mst.edu
+University of Missouri-St Louis,,Saint Louis,MO,178420,umsl.edu
+University of Missouri-System Office,,Columbia,MO,178439,umsystem.edu
+Nazarene Theological Seminary,,Kansas City,MO,178518,nts.edu
+Truman State University,,Kirksville,MO,178615,truman.edu
+Northwest Missouri State University,,Maryville,MO,178624,nwmissouri.edu
+Ozark Christian College,,Joplin,MO,178679,occ.edu
+College of the Ozarks,,Point Lookout,MO,178697,cofo.edu
+Park University,,Parkville,MO,178721,park.edu
+Ranken Technical College,,Saint Louis,MO,178891,ranken.edu
+Rockhurst University,,Kansas City,MO,179043,rockhurst.edu
+Saint Louis University,,Saint Louis,MO,179159,slu.edu
+University of Health Sciences and Pharmacy in St. Louis,,Saint Louis,MO,179265,uhsp.edu
+Saint Louis Community College,,Bridgeton,MO,179308,stlcc.edu
+Saint Paul School of Theology,,Leawood,KS,179317,spst.edu
+Southwest Baptist University,,Bolivar,MO,179326,sbuniv.edu
+Stephens College,,Columbia,MO,179548,stephens.edu
+Southeast Missouri State University,,Cape Girardeau,MO,179557,semo.edu
+Missouri State University-Springfield,,Springfield,MO,179566,missouristate.edu
+Kansas City University,,Kansas City,MO,179812,kansascity.edu
+Washington University in St Louis,,Saint Louis,MO,179867,wustl.edu
+Webster University,,Saint Louis,MO,179894,webster.edu
+Westminster College,,Fulton,MO,179946,wcmo.edu
+William Jewell College,,Liberty,MO,179955,jewell.edu
+William Woods University,,Fulton,MO,179964,williamwoods.edu
+Blackfeet Community College,,Browning,MT,180054,bfcc.edu
+Carroll College,,Helena,MT,180106,carroll.edu
+Montana State University Billings,,Billings,MT,180179,msubillings.edu
+Aaniiih Nakoda College,,Harlem,MT,180203,ancollege.edu
+University of Providence,,Great Falls,MT,180258,uprovidence.edu
+Montana Technological University,,Butte,MT,180416,mtech.edu
+Montana State University,,Bozeman,MT,180461,montana.edu
+The University of Montana,,Missoula,MT,180489,umt.edu
+Montana State University-Northern,,Havre,MT,180522,msun.edu
+Rocky Mountain College,,Billings,MT,180595,rocky.edu
+Salish Kootenai College,,Pablo,MT,180647,skc.edu
+The University of Montana-Western,,Dillon,MT,180692,umwestern.edu
+Bellevue University,,Bellevue,NE,180814,bellevue.edu
+Clarkson College,,Omaha,NE,180832,clarksoncollege.edu
+Bryan College of Health Sciences,,Lincoln,NE,180878,bryanhealthcollege.edu
+Chadron State College,,Chadron,NE,180948,csc.edu
+Concordia University-Nebraska,,Seward,NE,180984,cune.edu
+Creighton University,,Omaha,NE,181002,creighton.edu
+Doane University,,Crete,NE,181020,doane.edu
+Hastings College,,Hastings,NE,181127,hastings.edu
+CHI Health School of Radiologic Technology,,Omaha,NE,181145,chihealth.com
+University of Nebraska at Kearney,,Kearney,NE,181215,unk.edu
+Nebraska Methodist College of Nursing & Allied Health,,Omaha,NE,181297,methodistcollege.edu
+Midland University,,Fremont,NE,181330,midlandu.edu
+University of Nebraska at Omaha,,Omaha,NE,181394,unomaha.edu
+Nebraska Indian Community College,,Macy,NE,181419,thenicc.edu
+University of Nebraska Medical Center,,Omaha,NE,181428,unmc.edu
+Nebraska Wesleyan University,,Lincoln,NE,181446,nebrwesleyan.edu
+University of Nebraska-Lincoln,,Lincoln,NE,181464,unl.edu
+Peru State College,,Peru,NE,181534,peru.edu
+Summit Christian College,,Gering,NE,181543,summitcc.edu
+College of Saint Mary,,Omaha,NE,181604,csm.edu
+Union Adventist University,,Lincoln,NE,181738,ucollege.edu
+University of Nebraska-Central Administration System Office,,Lincoln,NE,181747,nebraska.edu
+Wayne State College,,Wayne,NE,181783,wsc.edu
+York University,,York,NE,181853,york.edu
+College of Southern Nevada,,Las Vegas,NV,182005,csn.edu
+University of Nevada-Las Vegas,,Las Vegas,NV,182281,unlv.edu
+University of Nevada-Reno,,Reno,NV,182290,unr.edu
+Great Basin College,,Elko,NV,182306,gbcnv.edu
+Truckee Meadows Community College,,Reno,NV,182500,tmcc.edu
+Nevada System of Higher Education-System Office,,Reno,NV,182519,nshe.nevada.edu
+Western Nevada College,,Carson City,NV,182564,wnc.edu
+Colby-Sawyer College,,New London,NH,182634,colby-sawyer.edu
+Dartmouth College,,Hanover,NH,182670,dartmouth.edu
+Franklin Pierce University,,Rindge,NH,182795,franklinpierce.edu
+University of New Hampshire-Franklin Pierce School of Law,,Concord,NH,182829,law.unh.edu
+Magdalen College,,Warner,NH,182917,magdalen.edu
+New England College,,Henniker,NH,182980,nec.edu
+Southern New Hampshire University,,Manchester,NH,183026,snhu.edu
+University of New Hampshire-Main Campus,,Durham,NH,183044,unh.edu
+Keene State College,,Keene,NH,183062,keene.edu
+University of New Hampshire at Manchester,,Manchester,NH,183071,manchester.unh.edu
+Plymouth State University,,Plymouth,NH,183080,plymouth.edu
+Rivier University,,Nashua,NH,183211,rivier.edu
+Saint Anselm College,,Manchester,NH,183239,anselm.edu
+University of New Hampshire College of Professional Studies Online,,Manchester,NH,183257,cps.unh.edu
+Thomas More College of Liberal Arts,,Merrimack,NH,183275,thomasmorecollege.edu
+University System of New Hampshire System Office,,Concord,NH,183327,usnh.edu
+Beth Medrash Govoha,,Lakewood,NJ,183804,yeshivanotices.org
+Bloomfield College,,Bloomfield,NJ,183822,bloomfield.edu
+Caldwell University,,Caldwell,NJ,183910,caldwell.edu
+Centenary University,,Hackettstown,NJ,183974,centenaryuniversity.edu
+Drew University,,Madison,NJ,184348,drew.edu
+Fairleigh Dickinson University-Metropolitan Campus,,Teaneck,NJ,184603,fdu.edu
+Felician University,,Lodi,NJ,184612,felician.edu
+Fairleigh Dickinson University-Florham Campus,,Madison,NJ,184694,fdu.edu
+Georgian Court University,,Lakewood,NJ,184773,georgian.edu
+Rowan University,,Glassboro,NJ,184782,rowan.edu
+New Jersey City University,,Jersey City,NJ,185129,njcu.edu
+Kean University,,Union,NJ,185262,kean.edu
+Monmouth University,,West Long Branch,NJ,185572,monmouth.edu
+Montclair State University,,Montclair,NJ,185590,montclair.edu
+New Brunswick Theological Seminary,,New Brunswick,NJ,185758,nbts.edu
+New Jersey Institute of Technology,,Newark,NJ,185828,njit.edu
+Princeton Theological Seminary,,Princeton,NJ,186122,ptsem.edu
+Princeton University,,Princeton,NJ,186131,princeton.edu
+Rabbinical College of America,,Morristown,NJ,186186,rca.edu
+Ramapo College of New Jersey,,Mahwah,NJ,186201,ramapo.edu
+Rider University,,Lawrenceville,NJ,186283,rider.edu
+Rutgers University-Camden,,Camden,NJ,186371,camden.rutgers.edu
+Rutgers University-New Brunswick,,New Brunswick,NJ,186380,newbrunswick.rutgers.edu
+Rutgers University-Newark,,Newark,NJ,186399,newark.rutgers.edu
+Saint Peter's University,,Jersey City,NJ,186432,saintpeters.edu
+Seton Hall University,,South Orange,NJ,186584,shu.edu
+Saint Elizabeth University,,Morristown,NJ,186618,steu.edu
+Stevens Institute of Technology,,Hoboken,NJ,186867,stevens.edu
+Stockton University,,Galloway,NJ,186876,stockton.edu
+Talmudical Academy-New Jersey,,Adelphia,NJ,186900,talmudicalacademynj.com
+Thomas Edison State University,,Trenton,NJ,187046,tesu.edu
+The College of New Jersey,,Ewing,NJ,187134,tcnj.edu
+William Paterson University of New Jersey,,Wayne,NJ,187444,wpunj.edu
+Navajo Technical University,,Crownpoint,NM,187596,navajotech.edu
+Eastern New Mexico University-Main Campus,,Portales,NM,187648,enmu.edu
+Institute of American Indian and Alaska Native Culture and Arts Development,,Santa Fe,NM,187745,iaia.edu
+New Mexico Highlands University,,Las Vegas,NM,187897,nmhu.edu
+New Mexico Institute of Mining and Technology,,Socorro,NM,187967,nmt.edu
+University of New Mexico-Main Campus,,Albuquerque,NM,187985,unm.edu
+New Mexico State University-Main Campus,,Las Cruces,NM,188030,nmsu.edu
+Northern New Mexico College,,Espanola,NM,188058,nnmc.edu
+University of the Southwest,,Hobbs,NM,188182,usw.edu
+Southwestern College,,Santa Fe,NM,188207,swc.edu
+Western New Mexico University,,Silver City,NM,188304,wnmu.edu
+Vaughn College of Aeronautics and Technology,,Flushing,NY,188340,vaughn.edu
+Adelphi University,,Garden City,NY,188429,adelphi.edu
+Bryant & Stratton College-Albany,,Albany,NY,188517,bryantstratton.edu
+Albany College of Pharmacy and Health Sciences,,Albany,NY,188526,acphs.edu
+Albany Law School,,Albany,NY,188535,albanylaw.edu
+Albany Medical College,,Albany,NY,188580,amc.edu
+Alfred University,,Alfred,NY,188641,alfred.edu
+American Musical and Dramatic Academy,,New York,NY,188854,amda.edu
+Associated Beth Rivkah Schools,,Brooklyn,NY,188942,bethrivkah.edu
+Bank Street College of Education,,New York,NY,189015,bankstreet.edu
+Bard College,,Annandale-On-Hudson,NY,189088,bard.edu
+Barnard College,,New York,NY,189097,barnard.edu
+Beth Hamedrash Shaarei Yosher Institute,,Brooklyn,NY,189273,bhsy.edu
+Mount Sinai Phillips School of Nursing,,New York,NY,189282,pson.edu
+Boricua College,,New York,NY,189413,boricuacollege.edu
+Brooklyn Law School,,Brooklyn,NY,189501,brooklaw.edu
+Bryant & Stratton College-Syracuse North,,Liverpool,NY,189565,bryantstratton.edu
+Bryant & Stratton College-Buffalo,,Buffalo,NY,189583,bryantstratton.edu
+Bryant & Stratton College-Greece,,Rochester,NY,189592,bryantstratton.edu
+Canisius University,,Buffalo,NY,189705,canisius.edu
+Cazenovia College,,Cazenovia,NY,189848,
+Central Yeshiva Tomchei Tmimim Lubavitz,,Brooklyn,NY,189857,cyttl.edu
+CUNY System Office,,New York,NY,190035,cuny.edu
+Clarkson University,,Potsdam,NY,190044,clarkson.edu
+Colgate Rochester Crozer Divinity School,,Rochester,NY,190080,crcds.edu
+Colgate University,,Hamilton,NY,190099,colgate.edu
+Metropolitan College of New York,,New York,NY,190114,mcny.edu
+Columbia University in the City of New York,,New York,NY,190150,columbia.edu
+The Cooper Union for the Advancement of Science and Art,,New York,NY,190372,cooper.edu
+Cornell University,,Ithaca,NY,190415,cornell.edu
+Weill Medical College of Cornell University,,New York,NY,190424,weill.cornell.edu
+Culinary Institute of America,,Hyde Park,NY,190503,ciachef.edu
+CUNY Bernard M Baruch College,,New York,NY,190512,baruch.cuny.edu
+CUNY Brooklyn College,,Brooklyn,NY,190549,brooklyn.cuny.edu
+College of Staten Island CUNY,,Staten Island,NY,190558,csi.cuny.edu
+CUNY City College,,New York,NY,190567,ccny.cuny.edu
+CUNY Graduate School and University Center,,New York,NY,190576,gc.cuny.edu
+CUNY Hunter College,,New York,NY,190594,hunter.cuny.edu
+CUNY John Jay College of Criminal Justice,,New York,NY,190600,jjay.cuny.edu
+CUNY Lehman College,,Bronx,NY,190637,lehman.edu
+CUNY Medgar Evers College,,Brooklyn,NY,190646,mec.cuny.edu
+CUNY New York City College of Technology,,Brooklyn,NY,190655,citytech.cuny.edu
+CUNY Queens College,,Queens,NY,190664,qc.cuny.edu
+CUNY School of Law,,Long Island City,NY,190682,law.cuny.edu
+CUNY York College,,Jamaica,NY,190691,york.cuny.edu
+D'Youville  University,,Buffalo,NY,190716,dyu.edu
+Daemen University,,Amherst,NY,190725,daemen.edu
+Yeshiva of Far Rockaway Derech Ayson Rabbinical Seminary,,Far Rockaway,NY,190752,yofr.org
+Dominican University New York,,Orangeburg,NY,190761,duny.edu
+Elmira College,,Elmira,NY,190983,elmira.edu
+Fashion Institute of Technology,,New York,NY,191126,fitnyc.edu
+Fordham University,,Bronx,NY,191241,fordham.edu
+Hamilton College,,Clinton,NY,191515,hamilton.edu
+Hartwick College,,Oneonta,NY,191533,hartwick.edu
+Helene Fuld College of Nursing,,New York,NY,191597,helenefuld.edu
+Hilbert College,,Hamburg,NY,191621,hilbert.edu
+Hobart William Smith Colleges,,Geneva,NY,191630,hws.edu
+Hofstra University,,Hempstead,NY,191649,hofstra.edu
+Houghton University,,Houghton,NY,191676,houghton.edu
+Iona University,,New Rochelle,NY,191931,iona.edu
+Ithaca College,,Ithaca,NY,191968,ithaca.edu
+Jewish Theological Seminary of America,,New York,NY,192040,jtsa.edu
+The Juilliard School,,New York,NY,192110,juilliard.edu
+Kehilath Yakov Rabbinical Seminary,,Ossining,NY,192165,kehilathyakov.com
+Keuka College,,Keuka Park,NY,192192,keuka.edu
+Le Moyne College,,Syracuse,NY,192323,lemoyne.edu
+Long Island University,,Brookville,NY,192448,liu.edu
+Machzikei Hadath Rabbinical College,,Brooklyn,NY,192624,mhrc.edu
+Manhattan College,,Riverdale,NY,192703,manhattan.edu
+Manhattan School of Music,,New York,NY,192712,msmnyc.edu
+Manhattanville College,,Purchase,NY,192749,mville.edu
+Maria College of Albany,,Albany,NY,192785,mariacollege.edu
+Marist College,,Poughkeepsie,NY,192819,marist.edu
+Marymount Manhattan College,,New York,NY,192864,mmm.edu
+Medaille University,,Buffalo,NY,192925,
+Mercy University,,Dobbs Ferry,NY,193016,mercy.edu
+Mesivta Torah Vodaath Rabbinical Seminary,,Brooklyn,NY,193052,independentrabbinicalcolleges.org
+Mesivta of Eastern Parkway-Yeshiva Zichron Meilech,,Brooklyn,NY,193061,mesivtaofeasternparkway.com
+Mesivtha Tifereth Jerusalem of America,,New York,NY,193070,mtj.edu
+Mirrer Yeshiva Cent Institute,,Brooklyn,NY,193247,mirreryeshiva.com
+Molloy College,,Rockville Centre,NY,193292,molloy.edu
+Mount Saint Mary College,,Newburgh,NY,193353,msmc.edu
+University of Mount Saint Vincent,,Bronx,NY,193399,mountsaintvincent.edu
+Icahn School of Medicine at Mount Sinai,,New York,NY,193405,icahn.mssm.edu
+Nazareth University,,Rochester,NY,193584,naz.edu
+The New School,,New York,NY,193654,newschool.edu
+Northeast College of Health Sciences,,Seneca Falls,NY,193751,northeastcollege.edu
+New York Law School,,New York,NY,193821,nyls.edu
+New York Medical College,,Valhalla,NY,193830,nymc.edu
+New York Theological Seminary,,New York,NY,193894,nyts.edu
+New York University,,New York,NY,193900,nyu.edu
+Niagara University,,Niagara University,NY,193973,niagara.edu
+New York College of Podiatric Medicine,,New York,NY,194073,nycpm.edu
+New York Institute of Technology,,Old Westbury,NY,194091,nyit.edu
+New York School of Interior Design,,New York,NY,194116,nysid.edu
+Alliance University,,New York,NY,194161,
+Ohr Hameir Theological Seminary,,Peekskill,NY,194189,ohrhameir.com
+Pace University,,New York,NY,194310,pace.edu
+Paul Smiths College of Arts and Science,,Paul Smiths,NY,194392,paulsmiths.edu
+Davis College,,Pottersville,NY,194569,davisny.edu
+Pratt Institute-Main,,Brooklyn,NY,194578,pratt.edu
+Rabbinical Academy Mesivta Rabbi Chaim Berlin,,Brooklyn,NY,194657,rabbinicalacademyrabbichaimberlin.com
+Rabbinical College Bobover Yeshiva Bnei Zion,,Brooklyn,NY,194666,rabbinicalcollegeboboveryeshiva.edu
+Rabbinical College Beth Shraga,,Monsey,NY,194693,rabbinicalcollegebethshraga.com
+Rabbinical Seminary Mkor Chaim,,Lakewood,NJ,194718,mkorchaim.org
+Rabbinical College of Long Island,,Long Beach,NY,194736,rabbinicalcollegelongisland.com
+Rabbinical Seminary of America,,Flushing,NY,194763,rabbinical.org
+Rensselaer Polytechnic Institute,,Troy,NY,194824,rpi.edu
+Roberts Wesleyan University,,Rochester,NY,194958,roberts.edu
+Rochester Institute of Technology,,Rochester,NY,195003,rit.edu
+University of Rochester,,Rochester,NY,195030,rochester.edu
+The Rockefeller University,,New York,NY,195049,rockefeller.edu
+Russell Sage College,,Troy,NY,195128,sage.edu
+St Bernard's School of Theology and Ministry,,Rochester,NY,195155,stbernards.edu
+St Bonaventure University,,Saint Bonaventure,NY,195164,sbu.edu
+St. Francis College,,Brooklyn,NY,195173,sfc.edu
+St Lawrence University,,Canton,NY,195216,stlawu.edu
+The College of Saint Rose,,Albany,NY,195234,strose.edu
+St. Thomas Aquinas College,,Sparkill,NY,195243,stac.edu
+Sarah Lawrence College,,Bronxville,NY,195304,sarahlawrence.edu
+Sh'or Yoshuv Rabbinical College,,Lawrence,NY,195438,shoryoshuv.org
+Siena College,,Loudonville,NY,195474,siena.edu
+Skidmore College,,Saratoga Springs,NY,195526,skidmore.edu
+St. Joseph's University-New York,,Brooklyn,NY,195544,sjny.edu
+Saint Vladimirs Orthodox Theological Seminary,,Yonkers,NY,195580,svots.edu
+St. John Fisher University,,Rochester,NY,195720,sjf.edu
+St. John's University-New York,,Queens,NY,195809,stjohns.edu
+SUNY-System Office,,Albany,NY,195827,suny.edu
+SUNY College of Technology at Alfred,,Alfred,NY,196006,alfredstate.edu
+SUNY College of Technology at Canton,,Canton,NY,196015,canton.edu
+SUNY College of Technology at Delhi,,Delhi,NY,196024,delhi.edu
+SUNY College of Agriculture and Technology at Cobleskill,,Cobleskill,NY,196033,cobleskill.edu
+Farmingdale State College,,Farmingdale,NY,196042,farmingdale.edu
+SUNY Morrisville,,Morrisville,NY,196051,morrisville.edu
+University at Albany,,Albany,NY,196060,albany.edu
+Binghamton University,,Vestal,NY,196079,binghamton.edu
+University at Buffalo,,Buffalo,NY,196088,buffalo.edu
+Stony Brook University,,Stony Brook,NY,196097,stonybrook.edu
+SUNY College of Environmental Science and Forestry,,Syracuse,NY,196103,esf.edu
+SUNY Polytechnic Institute,,Utica,NY,196112,sunypoly.edu
+SUNY Brockport,,Brockport,NY,196121,brockport.edu
+SUNY Buffalo State University,,Buffalo,NY,196130,suny.buffalostate.edu
+State University of New York at Cortland,,Cortland,NY,196149,cortland.edu
+SUNY at Fredonia,,Fredonia,NY,196158,fredonia.edu
+SUNY College at Geneseo,,Geneseo,NY,196167,geneseo.edu
+State University of New York at New Paltz,,New Paltz,NY,196176,newpaltz.edu
+SUNY Oneonta,,Oneonta,NY,196185,suny.oneonta.edu
+State University of New York at Oswego,,Oswego,NY,196194,oswego.edu
+SUNY College at Potsdam,,Potsdam,NY,196200,potsdam.edu
+SUNY at Purchase College,,Purchase,NY,196219,purchase.edu
+SUNY College of Optometry,,New York,NY,196228,sunyopt.edu
+SUNY Old Westbury,,Old Westbury,NY,196237,oldwestbury.edu
+SUNY College at Plattsburgh,,Plattsburgh,NY,196246,plattsburgh.edu
+SUNY Downstate Health Sciences University,,Brooklyn,NY,196255,downstate.edu
+Empire State University,,Saratoga Springs,NY,196264,sunyempire.edu
+SUNY Maritime College,,Throggs Neck,NY,196291,sunymaritime.edu
+Upstate Medical University,,Syracuse,NY,196307,upstate.edu
+Syracuse University,,Syracuse,NY,196413,syracuse.edu
+Talmudical Seminary Oholei Torah,,Brooklyn,NY,196431,tsot.edu
+Talmudical Institute of Upstate New York,,Rochester,NY,196440,tiuny.org
+Teachers College at Columbia University,,New York,NY,196468,tc.columbia.edu
+Torah Temimah Talmudical Seminary,,Staten Island,NY,196583,torahtemimahtalmudicalseminary.com
+Touro University,,New York,NY,196592,touro.edu
+Trocaire College,,Buffalo,NY,196653,trocaire.edu
+Excelsior University,,Albany,NY,196680,excelsior.edu
+Union College,,Schenectady,NY,196866,union.edu
+Union Theological Seminary in the City of New York,,New York,NY,196884,utsnyc.edu
+United Talmudical Seminary,,Brooklyn,NY,197018,utsny.edu
+United States Merchant Marine Academy,,Kings Point,NY,197027,usmma.edu
+United States Military Academy,,West  Point,NY,197036,westpoint.edu
+Utica University,,Utica,NY,197045,utica.edu
+Vassar College,,Poughkeepsie,NY,197133,vassar.edu
+Villa Maria College,,Buffalo,NY,197142,villa.edu
+Wagner College,,Staten Island,NY,197197,wagner.edu
+Webb Institute,,Glen Cove,NY,197221,webb.edu
+Wells College,,Aurora,NY,197230,wells.edu
+Yeshiva Karlin Stolin,,Brooklyn,NY,197601,yeshivakarlinstolin.org
+Yeshiva Derech Chaim,,Brooklyn,NY,197647,ydc.edu
+Yeshiva of Nitra Rabbinical College,,Chester,NY,197674,yeshivaofnitra.org
+Yeshivath Shaar Hatorah,,Kew Gardens,NY,197692,shaarhatorah.edu
+Yeshiva University,,New York,NY,197708,yu.edu
+Yeshivath Viznitz,,Monsey,NY,197735,yeshivathviznitz.com
+Yeshivath Zichron Moshe,,South Fallsburg,NY,197744,yeshivathzichronmoshe.com
+Appalachian State University,,Boone,NC,197869,appstate.edu
+Barton College,,Wilson,NC,197911,barton.edu
+Belmont Abbey College,,Belmont,NC,197984,belmontabbeycollege.edu
+Bennett College,,Greensboro,NC,197993,bennett.edu
+Brevard College,,Brevard,NC,198066,brevard.edu
+Cabarrus College of Health Sciences,,Concord,NC,198109,cabarruscollege.edu
+Campbell University,,Buies Creek,NC,198136,campbell.edu
+Catawba College,,Salisbury,NC,198215,catawba.edu
+Chowan University,,Murfreesboro,NC,198303,chowan.edu
+Davidson College,,Davidson,NC,198385,davidson.edu
+Duke University,,Durham,NC,198419,duke.edu
+East Carolina University,,Greenville,NC,198464,ecu.edu
+Elizabeth City State University,,Elizabeth City,NC,198507,ecsu.edu
+Elon University,,Elon,NC,198516,elon.edu
+Fayetteville State University,,Fayetteville,NC,198543,uncfsu.edu
+Gardner-Webb University,,Boiling Springs,NC,198561,gardner-webb.edu
+Greensboro College,,Greensboro,NC,198598,greensboro.edu
+Guilford College,,Greensboro,NC,198613,guilford.edu
+Heritage Bible College,,Dunn,NC,198677,heritagebiblecollege.edu
+High Point University,,High Point,NC,198695,highpoint.edu
+Johnson C Smith University,,Charlotte,NC,198756,jcsu.edu
+Lees-McRae College,,Banner Elk,NC,198808,lmc.edu
+Lenoir-Rhyne University,,Hickory,NC,198835,lr.edu
+Livingstone College,,Salisbury,NC,198862,livingstone.edu
+Mars Hill University,,Mars Hill,NC,198899,mhu.edu
+Meredith College,,Raleigh,NC,198950,meredith.edu
+Methodist University,,Fayetteville,NC,198969,methodist.edu
+Montreat College,,Montreat,NC,199032,montreat.edu
+University of Mount Olive,,Mount Olive,NC,199069,umo.edu
+North Carolina A & T State University,,Greensboro,NC,199102,ncat.edu
+University of North Carolina Asheville,,Asheville,NC,199111,unca.edu
+University of North Carolina at Chapel Hill,,Chapel Hill,NC,199120,unc.edu
+University of North Carolina at Charlotte,,Charlotte,NC,199139,charlotte.edu
+University of North Carolina at Greensboro,,Greensboro,NC,199148,uncg.edu
+North Carolina Central University,,Durham,NC,199157,nccu.edu
+University of North Carolina System,,Raleigh,NC,199175,northcarolina.edu
+University of North Carolina School of the Arts,,Winston Salem,NC,199184,uncsa.edu
+North Carolina State University at Raleigh,,Raleigh,NC,199193,ncsu.edu
+North Carolina Wesleyan University,,Rocky Mount,NC,199209,ncwc.edu
+University of North Carolina Wilmington,,Wilmington,NC,199218,uncw.edu
+William Peace University,,Raleigh,NC,199272,peace.edu
+University of North Carolina at Pembroke,,Pembroke,NC,199281,uncp.edu
+Pfeiffer University,,Misenheimer,NC,199306,pfeiffer.edu
+Queens University of Charlotte,,Charlotte,NC,199412,queens.edu
+Mid-Atlantic Christian University,,Elizabeth City,NC,199458,macuniversity.edu
+Saint Augustine's University,,Raleigh,NC,199582,st-aug.edu
+Salem College,,Winston-Salem,NC,199607,salem.edu
+Shaw University,,Raleigh,NC,199643,shawu.edu
+St. Andrews University,,Laurinburg,NC,199698,sa.edu
+Southeastern Baptist Theological Seminary,,Wake Forest,NC,199759,sebts.edu
+Wake Forest University,,Winston-Salem,NC,199847,wfu.edu
+Warren Wilson College,,Swannanoa,NC,199865,warren-wilson.edu
+Watts College of Nursing,,Durham,NC,199883,wattscollegeofnursing.edu
+Wingate University,,Wingate,NC,199962,wingate.edu
+Carolina Christian College,,Winston Salem,NC,199971,carolina.edu
+Winston-Salem State University,,Winston-Salem,NC,199999,wssu.edu
+Western Carolina University,,Cullowhee,NC,200004,wcu.edu
+Bismarck State College,,Bismarck,ND,200022,bismarckstate.edu
+Dickinson State University,,Dickinson,ND,200059,dickinsonstate.edu
+Nueta Hidatsa Sahnish College,,New Town,ND,200086,nhsc.edu
+University of Jamestown,,Jamestown,ND,200156,uj.edu
+University of Mary,,Bismarck,ND,200217,umary.edu
+Mayville State University,,Mayville,ND,200226,mayvillestate.edu
+Minot State University,,Minot,ND,200253,minotstateu.edu
+University of North Dakota,,Grand Forks,ND,200280,und.edu
+North Dakota State University-Main Campus,,Fargo,ND,200332,ndsu.edu
+Sitting Bull College,,Fort Yates,ND,200466,sittingbull.edu
+Trinity Bible College and Graduate School,,Ellendale,ND,200484,trinitybiblecollege.edu
+Turtle Mountain Community College,,Belcourt,ND,200527,tm.edu
+United Tribes Technical College,,Bismarck,ND,200554,uttc.edu
+Valley City State University,,Valley City,ND,200572,vcsu.edu
+Air Force Institute of Technology-Graduate School of Engineering & Management,,Wright-Patterson AFB,OH,200697,afit.edu
+Herzing University-Akron,,Akron,OH,200785,herzing.edu
+University of Akron Main Campus,,Akron,OH,200800,uakron.edu
+Allegheny Wesleyan College,,Salem,OH,200873,awc.edu
+Art Academy of Cincinnati,,Cincinnati,OH,201061,artacademy.edu
+Ashland University,,Ashland,OH,201104,ashland.edu
+Athenaeum of Ohio,,Cincinnati,OH,201140,athenaeum.edu
+Aultman College of Nursing and Health Sciences,,Canton,OH,201177,aultmancollege.edu
+Baldwin Wallace University,,Berea,OH,201195,bw.edu
+Bluffton University,,Bluffton,OH,201371,bluffton.edu
+Bowling Green State University-Firelands,,Huron,OH,201432,firelands.bgsu.edu
+Bowling Green State University-Main Campus,,Bowling Green,OH,201441,bgsu.edu
+Bryant & Stratton College-Parma,,Parma,OH,201469,bryantstratton.edu
+Capital University,,Columbus,OH,201548,capital.edu
+Case Western Reserve University,,Cleveland,OH,201645,case.edu
+Cedarville University,,Cedarville,OH,201654,cedarville.edu
+Central Ohio Technical College,,Newark,OH,201672,cotc.edu
+Central State University,,Wilberforce,OH,201690,centralstate.edu
+The Christ College of Nursing and Health Sciences,,Cincinnati,OH,201821,thechristcollege.edu
+Cincinnati College of Mortuary Science,,Cincinnati,OH,201867,ccms.edu
+University of Cincinnati-Main Campus,,Cincinnati,OH,201885,uc.edu
+Cincinnati State Technical and Community College,,Cincinnati,OH,201928,cincinnatistate.edu
+University of Cincinnati-Clermont College,,Batavia,OH,201946,ucclermont.edu
+University of Cincinnati-Blue Ash College,,Blue Ash,OH,201955,ucblueash.edu
+Ohio Christian University,,Circleville,OH,201964,ohiochristian.edu
+Clark State College,,Springfield,OH,201973,clarkstate.edu
+Cleveland Institute of Art,,Cleveland,OH,202046,cia.edu
+Cleveland Institute of Music,,Cleveland,OH,202073,cim.edu
+Cleveland State University,,Cleveland,OH,202134,csuohio.edu
+Columbus College of Art & Design,,Columbus,OH,202170,ccad.edu
+University of Dayton,,Dayton,OH,202480,udayton.edu
+Defiance College,,Defiance,OH,202514,defiance.edu
+Denison University,,Granville,OH,202523,denison.edu
+The University of Findlay,,Findlay,OH,202763,findlay.edu
+Franklin University,,Columbus,OH,202806,franklin.edu
+Gods Bible School and College,,Cincinnati,OH,202903,gbs.edu
+Good Samaritan College of Nursing and Health Science,,Cincinnati,OH,202912,gscollege.edu
+Hebrew Union College-Jewish Institute of Religion,,New York,NY,203067,huc.edu
+Heidelberg University,,Tiffin,OH,203085,heidelberg.edu
+Hiram College,,Hiram,OH,203128,hiram.edu
+John Carroll University,,University Heights,OH,203368,jcu.edu
+Kent State University at Ashtabula,,Ashtabula,OH,203447,kent.edu
+Kent State University at East Liverpool,,East Liverpool,OH,203456,kent.edu
+Kent State University at Stark,,North Canton,OH,203465,kent.edu
+Kent State University at Trumbull,,Warren,OH,203474,kent.edu
+Kent State University at Tuscarawas,,New Philadelphia,OH,203483,kent.edu
+Kent State University at Salem,,Salem,OH,203492,kent.edu
+Kent State University at Kent,,Kent,OH,203517,kent.edu
+Kent State University at Geauga,,Burton,OH,203526,kent.edu
+Kenyon College,,Gambier,OH,203535,kenyon.edu
+Kettering College,,Kettering,OH,203544,kc.edu
+Lake Erie College,,Painesville,OH,203580,lec.edu
+James A. Rhodes State College,,Lima,OH,203678,rhodesstate.edu
+Lorain County Community College,,Elyria,OH,203748,lorainccc.edu
+Lourdes University,,Sylvania,OH,203757,lourdes.edu
+Malone University,,Canton,OH,203775,malone.edu
+Marietta College,,Marietta,OH,203845,marietta.edu
+Marion Technical College,,Marion,OH,203881,mtc.edu
+Mercy College of Ohio,,Toledo,OH,203960,mercycollege.edu
+Methodist Theological School in Ohio,,Delaware,OH,203997,mtso.edu
+Miami University-Hamilton,,Hamilton,OH,204006,miamioh.edu
+Miami University-Middletown,,Middletown,OH,204015,miamioh.edu
+Miami University-Oxford,,Oxford,OH,204024,miamioh.edu
+Mount Carmel College of Nursing,,Columbus,OH,204176,mccn.edu
+University of Mount Union,,Alliance,OH,204185,mountunion.edu
+Mount Vernon Nazarene University,,Mount Vernon,OH,204194,mvnu.edu
+Mount St. Joseph University,,Cincinnati,OH,204200,msj.edu
+Zane State College,,Zanesville,OH,204255,zanestate.edu
+Muskingum University,,New Concord,OH,204264,muskingum.edu
+North Central State College,,Mansfield,OH,204422,ncstatecollege.edu
+Notre Dame College,,Cleveland,OH,204468,notredamecollege.edu
+Northeast Ohio Medical University,,Rootstown,OH,204477,neomed.edu
+University of Northwestern Ohio,,Lima,OH,204486,unoh.edu
+Oberlin College,,Oberlin,OH,204501,oberlin.edu
+Ohio Dominican University,,Columbus,OH,204617,ohiodominican.edu
+Ohio Northern University,,Ada,OH,204635,onu.edu
+Ohio State University-Lima Campus,,Lima,OH,204671,lima.osu.edu
+Ohio State University-Mansfield Campus,,Mansfield,OH,204680,mansfield.osu.edu
+Ohio State University-Marion Campus,,Marion,OH,204699,osumarion.osu.edu
+Ohio State University-Newark Campus,,Newark,OH,204705,newark.osu.edu
+Ohio State University-Main Campus,,Columbus,OH,204796,osu.edu
+Ohio University-Eastern Campus,,Saint Clairsville,OH,204802,ohio.edu
+Ohio University-Chillicothe Campus,,Chillicothe,OH,204820,ohio.edu
+Ohio University-Southern Campus,,Ironton,OH,204839,ohio.edu
+Ohio University-Lancaster Campus,,Lancaster,OH,204848,ohio.edu
+Ohio University-Main Campus,,Athens,OH,204857,ohio.edu
+Ohio University-Zanesville Campus,,Zanesville,OH,204866,ohio.edu
+Ohio Wesleyan University,,Delaware,OH,204909,owu.edu
+Otterbein University,,Westerville,OH,204936,otterbein.edu
+Payne Theological Seminary,,Wilberforce,OH,204990,payneseminary.edu
+Pontifical College Josephinum,,Columbus,OH,205027,pcj.edu
+Rabbinical College Telshe,,Wickliffe,OH,205124,independentrabbinicalcolleges.org
+University of Rio Grande,,Rio Grande,OH,205203,rio.edu
+Shawnee State University,,Portsmouth,OH,205443,shawnee.edu
+Sinclair Community College,,Dayton,OH,205470,sinclair.edu
+Franciscan University of Steubenville,,Steubenville,OH,205957,franciscan.edu
+Tiffin University,,Tiffin,OH,206048,tiffin.edu
+University of Toledo,,Toledo,OH,206084,utoledo.edu
+Tri-State Bible College,,South Point,OH,206154,tsbc.edu
+Union Institute & University,,Cincinnati,OH,206279,myunion.edu
+United Theological Seminary,,Dayton,OH,206288,united.edu
+Ursuline College,,Pepper Pike,OH,206349,ursuline.edu
+Walsh University,,North Canton,OH,206437,walsh.edu
+Washington State Community College,,Marietta,OH,206446,wscc.edu
+Wilberforce University,,Wilberforce,OH,206491,wilberforce.edu
+Wilmington College,,Wilmington,OH,206507,wilmington.edu
+Winebrenner Theological Seminary,,Findlay,OH,206516,winebrenner.edu
+Wittenberg University,,Springfield,OH,206525,wittenberg.edu
+The College of Wooster,,Wooster,OH,206589,wooster.edu
+Wright State University-Main Campus,,Dayton,OH,206604,wright.edu
+Wright State University-Lake Campus,,Celina,OH,206613,lake.wright.edu
+Xavier University,,Cincinnati,OH,206622,xavier.edu
+Youngstown State University,,Youngstown,OH,206695,ysu.edu
+Bacone College,,Muskogee,OK,206817,bacone.edu
+Oklahoma Wesleyan University,,Bartlesville,OK,206835,okwu.edu
+Southern Nazarene University,,Bethany,OK,206862,snu.edu
+Cameron University,,Lawton,OK,206914,cameron.edu
+University of Central Oklahoma,,Edmond,OK,206941,uco.edu
+East Central University,,Ada,OK,207041,ecok.edu
+Randall University,,Moore,OK,207157,ru.edu
+Langston University,,Langston,OK,207209,langston.edu
+Northeastern State University,,Tahlequah,OK,207263,nsuok.edu
+Northwestern Oklahoma State University,,Alva,OK,207306,nwosu.edu
+Oklahoma State University Center for Health Sciences,,Tulsa,OK,207315,medicine.okstate.edu
+Oklahoma Christian University,,Edmond,OK,207324,oc.edu
+University of Oklahoma-Health Sciences Center,,Oklahoma City,OK,207342,ouhsc.edu
+Oklahoma Panhandle State University,,Goodwell,OK,207351,opsu.edu
+Oklahoma State University-Main Campus,,Stillwater,OK,207388,okstate.edu
+Oklahoma State University-Oklahoma City,,Oklahoma City,OK,207397,osuokc.edu
+Oklahoma Baptist University,,Shawnee,OK,207403,okbu.edu
+Oklahoma City University,,Oklahoma City,OK,207458,okcu.edu
+University of Oklahoma-Norman Campus,,Norman,OK,207500,ou.edu
+Oklahoma State University Institute of Technology,,Okmulgee,OK,207564,osuit.edu
+Oral Roberts University,,Tulsa,OK,207582,oru.edu
+Rogers State University,,Claremore,OK,207661,rsu.edu
+University of Science and Arts of Oklahoma,,Chickasha,OK,207722,usao.edu
+Southeastern Oklahoma State University,,Durant,OK,207847,se.edu
+Southwestern Christian University,,Bethany,OK,207856,swcu.edu
+Southwestern Oklahoma State University,,Weatherford,OK,207865,swosu.edu
+University of Tulsa,,Tulsa,OK,207971,utulsa.edu
+Chemeketa Community College,,Salem,OR,208390,chemeketa.edu
+Eastern Oregon University,,La Grande,OR,208646,eou.edu
+New Hope Christian College-Eugene,,Eugene,OR,208725,newhope.edu
+George Fox University,,Newberg,OR,208822,georgefox.edu
+Lewis & Clark College,,Portland,OR,209056,lclark.edu
+Linfield University,,McMinnville,OR,209065,linfield.edu
+Mount Angel Seminary,,Saint Benedict,OR,209241,mountangelabbey.org
+Mt Hood Community College,,Gresham,OR,209250,mhcc.edu
+Multnomah University,,Portland,OR,209287,multnomah.edu
+National University of Natural Medicine,,Portland,OR,209296,nunm.edu
+Bushnell University,,Eugene,OR,209409,bushnell.edu
+Oregon Health & Science University,,Portland,OR,209490,ohsu.edu
+Oregon Institute of Technology,,Klamath Falls,OR,209506,oit.edu
+Oregon State University,,Corvallis,OR,209542,oregonstate.edu
+University of Oregon,,Eugene,OR,209551,uoregon.edu
+Pacific Northwest College of Art,,Portland,OR,209603,willamette.edu
+Pacific University,,Forest Grove,OR,209612,pacificu.edu
+Portland State University,,Portland,OR,209807,pdx.edu
+University of Portland,,Portland,OR,209825,up.edu
+Reed College,,Portland,OR,209922,reed.edu
+Southern Oregon University,,Ashland,OR,210146,sou.edu
+Warner Pacific University,,Portland,OR,210304,warnerpacific.edu
+Corban University,,Salem,OR,210331,corban.edu
+Western Seminary,,Portland,OR,210368,westernseminary.edu
+Willamette University,,Salem,OR,210401,willamette.edu
+Western Oregon University,,Monmouth,OR,210429,wou.edu
+University of Western States,,Portland,OR,210438,uws.edu
+Bryn Athyn College of the New Church,,Bryn Athyn,PA,210492,brynathyn.edu
+Academy of Vocal Arts,,Philadelphia,PA,210508,avaopera.org
+Albright College,,Reading,PA,210571,albright.edu
+Allegheny College,,Meadville,PA,210669,allegheny.edu
+DeSales University,,Center Valley,PA,210739,desales.edu
+Alvernia University,,Reading,PA,210775,alvernia.edu
+American College of Financial Services,,King of Prussia,PA,210809,theamericancollege.edu
+Clarks Summit University,,Clarks Summit,PA,211024,clarkssummitu.edu
+Arcadia University,,Glenside,PA,211088,arcadia.edu
+Missio Theological Seminary,,Philadelphia,PA,211130,missio.edu
+Bryn Mawr College,,Bryn Mawr,PA,211273,brynmawr.edu
+Bucknell University,,Lewisburg,PA,211291,bucknell.edu
+Cabrini University,,Radnor,PA,211352,cabrini.edu
+Carlow University,,Pittsburgh,PA,211431,carlow.edu
+Carnegie Mellon University,,Pittsburgh,PA,211440,cmu.edu
+Cedar Crest College,,Allentown,PA,211468,cedarcrest.edu
+Chatham University,,Pittsburgh,PA,211556,chatham.edu
+Chestnut Hill College,,Philadelphia,PA,211583,chc.edu
+Cheyney University of Pennsylvania,,Cheyney,PA,211608,cheyney.edu
+Curtis Institute of Music,,Philadelphia,PA,211893,curtis.edu
+Delaware Valley University,,Doylestown,PA,211981,delval.edu
+Dickinson College,,Carlisle,PA,212009,dickinson.edu
+Drexel University,,Philadelphia,PA,212054,drexel.edu
+Duquesne University,,Pittsburgh,PA,212106,duq.edu
+East Stroudsburg University of Pennsylvania,,East Stroudsburg,PA,212115,esu.edu
+Eastern University,,Saint Davids,PA,212133,eastern.edu
+Elizabethtown College,,Elizabethtown,PA,212197,etown.edu
+Franklin and Marshall College,,Lancaster,PA,212577,fandm.edu
+Gannon University,,Erie,PA,212601,gannon.edu
+Geneva College,,Beaver Falls,PA,212656,geneva.edu
+Gettysburg College,,Gettysburg,PA,212674,gettysburg.edu
+Gratz College,,Melrose Park,PA,212771,gratz.edu
+Grove City College,,Grove City,PA,212805,gcc.edu
+Gwynedd Mercy University,,Gwynedd Valley,PA,212832,gmercyu.edu
+Haverford College,,Haverford,PA,212911,haverford.edu
+Holy Family University,,Philadelphia,PA,212984,holyfamily.edu
+Immaculata University,,Immaculata,PA,213011,immaculata.edu
+Indiana University of Pennsylvania-Main Campus,,Indiana,PA,213020,iup.edu
+Juniata College,,Huntingdon,PA,213251,juniata.edu
+Keystone College,,La Plume,PA,213303,keystone.edu
+King's College,,Wilkes-Barre,PA,213321,kings.edu
+Kutztown University of Pennsylvania,,Kutztown,PA,213349,kutztown.edu
+La Roche University,,Pittsburgh,PA,213358,laroche.edu
+La Salle University,,Philadelphia,PA,213367,lasalle.edu
+Lackawanna College,,Scranton,PA,213376,lackawanna.edu
+Lafayette College,,Easton,PA,213385,lafayette.edu
+Lancaster Bible College,,Lancaster,PA,213400,lbc.edu
+Lancaster Theological Seminary,,Lancaster,PA,213446,lancasterseminary.edu
+Lebanon Valley College,,Annville,PA,213507,lvc.edu
+Lehigh University,,Bethlehem,PA,213543,lehigh.edu
+Lincoln University,,Lincoln University,PA,213598,lincoln.edu
+United Lutheran Seminary,,Gettysburg,PA,213631,unitedlutheranseminary.edu
+Lycoming College,,Williamsport,PA,213668,lycoming.edu
+Manor College,,Jenkintown,PA,213774,manor.edu
+Marywood University,,Scranton,PA,213826,marywood.edu
+Mercyhurst University,,Erie,PA,213987,mercyhurst.edu
+Messiah University,,Mechanicsburg,PA,213996,messiah.edu
+Millersville University of Pennsylvania,,Millersville,PA,214041,millersville.edu
+Misericordia University,,Dallas,PA,214069,misericordia.edu
+Moore College of Art and Design,,Philadelphia,PA,214148,moore.edu
+Moravian University,,Bethlehem,PA,214157,moravian.edu
+Mount Aloysius College,,Cresson,PA,214166,mtaloy.edu
+Muhlenberg College,,Allentown,PA,214175,muhlenberg.edu
+Neumann University,,Aston,PA,214272,neumann.edu
+Salus University,,Elkins Park,PA,214564,salus.edu
+Pennsylvania Institute of Technology,,Media,PA,214582,pit.edu
+Pennsylvania State University-Penn State Erie-Behrend College,,Erie,PA,214591,behrend.psu.edu
+Pennsylvania State University-Penn State Great Valley,,Malvern,PA,214607,greatvalley.psu.edu
+Pennsylvania State University-Penn State New Kensington,,New Kensington,PA,214625,newkensington.psu.edu
+Pennsylvania State University-Penn State Shenango,,Sharon,PA,214634,shenango.psu.edu
+Pennsylvania State University-Penn State Wilkes-Barre,,Dallas,PA,214643,wilkesbarre.psu.edu
+Pennsylvania State University-Penn State Scranton,,Dunmore,PA,214652,scranton.psu.edu
+Pennsylvania State System of Higher Education-Central Office,,Harrisburg,PA,214661,passhe.edu
+Pennsylvania State University-Penn State Lehigh Valley,,Center Valley,PA,214670,lehighvalley.psu.edu
+Pennsylvania State University-Penn State Altoona,,Altoona,PA,214689,altoona.psu.edu
+Pennsylvania State University-Penn State Beaver,,Monaca,PA,214698,beaver.psu.edu
+Pennsylvania State University-Penn State Berks,,Reading,PA,214704,berks.psu.edu
+Pennsylvania State University-Penn State Harrisburg,,Middletown,PA,214713,harrisburg.psu.edu
+Pennsylvania State University-Penn State Brandywine,,Media,PA,214731,brandywine.psu.edu
+Pennsylvania State University-Penn State DuBois,,DuBois,PA,214740,dubois.psu.edu
+Pennsylvania State University-Penn State Fayette- Eberly,,Lemont Furnace,PA,214759,fayette.psu.edu
+Pennsylvania State University-Penn State Hazleton,,Hazleton,PA,214768,hazleton.psu.edu
+Pennsylvania State University-Main Campus,,University Park,PA,214777,psu.edu
+Pennsylvania State University-Penn State Greater Allegheny,,McKeesport,PA,214786,greaterallegheny.psu.edu
+Pennsylvania State University-Penn State Mont Alto,,Mont Alto,PA,214795,montalto.psu.edu
+Pennsylvania State University-Penn State Abington,,Abington,PA,214801,abington.psu.edu
+Pennsylvania State University-Penn State Schuylkill,,Schuylkill Haven,PA,214810,schuylkill.psu.edu
+Pennsylvania State University-Penn State York,,York,PA,214829,york.psu.edu
+Peirce College,,Philadelphia,PA,214883,peirce.edu
+Pennsylvania Academy of the Fine Arts,,Philadelphia,PA,214971,pafa.org
+Pennsylvania College of Art and Design,,Lancaster,PA,215053,pcad.edu
+University of Pennsylvania,,Philadelphia,PA,215062,upenn.edu
+University of the Arts,,Philadelphia,PA,215105,uarts.edu
+Cairn University-Langhorne,,Langhorne,PA,215114,cairn.edu
+Philadelphia College of Osteopathic Medicine,,Philadelphia,PA,215123,pcom.edu
+University of Pittsburgh-Bradford,,Bradford,PA,215266,upb.pitt.edu
+University of Pittsburgh-Greensburg,,Greensburg,PA,215275,greensburg.pitt.edu
+University of Pittsburgh-Johnstown,,Johnstown,PA,215284,upj.pitt.edu
+University of Pittsburgh-Pittsburgh Campus,,Pittsburgh,PA,215293,pitt.edu
+Pittsburgh Technical College,,Oakdale,PA,215415,ptcollege.edu
+Pittsburgh Theological Seminary,,Pittsburgh,PA,215424,pts.edu
+Point Park University,,Pittsburgh,PA,215442,pointpark.edu
+Reconstructionist Rabbinical College,,Wyncote,PA,215619,rrc.edu
+Robert Morris University,,Moon Township,PA,215655,rmu.edu
+Rosemont College,,Rosemont,PA,215691,rosemont.edu
+Saint Francis University,,Loretto,PA,215743,francis.edu
+Saint Joseph's University,,Philadelphia,PA,215770,sju.edu
+Saint Vincent College,,Latrobe,PA,215798,stvincent.edu
+Saint Vincent Seminary,,Latrobe,PA,215813,saintvincentseminary.edu
+University of Scranton,,Scranton,PA,215929,scranton.edu
+Seton Hill University,,Greensburg,PA,215947,setonhill.edu
+Shippensburg University of Pennsylvania,,Shippensburg,PA,216010,ship.edu
+Slippery Rock University of Pennsylvania,,Slippery Rock,PA,216038,sru.edu
+Saint Charles Borromeo Seminary-Overbrook,,Wynnewood,PA,216047,scs.edu
+Susquehanna University,,Selinsgrove,PA,216278,susqu.edu
+Swarthmore College,,Swarthmore,PA,216287,swarthmore.edu
+Talmudical Yeshiva of Philadelphia,,Philadelphia,PA,216311,meterware.com
+Temple University,,Philadelphia,PA,216339,temple.edu
+Theological Seminary of the Reformed Episcopal Church,,Blue Bell,PA,216348,reseminary.edu
+Thiel College,,Greenville,PA,216357,thiel.edu
+Thomas Jefferson University,,Philadelphia,PA,216366,jefferson.edu
+Trinity Episcopal School for Ministry,,Ambridge,PA,216463,tsm.edu
+Ursinus College,,Collegeville,PA,216524,ursinus.edu
+University of Valley Forge,,Phoenixville,PA,216542,valleyforge.edu
+Villanova University,,Villanova,PA,216597,villanova.edu
+Washington & Jefferson College,,Washington,PA,216667,washjeff.edu
+Waynesburg University,,Waynesburg,PA,216694,waynesburg.edu
+West Chester University of Pennsylvania,,West Chester,PA,216764,wcupa.edu
+Westminster College,,New Wilmington,PA,216807,westminster.edu
+Westminster Theological Seminary,,Glenside,PA,216816,wts.edu
+Widener University,,Chester,PA,216852,widener.edu
+Wilkes University,,Wilkes-Barre,PA,216931,wilkes.edu
+Wilson College,,Chambersburg,PA,217013,wilson.edu
+Yeshivath Beth Moshe,,Scranton,PA,217040,yeshivabethmoshe.com
+York College of Pennsylvania,,York,PA,217059,ycp.edu
+Brown University,,Providence,RI,217156,brown.edu
+Bryant University,,Smithfield,RI,217165,bryant.edu
+Johnson & Wales University-Providence,,Providence,RI,217235,jwu.edu
+New England Institute of Technology,,East Greenwich,RI,217305,neit.edu
+Providence College,,Providence,RI,217402,providence.edu
+Rhode Island College,,Providence,RI,217420,ric.edu
+University of Rhode Island,,Kingston,RI,217484,web.uri.edu
+Rhode Island School of Design,,Providence,RI,217493,risd.edu
+Roger Williams University,,Bristol,RI,217518,rwu.edu
+Salve Regina University,,Newport,RI,217536,salve.edu
+Northpoint Bible College,,Haverhill,MA,217606,northpoint.edu
+Allen University,,Columbia,SC,217624,allenuniversity.edu
+Anderson University,,Anderson,SC,217633,andersonuniversity.edu
+Charleston Southern University,,Charleston,SC,217688,charlestonsouthern.edu
+Benedict College,,Columbia,SC,217721,benedict.edu
+Bob Jones University,,Greenville,SC,217749,bju.edu
+Southern Wesleyan University,,Central,SC,217776,swu.edu
+College of Charleston,,Charleston,SC,217819,cofc.edu
+Citadel Military College of South Carolina,,Charleston,SC,217864,citadel.edu
+Claflin University,,Orangeburg,SC,217873,claflin.edu
+Clemson University,,Clemson,SC,217882,clemson.edu
+Clinton College,,Rock Hill,SC,217891,clintoncollege.edu
+Coker University,,Hartsville,SC,217907,coker.edu
+Columbia International University,,Columbia,SC,217925,ciu.edu
+Columbia College,,Columbia,SC,217934,columbiasc.edu
+Converse University,,Spartanburg,SC,217961,converse.edu
+Erskine College,,Due West,SC,217998,erskine.edu
+Francis Marion University,,Florence,SC,218061,fmarion.edu
+Furman University,,Greenville,SC,218070,furman.edu
+Greenville Technical College,,Greenville,SC,218113,gvltec.edu
+Lander University,,Greenwood,SC,218229,lander.edu
+Limestone University,,Gaffney,SC,218238,limestone.edu
+Medical University of South Carolina,,Charleston,SC,218335,web.musc.edu
+Morris College,,Sumter,SC,218399,morris.edu
+Newberry College,,Newberry,SC,218414,newberry.edu
+North Greenville University,,Tigerville,SC,218441,ngu.edu
+Presbyterian College,,Clinton,SC,218539,presby.edu
+University of South Carolina Aiken,,Aiken,SC,218645,usca.edu
+University of South Carolina Beaufort,,Bluffton,SC,218654,uscb.edu
+University of South Carolina-Columbia,,Columbia,SC,218663,sc.edu
+Coastal Carolina University,,Conway,SC,218724,coastal.edu
+South Carolina State University,,Orangeburg,SC,218733,scsu.edu
+University of South Carolina-Upstate,,Spartanburg,SC,218742,uscupstate.edu
+Sherman College of Chiropractic,,Spartanburg,SC,218751,sherman.edu
+Spartanburg Methodist College,,Spartanburg,SC,218821,smcsc.edu
+Voorhees University,,Denmark,SC,218919,voorhees.edu
+Winthrop University,,Rock Hill,SC,218964,winthrop.edu
+Wofford College,,Spartanburg,SC,218973,wofford.edu
+Augustana University,,Sioux Falls,SD,219000,augie.edu
+Black Hills State University,,Spearfish,SD,219046,bhsu.edu
+Dakota State University,,Madison,SD,219082,dsu.edu
+Dakota Wesleyan University,,Mitchell,SD,219091,dwu.edu
+Mount Marty University,,Yankton,SD,219198,mountmarty.edu
+Kairos University,,Sioux Falls,SD,219240,kairos.edu
+Northern State University,,Aberdeen,SD,219259,northern.edu
+Oglala Lakota College,,Kyle,SD,219277,olc.edu
+Presentation College,,Aberdeen,SD,219295,
+South Dakota School of Mines and Technology,,Rapid City,SD,219347,sdsmt.edu
+South Dakota State University,,Brookings,SD,219356,sdstate.edu
+Sinte Gleska University,,Mission,SD,219374,sintegleska.edu
+University of Sioux Falls,,Sioux Falls,SD,219383,usiouxfalls.edu
+Sisseton Wahpeton College,,Sisseton,SD,219408,swcollege.edu
+University of South Dakota,,Vermillion,SD,219471,usd.edu
+American Baptist College,,Nashville,TN,219505,abcnash.edu
+Austin Peay State University,,Clarksville,TN,219602,apsu.edu
+Baptist Health Sciences University,,Memphis,TN,219639,baptistu.edu
+Belmont University,,Nashville,TN,219709,belmont.edu
+Bethel University,,McKenzie,TN,219718,bethelu.edu
+Bryan College-Dayton,,Dayton,TN,219790,bryan.edu
+Carson-Newman University,,Jefferson City,TN,219806,cn.edu
+Christian Brothers University,,Memphis,TN,219833,cbu.edu
+Pentecostal Theological Seminary,,Cleveland,TN,219842,ptseminary.edu
+Cumberland University,,Lebanon,TN,219949,cumberland.edu
+Lipscomb University,,Nashville,TN,219976,lipscomb.edu
+East Tennessee State University,,Johnson City,TN,220075,etsu.edu
+Fisk University,,Nashville,TN,220181,fisk.edu
+Welch College,,Gallatin,TN,220206,welch.edu
+Freed-Hardeman University,,Henderson,TN,220215,fhu.edu
+Johnson University,,Knoxville,TN,220473,johnsonu.edu
+King University,,Bristol,TN,220516,king.edu
+Lane College,,Jackson,TN,220598,lanecollege.edu
+Le Moyne-Owen College,,Memphis,TN,220604,loc.edu
+Lee University,,Cleveland,TN,220613,leeuniversity.edu
+Lincoln Memorial University,,Harrogate,TN,220631,lmunet.edu
+The University of Tennessee Southern,,Pulaski,TN,220701,utsouthern.edu
+Maryville College,,Maryville,TN,220710,maryvillecollege.edu
+Meharry Medical College,,Nashville,TN,220792,mmc.edu
+University of Memphis,,Memphis,TN,220862,memphis.edu
+Memphis Theological Seminary,,Memphis,TN,220871,memphisseminary.edu
+Middle Tennessee State University,,Murfreesboro,TN,220978,mtsu.edu
+Middle Tennessee School of Anesthesia Inc,,Madison,TN,220996,mtsa.edu
+Rhodes College,,Memphis,TN,221351,rhodes.edu
+The University of the South,,Sewanee,TN,221519,sewanee.edu
+Southern Adventist University,,Collegedale,TN,221661,southern.edu
+Southern College of Optometry,,Memphis,TN,221670,sco.edu
+Tennessee Wesleyan University,,Athens,TN,221731,tnwesleyan.edu
+The University of Tennessee-Chattanooga,,Chattanooga,TN,221740,utc.edu
+The University of Tennessee-Knoxville,,Knoxville,TN,221759,utk.edu
+The University of Tennessee-Martin,,Martin,TN,221768,utm.edu
+Tennessee State University,,Nashville,TN,221838,tnstate.edu
+Tennessee Technological University,,Cookeville,TN,221847,tntech.edu
+Trevecca Nazarene University,,Nashville,TN,221892,trevecca.edu
+Tusculum University,,Greeneville,TN,221953,tusculum.edu
+Union University,,Jackson,TN,221971,uu.edu
+Vanderbilt University,,Nashville,TN,221999,vanderbilt.edu
+Abilene Christian University,,Abilene,TX,222178,acu.edu
+Alamo Community College District Central Office,,San Antonio,TX,222497,alamo.edu
+Amberton University,,Garland,TX,222628,amberton.edu
+Angelo State University,,San Angelo,TX,222831,angelo.edu
+Arlington Baptist University,,Arlington,TX,222877,abu.edu
+Austin College,,Sherman,TX,222983,austincollege.edu
+Austin Community College District,,Austin,TX,222992,austincc.edu
+Austin Presbyterian Theological Seminary,,Austin,TX,223001,austinseminary.edu
+Baptist Missionary Association Theological Seminary,,Jacksonville,TX,223117,bmats.edu
+Baylor College of Medicine,,Houston,TX,223223,bcm.edu
+Baylor University,,Waco,TX,223232,baylor.edu
+Remington College-Dallas Campus,,Dallas,TX,223463,remingtoncollege.edu
+Brazosport College,,Lake Jackson,TX,223506,brazosport.edu
+Concordia University Texas,,Austin,TX,224004,concordia.edu
+Texas A & M University-Corpus Christi,,Corpus Christi,TX,224147,tamucc.edu
+Dallas Baptist University,,Dallas,TX,224226,dbu.edu
+Dallas Christian College,,Dallas,TX,224244,dallas.edu
+Dallas Theological Seminary,,Dallas,TX,224305,dts.edu
+University of Dallas,,Irving,TX,224323,udallas.edu
+Del Mar College,,Corpus Christi,TX,224350,delmar.edu
+East Texas Baptist University,,Marshall,TX,224527,etbu.edu
+Texas A&M University-Texarkana,,Texarkana,TX,224545,tamut.edu
+Texas A & M University-Commerce,,Commerce,TX,224554,tamuc.edu
+Dallas College,,Dallas,TX,224615,dallascollege.edu
+Episcopal Theological Seminary of the Southwest,,Austin,TX,224712,ssw.edu
+Galveston College,,Galveston,TX,224961,gc.edu
+Grayson College,,Denison,TX,225070,grayson.edu
+Hallmark University,,San Antonio,TX,225201,hallmarkuniversity.edu
+Hardin-Simmons University,,Abilene,TX,225247,hsutx.edu
+Trinity Valley Community College,,Athens,TX,225308,tvcc.edu
+Houston Christian University,,Houston,TX,225399,hc.edu
+University of Houston-Clear Lake,,Houston,TX,225414,uhcl.edu
+Houston Community College,,Houston,TX,225423,hccs.edu
+University of Houston-Downtown,,Houston,TX,225432,uhd.edu
+University of Houston-Victoria,,Victoria,TX,225502,uhv.edu
+University of Houston,,Houston,TX,225511,uh.edu
+Howard Payne University,,Brownwood,TX,225548,hputx.edu
+Huston-Tillotson University,,Austin,TX,225575,htu.edu
+University of the Incarnate Word,,San Antonio,TX,225627,uiw.edu
+Jarvis Christian University,,Hawkins,TX,225885,jarvis.edu
+Lamar University,,Beaumont,TX,226091,lamar.edu
+Laredo College,,Laredo,TX,226134,laredo.edu
+Texas A & M International University,,Laredo,TX,226152,tamiu.edu
+LeTourneau University,,Longview,TX,226231,letu.edu
+Lubbock Christian University,,Lubbock,TX,226383,lcu.edu
+College of the Mainland,,Texas City,TX,226408,com.edu
+University of Mary Hardin-Baylor,,Belton,TX,226471,go.umhb.edu
+McMurry University,,Abilene,TX,226587,mcm.edu
+Midland College,,Midland,TX,226806,midland.edu
+Midwestern State University,,Wichita Falls,TX,226833,msutexas.edu
+Navarro College,,Corsicana,TX,227146,navarrocollege.edu
+Lone Star College System,,The Woodlands,TX,227182,lonestar.edu
+University of North Texas,,Denton,TX,227216,unt.edu
+Oblate School of Theology,,San Antonio,TX,227289,ost.edu
+Odessa College,,Odessa,TX,227304,odessa.edu
+Our Lady of the Lake University,,San Antonio,TX,227331,ollusa.edu
+The University of Texas Rio Grande Valley,,Edinburg,TX,227368,utrgv.edu
+Paul Quinn College,,Dallas,TX,227429,pqc.edu
+Prairie View A & M University,,Prairie View,TX,227526,pvamu.edu
+Rice University,,Houston,TX,227757,rice.edu
+Saint Edward's University,,Austin,TX,227845,stedwards.edu
+University of St Thomas,,Houston,TX,227863,stthom.edu
+Sam Houston State University,,Huntsville,TX,227881,shsu.edu
+San Antonio College,,San Antonio,TX,227924,alamo.edu
+San Jacinto Community College,,Pasadena,TX,227979,sanjac.edu
+Schreiner University,,Kerrville,TX,228042,schreiner.edu
+St. Mary's University,,San Antonio,TX,228149,stmarytx.edu
+South Texas College of Law Houston,,Houston,TX,228194,stcl.edu
+Southern Methodist University,,Dallas,TX,228246,smu.edu
+Southwestern Assemblies of God University,,Waxahachie,TX,228325,sagu.edu
+Southwestern University,,Georgetown,TX,228343,southwestern.edu
+Stephen F Austin State University,,Nacogdoches,TX,228431,sfasu.edu
+Texas State University,,San Marcos,TX,228459,txst.edu
+Southwestern Adventist University,,Keene,TX,228468,swau.edu
+Southwestern Christian College,,Terrell,TX,228486,swcc.edu
+Sul Ross State University,,Alpine,TX,228501,sulross.edu
+Tarleton State University,,Stephenville,TX,228529,tarleton.edu
+University of Texas Southwestern Medical Center,,Dallas,TX,228635,utsouthwestern.edu
+The University of Texas Health Science Center at San Antonio,,San Antonio,TX,228644,uthscsa.edu
+The University of Texas Medical Branch at Galveston,,Galveston,TX,228653,utmb.edu
+Texas A & M University-Kingsville,,Kingsville,TX,228705,tamuk.edu
+Texas A & M University-College Station,,College Station,TX,228723,tamu.edu
+Texas A & M University-System Office,,College Station,TX,228732,tamus.edu
+The University of Texas at Arlington,,Arlington,TX,228769,uta.edu
+The University of Texas at Austin,,Austin,TX,228778,utexas.edu
+The University of Texas at Dallas,,Richardson,TX,228787,utdallas.edu
+The University of Texas at El Paso,,El Paso,TX,228796,utep.edu
+The University of Texas at Tyler,,Tyler,TX,228802,uttyler.edu
+Texas Chiropractic College Foundation Inc,,Pasadena,TX,228866,txchiro.edu
+Texas Christian University,,Fort Worth,TX,228875,tcu.edu
+Texas College,,Tyler,TX,228884,texascollege.edu
+University of North Texas Health Science Center,,Fort Worth,TX,228909,unthsc.edu
+Texas Lutheran University,,Seguin,TX,228981,tlu.edu
+The University of Texas Permian Basin,,Odessa,TX,229018,utpb.edu
+The University of Texas at San Antonio,,San Antonio,TX,229027,utsa.edu
+Texas Southern University,,Houston,TX,229063,tsu.edu
+The University of Texas System Office,,Austin,TX,229090,utsystem.edu
+Texas Tech University,,Lubbock,TX,229115,ttu.edu
+Texas Wesleyan University,,Fort Worth,TX,229160,txwes.edu
+Texas Woman's University,,Denton,TX,229179,twu.edu
+Trinity University,,San Antonio,TX,229267,new.trinity.edu
+The University of Texas Health Science Center at Houston,,Houston,TX,229300,uth.edu
+Texas Tech University Health Sciences Center,,Lubbock,TX,229337,ttuhsc.edu
+Tyler Junior College,,Tyler,TX,229355,tjc.edu
+University of Houston-System Administration,,Houston,TX,229407,uh.edu
+Wayland Baptist University,,Plainview,TX,229780,wbu.edu
+Weatherford College,,Weatherford,TX,229799,wc.edu
+West Texas A & M University,,Canyon,TX,229814,wtamu.edu
+Wiley University,,Marshall,TX,229887,wileyc.edu
+Brigham Young University,,Provo,UT,230038,byu.edu
+Brigham Young University-Hawaii,,Laie,HI,230047,byuh.edu
+Utah Tech University,,Saint George,UT,230171,utahtech.edu
+Ensign College,,Salt Lake City,UT,230418,ensign.edu
+Snow College,,Ephraim,UT,230597,snow.edu
+Southern Utah University,,Cedar City,UT,230603,suu.edu
+Utah State University,,Logan,UT,230728,usu.edu
+Utah Valley University,,Orem,UT,230737,uvu.edu
+University of Utah,,Salt Lake City,UT,230764,utah.edu
+Weber State University,,Ogden,UT,230782,weber.edu
+Westminster University,,Salt Lake City,UT,230807,westminstercollege.edu
+Bennington College,,Bennington,VT,230816,bennington.edu
+Castleton University,,Castleton,VT,230834,
+Champlain College,,Burlington,VT,230852,champlain.edu
+Goddard College,,Plainfield,VT,230889,goddard.edu
+Northern Vermont University,,Johnson,VT,230913,
+Middlebury College,,Middlebury,VT,230959,middlebury.edu
+Norwich University,,Northfield,VT,230995,norwich.edu
+Saint Michael's College,,Colchester,VT,231059,smcvt.edu
+SIT Graduate Institute,,Brattleboro,VT,231068,sit.edu
+Sterling College,,Craftsbury Common,VT,231095,sterlingcollege.edu
+Vermont Law and Graduate School,,South Royalton,VT,231147,vermontlaw.edu
+Vermont State Colleges-Office of the Chancellor,,Montpelier,VT,231156,vsc.edu
+Vermont State University,,Randolph,VT,231165,vermontstate.edu
+University of Vermont,,Burlington,VT,231174,uvm.edu
+Averett University,,Danville,VA,231420,averett.edu
+Bluefield University,,Bluefield,VA,231554,bluefield.edu
+Bridgewater College,,Bridgewater,VA,231581,bridgewater.edu
+William & Mary,,Williamsburg,VA,231624,wm.edu
+Regent University,,Virginia Beach,VA,231651,regent.edu
+Christopher Newport University,,Newport News,VA,231712,cnu.edu
+Bryant & Stratton College-Virginia Beach,,Virginia Beach,VA,231785,bryantstratton.edu
+Eastern Virginia Medical School,,Norfolk,VA,231970,evms.edu
+Emory & Henry University,,Emory,VA,232025,ehc.edu
+Eastern Mennonite University,,Harrisonburg,VA,232043,emu.edu
+Ferrum College,,Ferrum,VA,232089,ferrum.edu
+George Mason University,,Fairfax,VA,232186,gmu.edu
+Hampden-Sydney College,,Hampden-Sydney,VA,232256,hsc.edu
+Hampton University,,Hampton,VA,232265,hamptonu.edu
+Hollins University,,Roanoke,VA,232308,hollins.edu
+James Madison University,,Harrisonburg,VA,232423,jmu.edu
+Liberty University,,Lynchburg,VA,232557,liberty.edu
+Longwood University,,Farmville,VA,232566,longwood.edu
+University of Lynchburg,,Lynchburg,VA,232609,lynchburg.edu
+Centra College,,Lynchburg,VA,232618,centrahealth.com
+Mary Baldwin University,,Staunton,VA,232672,marybaldwin.edu
+University of Mary Washington,,Fredericksburg,VA,232681,umw.edu
+Marymount University,,Arlington,VA,232706,marymount.edu
+Sentara College of Health Sciences,,Chesapeake,VA,232885,sentara.edu
+Norfolk State University,,Norfolk,VA,232937,nsu.edu
+Old Dominion University,,Norfolk,VA,232982,odu.edu
+Radford University,,Radford,VA,233277,radford.edu
+Randolph-Macon College,,Ashland,VA,233295,rmc.edu
+Randolph College,,Lynchburg,VA,233301,randolphcollege.edu
+Bon Secours Memorial College of Nursing,,Richmond,VA,233356,bsmcon.edu
+University of Richmond,,University of Richmond,VA,233374,richmond.edu
+Riverside College of Health Careers,,Newport News,VA,233408,riversideonline.com
+Roanoke College,,Salem,VA,233426,roanoke.edu
+Shenandoah University,,Winchester,VA,233541,su.edu
+Southeastern Free Will Baptist Bible College,,Wendell,NC,233602,sfwbc.edu
+Southern Virginia University,,Buena Vista,VA,233611,svu.edu
+Sweet Briar College,,Sweet Briar,VA,233718,sbc.edu
+Union Presbyterian Seminary,,Richmond,VA,233842,upsem.edu
+University of Virginia's College at Wise,,Wise,VA,233897,uvawise.edu
+Virginia Polytechnic Institute and State University,,Blacksburg,VA,233921,vt.edu
+Virginia Commonwealth University,,Richmond,VA,234030,vcu.edu
+University of Virginia-Main Campus,,Charlottesville,VA,234076,virginia.edu
+Virginia Military Institute,,Lexington,VA,234085,vmi.edu
+Virginia University of Lynchburg,,Lynchburg,VA,234137,vul.edu
+Virginia State University,,Petersburg,VA,234155,vsu.edu
+Virginia Union University,,Richmond,VA,234164,vuu.edu
+Virginia Wesleyan University,,Virginia Beach,VA,234173,vwu.edu
+Washington and Lee University,,Lexington,VA,234207,wlu.edu
+Bellevue College,,Bellevue,WA,234669,bellevuecollege.edu
+Bellingham Technical College,,Bellingham,WA,234696,btc.edu
+Big Bend Community College,,Moses Lake,WA,234711,bigbend.edu
+Central Washington University,,Ellensburg,WA,234827,cwu.edu
+Centralia College,,Centralia,WA,234845,centralia.edu
+City University of Seattle,,Seattle,WA,234915,cityu.edu
+Clark College,,Vancouver,WA,234933,clark.edu
+Clover Park Technical College,,Lakewood,WA,234951,cptc.edu
+Columbia Basin College,,Pasco,WA,234979,columbiabasin.edu
+Cornish College of the Arts,,Seattle,WA,235024,cornish.edu
+Eastern Washington University,,Cheney,WA,235097,ewu.edu
+Edmonds College,,Lynnwood,WA,235103,edmonds.edu
+Everett Community College,,Everett,WA,235149,everettcc.edu
+The Evergreen State College,,Olympia,WA,235167,evergreen.edu
+Pierce College District,,Lakewood,WA,235237,pierce.ctc.edu
+Gonzaga University,,Spokane,WA,235316,gonzaga.edu
+Grays Harbor College,,Aberdeen,WA,235334,ghc.edu
+Green River College,,Auburn,WA,235343,greenriver.edu
+Heritage University,,Toppenish,WA,235422,heritage.edu
+Highline College,,Des Moines,WA,235431,highline.edu
+Bastyr University,,Kenmore,WA,235547,bastyr.edu
+Lake Washington Institute of Technology,,Kirkland,WA,235699,lwtech.edu
+Lower Columbia College,,Longview,WA,235750,lowercolumbia.edu
+North Seattle College,,Seattle,WA,236072,northseattle.edu
+Northwest University,,Kirkland,WA,236133,northwestu.edu
+Olympic College,,Bremerton,WA,236188,olympic.edu
+Pacific Lutheran University,,Tacoma,WA,236230,plu.edu
+Peninsula College,,Port Angeles,WA,236258,pencol.edu
+University of Puget Sound,,Tacoma,WA,236328,pugetsound.edu
+Renton Technical College,,Renton,WA,236382,rtc.edu
+Saint Martin's University,,Lacey,WA,236452,stmartin.edu
+South Seattle College,,Seattle,WA,236504,southseattle.edu
+Seattle Central College,,Seattle,WA,236513,seattlecentral.edu
+Seattle Pacific University,,Seattle,WA,236577,spu.edu
+Seattle University,,Seattle,WA,236595,seattleu.edu
+Skagit Valley College,,Mount Vernon,WA,236638,skagit.edu
+Spokane Community College,,Spokane,WA,236692,scc.spokane.edu
+Spokane Falls Community College,,Spokane,WA,236708,sfcc.spokane.edu
+Tacoma Community College,,Tacoma,WA,236753,tacomacc.edu
+Walla Walla Community College,,Walla Walla,WA,236887,wwcc.edu
+Walla Walla University,,College Place,WA,236896,wallawalla.edu
+Washington State University,,Pullman,WA,236939,wsu.edu
+University of Washington-Seattle Campus,,Seattle,WA,236948,washington.edu
+Wenatchee Valley College,,Wenatchee,WA,236975,wvc.edu
+Western Washington University,,Bellingham,WA,237011,wwu.edu
+Whatcom Community College,,Bellingham,WA,237039,whatcom.edu
+Whitman College,,Walla Walla,WA,237057,whitman.edu
+Whitworth University,,Spokane,WA,237066,whitworth.edu
+Yakima Valley College,,Yakima,WA,237109,yvcc.edu
+Alderson Broaddus University,,Philippi,WV,237118,
+Appalachian Bible College,,Mount Hope,WV,237136,abc.edu
+Bethany College,,Bethany,WV,237181,bethanywv.edu
+Bluefield State University,,Bluefield,WV,237215,bluefieldstate.edu
+University of Charleston,,Charleston,WV,237312,ucwv.edu
+Concord University,,Athens,WV,237330,concord.edu
+Davis & Elkins College,,Elkins,WV,237358,dewv.edu
+Fairmont State University,,Fairmont,WV,237367,fairmontstate.edu
+Glenville State University,,Glenville,WV,237385,glenville.edu
+Marshall University,,Huntington,WV,237525,marshall.edu
+West Virginia University at Parkersburg,,Parkersburg,WV,237686,wvup.edu
+Potomac State College of West Virginia University,,Keyser,WV,237701,potomacstatecollege.edu
+Shepherd University,,Shepherdstown,WV,237792,shepherd.edu
+West Virginia School of Osteopathic Medicine,,Lewisburg,WV,237880,wvsom.edu
+West Virginia State University,,Institute,WV,237899,wvstateu.edu
+West Virginia University Hospital Departments of Rad Tech and Nutrition,,Morgantown,WV,237905,wvumedicine.org
+West Liberty University,,West Liberty,WV,237932,westliberty.edu
+West Virginia University Institute of Technology,,Beckley,WV,237950,wvutech.edu
+West Virginia Wesleyan College,,Buckhannon,WV,237969,wvwc.edu
+West Virginia University,,Morgantown,WV,238032,wvu.edu
+Wheeling University,,Wheeling,WV,238078,wheeling.edu
+Alverno College,,Milwaukee,WI,238193,alverno.edu
+Madison Area Technical College,,Madison,WI,238263,madisoncollege.edu
+Bellin College,,Green Bay,WI,238324,bellincollege.edu
+Beloit College,,Beloit,WI,238333,beloit.edu
+Cardinal Stritch University,,Milwaukee,WI,238430,
+Carroll University,,Waukesha,WI,238458,carrollu.edu
+Carthage College,,Kenosha,WI,238476,carthage.edu
+Concordia University-Wisconsin,,Mequon,WI,238616,cuw.edu
+Edgewood College,,Madison,WI,238661,edgewood.edu
+Lakeland University,,Plymouth,WI,238980,lakeland.edu
+Lawrence University,,Appleton,WI,239017,lawrence.edu
+Maranatha Baptist University,,Watertown,WI,239071,mbu.edu
+Marian University,,Fond Du Lac,WI,239080,marianuniversity.edu
+Marquette University,,Milwaukee,WI,239105,marquette.edu
+Medical College of Wisconsin,,Milwaukee,WI,239169,mcw.edu
+Milwaukee Institute of Art & Design,,Milwaukee,WI,239309,miad.edu
+Milwaukee School of Engineering,,Milwaukee,WI,239318,msoe.edu
+Mount Mary University,,Milwaukee,WI,239390,mtmary.edu
+Nashotah House,,Nashotah,WI,239424,nashotah.edu
+Northland College,,Ashland,WI,239512,northland.edu
+Ripon College,,Ripon,WI,239628,ripon.edu
+Sacred Heart Seminary and School of Theology,,Franklin,WI,239637,shsst.edu
+Saint Norbert College,,De Pere,WI,239716,snc.edu
+Viterbo University,,La Crosse,WI,240107,viterbo.edu
+University of Wisconsin-Whitewater,,Whitewater,WI,240189,uww.edu
+Wisconsin School of Professional Psychology,,Milwaukee,WI,240213,wspp.edu
+University of Wisconsin-Eau Claire,,Eau Claire,WI,240268,uwec.edu
+University of Wisconsin-Green Bay,,Green Bay,WI,240277,uwgb.edu
+University of Wisconsin-La Crosse,,La Crosse,WI,240329,uwlax.edu
+Wisconsin Lutheran College,,Milwaukee,WI,240338,wlc.edu
+University of Wisconsin-Oshkosh,,Oshkosh,WI,240365,uwosh.edu
+University of Wisconsin-Parkside,,Kenosha,WI,240374,uwp.edu
+Herzing University-Madison,,Madison,WI,240392,herzing.edu
+University of Wisconsin-Stout,,Menomonie,WI,240417,uwstout.edu
+University of Wisconsin-Superior,,Superior,WI,240426,uwsuper.edu
+University of Wisconsin-System Administration,,Madison,WI,240435,wisconsin.edu
+University of Wisconsin-Madison,,Madison,WI,240444,wisc.edu
+University of Wisconsin-Milwaukee,,Milwaukee,WI,240453,uwm.edu
+University of Wisconsin-Platteville,,Platteville,WI,240462,uwplatt.edu
+University of Wisconsin-River Falls,,River Falls,WI,240471,uwrf.edu
+University of Wisconsin-Stevens Point,,Stevens Point,WI,240480,uwsp.edu
+Central Wyoming College,,Riverton,WY,240514,cwc.edu
+Laramie County Community College,,Cheyenne,WY,240620,lccc.wy.edu
+Northwest College,,Powell,WY,240657,nwc.edu
+Western Wyoming Community College,,Rock Springs,WY,240693,westernwyoming.edu
+University of Wyoming,,Laramie,WY,240727,uwyo.edu
+American Samoa Community College,,Pago Pago,AS,240736,amsamoa.edu
+Guam Community College,,Mangilao,GU,240745,guamcc.edu
+University of Guam,,Mangilao,GU,240754,uog.edu
+Northern Marianas College,,Saipan,MP,240790,marianas.edu
+American University of Puerto Rico,,Bayamon,PR,241100,aupr.edu
+American University of Puerto Rico,,Manati,PR,241128,aupr.edu
+Universidad Adventista de las Antillas,,Mayaguez,PR,241191,uaa.edu
+Atlantic University,,Guaynabo,PR,241216,atlanticu.edu
+Universidad Central de Bayamon,,BayamÃ³n,PR,241225,ucb.edu.pr
+Albizu University-San Juan,,San Juan,PR,241331,albizu.edu
+Caribbean University-Bayamon,,Bayamon,PR,241377,caribbean.edu
+Caribbean University-Carolina,,Carolina,PR,241386,caribbean.edu
+Pontifical Catholic University of Puerto Rico-Arecibo,,Arecibo,PR,241395,pucpr.edu
+Pontifical Catholic University of Puerto Rico-Ponce,,Ponce,PR,241410,pucpr.edu
+Universidad Teologica del Caribe,,Trujillo Alto,PR,241614,utcpr.edu
+Colegio Universitario de San Juan,,San Juan,PR,241720,cunisanjuan.edu
+Universidad Ana G. Mendez-Cupey Campus,,San Juan,PR,241739,uagm.edu
+Puerto Rico Conservatory of Music,,San Juan,PR,241766,cmpr.edu
+Center for Advanced Studies On Puerto Rico and the Caribbean,,San Juan,PR,241793,ceaprc.edu
+EDP University of Puerto Rico Inc-San Sebastian,,San Sebastian,PR,241836,edpuniversity.edu
+Escuela de Artes Plasticas y Diseno de Puerto Rico,,San Juan,PR,241951,eap.edu
+Sistema Universitario Ana G. Mendez,,Rio Piedras,PR,242060,uagm.edu
+Humacao Community College,,Humacao,PR,242121,hccpr.edu
+Inter American University of Puerto Rico-San German,,San German,PR,242617,sg.inter.edu
+Inter American University of Puerto Rico-Aguadilla,,Aguadilla,PR,242626,aguadilla.inter.edu
+Inter American University of Puerto Rico-Arecibo,,Arecibo,PR,242635,arecibo.inter.edu
+Inter American University of Puerto Rico-Barranquitas,,Barranquitas,PR,242644,br.inter.edu
+Inter American University of Puerto Rico-Metro,,San Juan,PR,242653,metro.inter.edu
+Inter American University of Puerto Rico-Ponce,,Mercedita,PR,242662,ponce.inter.edu
+Inter American University of Puerto Rico-Central Office,,San Juan,PR,242671,inter.edu
+Inter American University of Puerto Rico-Fajardo,,Fajardo,PR,242680,fajardo.inter.edu
+Inter American University of Puerto Rico-Guayama,,Guayama,PR,242699,guayama.inter.edu
+Inter American University of Puerto Rico-Bayamon,,Bayamon,PR,242705,bayamon.inter.edu
+Inter American University of Puerto Rico-School of Law,,San Juan,PR,242723,derecho.inter.edu
+University of Puerto Rico-Aguadilla,,Aguadilla,PR,243106,uprag.edu
+University of Puerto Rico-Arecibo,,Arecibo,PR,243115,upra.edu
+University of Puerto Rico-Bayamon,,Bayamon,PR,243133,uprb.edu
+University of Puerto Rico-Carolina,,Carolina,PR,243142,uprc.edu
+University of Puerto Rico at Cayey,,Cayey,PR,243151,cayey.upr.edu
+University of Puerto Rico-Central Administration,,San Juan,PR,243160,upr.edu
+University of Puerto Rico-Humacao,,Humacao,PR,243179,upr.edu
+University of Puerto Rico-Utuado,,Utuado,PR,243188,uprutuado.edu
+University of Puerto Rico-Mayaguez,,Mayaguez,PR,243197,uprm.edu
+University of Puerto Rico-Medical Sciences,,San Juan,PR,243203,rcm.upr.edu
+University of Puerto Rico at Ponce,,Ponce,PR,243212,uprp.edu
+University of Puerto Rico-Rio Piedras,,San Juan,PR,243221,uprrp.edu
+Universidad Ana G. Mendez-Carolina Campus,,Carolina,PR,243346,uagm.edu
+Universidad del Sagrado Corazon,,Santurce,PR,243443,sagrado.edu
+Seminario Evangelico de Puerto Rico,,San Juan,PR,243498,se-pr.edu
+Universidad Central Del Caribe,,Bayamon,PR,243568,uccaribe.edu
+Universidad Politecnica de Puerto Rico,,Hato Rey,PR,243577,pupr.edu
+Pontifical Catholic University of Puerto Rico-Mayaguez,,Mayaguez,PR,243586,mayaguez.pucpr.edu
+Universidad Ana G. Mendez-Gurabo Campus,,Gurabo,PR,243601,uagm.edu
+College of Micronesia-FSM,,Pohnpei,FM,243638,comfsm.fm
+University of the Virgin Islands,,Charlotte Amalie,VI,243665,uvi.edu
+Stanford University,,Stanford,CA,243744,stanford.edu
+Purdue University-Main Campus,,West Lafayette,IN,243780,purdue.edu
+Parker University,,Dallas,TX,243823,parker.edu
+EDP University of Puerto Rico Inc-San Juan,,San Juan,PR,243832,edpuniversity.edu
+St. John's College,,Santa Fe,NM,245652,sjc.edu
+Bais Medrash Elyon,,Monsey,NY,245777,baismedroshelyon.com
+Antioch University-Los Angeles,,Culver City,CA,245838,antiochla.edu
+Antioch University-Santa Barbara,,Santa Barbara,CA,245847,antiochsb.edu
+Antioch University-New England,,Keene,NH,245865,antiochne.edu
+Antioch University-Seattle,,Seattle,WA,245883,antiochseattle.edu
+Antioch University,,Yellow Springs,OH,245892,antioch.edu
+Mid-America Christian University,,Oklahoma City,OK,245953,macu.edu
+Houston Graduate School of Theology,,Houston,TX,246345,hgst.edu
+HJ International Graduate School for Peace and Public Leadership,,New York,NY,246789,uts.edu
+University of Louisiana-System Administration,,Baton Rouge,LA,247083,ulsystem.edu
+Ecumenical Theological Seminary,,Detroit,MI,247162,etseminary.edu
+Landmark College,,Putney,VT,247649,landmark.edu
+Yeshiva Gedolah of Greater Detroit,,Oak Park,MI,247773,yeshivagedolahgreaterdetroit.com
+Collin County Community College District,,McKinney,TX,247834,collin.edu
+Lac Courte Oreilles Ojibwe University,,Hayward,WI,260372,lco.edu
+University of Massachusetts Global,,Irvine,CA,262086,umassglobal.edu
+New College of Florida,,Sarasota,FL,262129,ncf.edu
+Montana Bible College,,Billings,MT,262165,montanabiblecollege.edu
+Yeshivah Gedolah Rabbinical College,,Miami Beach,FL,363712,lecfl.com
+Caribbean University-Ponce,,Ponce,PR,363907,caribbean.edu
+Caribbean University-Vega Baja,,Vega Baja,PR,363916,caribbean.edu
+Paradise Valley Community College,,Phoenix,AZ,364016,paradisevalley.edu
+South Florida Bible College and Theological Seminary,,Deerfield Beach,FL,366003,sfbc.edu
+Pennsylvania College of Technology,,Williamsport,PA,366252,pct.edu
+Stone Child College,,Box Elder,MT,366340,stonechild.edu
+New York Academy of Art,,New York,NY,366368,nyaa.edu
+California State University-San Marcos,,San Marcos,CA,366711,csusm.edu
+Hodges University,,Fort Myers,FL,367884,hodges.edu
+Massachusetts School of Law,,Andover,MA,369002,mslaw.edu
+Oregon College of Oriental Medicine,,Portland,OR,369659,ocom.edu
+Adler Graduate School,,Minnetonka,MN,374024,alfredadler.edu
+Yeshiva Gedolah Imrei Yosef D'spinka,,Brooklyn,NY,375230,spinka58st.com
+Universal Technology College of Puerto Rico,,Aguadilla,PR,376385,unitecpr.edu
+College of the Marshall Islands,,Majuro,MH,376695,cmi.edu
+University of Washington-Bothell Campus,,Bothell,WA,377555,uwb.edu
+University of Washington-Tacoma Campus,,Tacoma,WA,377564,tacoma.uw.edu
+Bay Mills Community College,,Brimley,MI,380359,bmcc.edu
+Fond du Lac Tribal and Community College,,Cloquet,MN,380368,fdltcc.edu
+Northwest Indian College,,Bellingham,WA,380377,nwic.edu
+Phoenix Seminary,,Scottsdale,AZ,381459,ps.edu
+Beacon College,,Leesburg,FL,384254,beaconcollege.edu
+Acupuncture and Integrative Medicine College-Berkeley,,Berkeley,CA,384306,aimc.edu
+Rabbi Jacob Joseph School,,Edison,NJ,384421,rabbijacobjoseph.com
+Albert Einstein College of Medicine,,Bronx,NY,385415,einsteinmed.edu
+Everglades University,,Boca Raton,FL,385619,evergladesuniversity.edu
+Herzing University-Orlando,,Winter Park,FL,386472,herzing.edu
+College of Biblical Studies-Houston,,Houston,TX,388520,cbshouston.edu
+Soka University of America,,Aliso Viejo,CA,399911,soka.edu
+World Mission University,,Los Angeles,CA,401223,wmu.edu
+Yo San University of Traditional Chinese Medicine,,Los Angeles,CA,401250,yosan.edu
+Inter American University of Puerto Rico-School of Optometry,,Bayamon,PR,404222,optonet.inter.edu
+University System of Maryland-Research Centers,,Baltimore,MD,404480,usmd.edu
+Yeshivas Novominsk,,Brooklyn,NY,405058,yeshivasnovominsk.com
+Rabbinical College of Ohr Shimon Yisroel,,Brooklyn,NY,405854,ohr-sy.com
+Pacific Bible College,,Medford,OR,407610,pacificbible.edu
+Lake Erie College of Osteopathic Medicine,,Erie,PA,407629,lecom.edu
+Erikson Institute,,Chicago,IL,409254,erikson.edu
+South Texas College,,McAllen,TX,409315,southtexascollege.edu
+Roger Williams University School of Law,,Bristol,RI,409616,law.rwu.edu
+California State University-Monterey Bay,,Seaside,CA,409698,csumb.edu
+College of Menominee Nation,,Keshena,WI,413617,menominee.edu
+Trine University-Regional/Non-Traditional Campuses,,Angola,IN,414878,trine.edu
+Phillips Theological Seminary,,Tulsa,OK,414966,ptstulsa.edu
+The University of Texas MD Anderson Cancer Center,,Houston,TX,416801,mdanderson.org
+Southeast Missouri Hospital College of Nursing and Health Sciences,,Cape Girardeau,MO,417734,sehcollege.edu
+Messenger College,,Bedford,TX,417752,messengercollege.edu
+New York College of Health Professions,,Syosset,NY,418126,nycollege.edu
+Sonoran University of Health Sciences,,Tempe,AZ,420246,sonoran.edu
+Yeshiva D'monsey Rabbinical College,,Monsey,NY,420325,yeshivadmonsey.com
+Bakke Graduate University,,Dallas,TX,420705,bgu.edu
+Arizona Board of Regents,,Phoenix,AZ,420802,azregents.edu
+Midwestern University-Glendale,,Glendale,AZ,423643,midwestern.edu
+Embry-Riddle Aeronautical University-Worldwide,,Daytona Beach,FL,426314,worldwide.erau.edu
+Ottawa University-Milwaukee,,Brookfield,WI,428259,ottawa.edu
+Minnesota State Colleges and Universities System Office,,ST PAUL,MN,428453,minnstate.edu
+San Juan Bautista School of Medicine,,Caguas,PR,430670,sanjuanbautista.edu
+Yeshiva of the Telshe Alumni,,Riverdale,NY,431983,yeshivatelshealumni.com
+Appalachian School of Law,,Grundy,VA,432348,asl.edu
+Carolinas College of Health Sciences,,Charlotte,NC,433174,carolinascollege.edu
+Western Governors University,,Salt Lake City,UT,433387,wgu.edu
+Herzing University-New Orleans,,Metairie,LA,433536,herzing.edu
+Florida Gulf Coast University,,Fort Myers,FL,433660,fgcu.edu
+Ilisagvik College,,Barrow,AK,434584,ilisagvik.edu
+Dewey University-Carolina,,Carolina,PR,434900,dewey.edu
+Yeshiva College of the Nations Capital,,Silver  Spring,MD,434937,ycnc.org
+Louisiana State University Health Sciences Center-Shreveport,,Shreveport,LA,435000,lsuhs.edu
+International Baptist College and Seminary,,Chandler,AZ,436614,ibcs.edu
+University of Connecticut-Waterbury Campus,,Waterbury,CT,436818,waterbury.uconn.edu
+University of Connecticut-Avery Point,,Groton,CT,436827,averypoint.uconn.edu
+University of Connecticut-Stamford,,Stamford,CT,436836,stamford.uconn.edu
+Rancho Santiago Community College District Office,,Santa Ana,CA,438665,rsccd.edu
+Texas Tech University System Administration,,Lubbock,TX,439154,texastech.edu
+Cascadia College,,Bothell,WA,439190,cascadia.edu
+CBD College,,Los Angeles,CA,439367,cbd.edu
+Atlantic Institute of Oriental Medicine,,Fort Lauderdale,FL,439446,atom.edu
+The King's University,,Southlake,TX,439701,tku.edu
+New York College of Traditional Chinese Medicine,,Mineola,NY,439783,nyctcm.edu
+Northeastern Seminary,,Rochester,NY,439817,nes.edu
+Pacific Islands University,,Mangilao,GU,439862,piu.edu
+Seattle Institute of East Asian Medicine,,Seattle,WA,439914,sieam.edu
+Upper Valley Educators Institute,,Lebanon,NH,440004,uvei.edu
+Keck Graduate Institute,,Claremont,CA,440031,kgi.edu
+Antioch University-System Administration,,Yellow Springs,OH,440138,antioch.edu
+New Saint Andrews College,,Moscow,ID,440396,nsa.edu
+Atenas College,,Manati,PR,440651,atenascollege.edu
+Pillar College,,Newark,NJ,440794,pillar.edu
+Oregon State University-Cascades Campus,,Bend,OR,440828,osucascades.edu
+Southern University Law Center,,Baton Rouge,LA,440916,sulc.edu
+Richmont Graduate University,,Chattanooga,TN,441104,richmont.edu
+The Seattle School of Theology & Psychology,,Seattle,WA,441131,theseattleschool.edu
+Irell & Manella Graduate School of Biological Sciences at City of Hope,,Duarte,CA,441238,cityofhope.org
+Yeshiva Shaarei Torah of Rockland,,Suffern,NY,441609,yst.edu
+Universidad Pentecostal Mizpa,,Rio Piedras,PR,441690,mizpa.edu
+Nevada State University,,Henderson,NV,441900,nsc.edu
+California State University-Channel Islands,,Camarillo,CA,441937,csuci.edu
+Franklin W Olin College of Engineering,,Needham,MA,441982,olin.edu
+Won Institute of Graduate Studies,,Warminster,PA,442064,woninstitute.edu
+Ave Maria School of Law,,Naples,FL,442295,avemarialaw.edu
+Pennsylvania College of Health Sciences,,Lancaster,PA,442356,pacollege.edu
+University of Arkansas Grantham,,LIttle Rock,AR,442569,uagrantham.edu
+Edward Via College of Osteopathic Medicine,,Blacksburg,VA,442806,vcom.edu
+NorthShore University HealthSystem School of Nurse Anesthesia,,Evanston,IL,443030,northshore.org
+Faith International University,,Tacoma,WA,443049,faithiu.edu
+Family of Faith Christian University,,Shawnee,OK,443058,familyoffaith.edu
+Hood Theological Seminary,,Salisbury,NC,443076,hoodseminary.edu
+Williamson Christian College,,Franklin,TN,443340,williamsoncc.edu
+Dewey University-Hato Rey,,Hato Rey,PR,443562,dewey.edu
+"Bexley Hall Seabury Western Theological Seminary Federation, Inc.",,Chicago,IL,443702,bexleyseabury.edu
+University of North Texas System,,Dallas,TX,443711,untsystem.unt.edu
+Byzantine Catholic Seminary of Saints Cyril and Methodius,,Pittsburgh,PA,444103,bcs.edu
+Northcentral University,,San Diego,CA,444130,nu.edu
+Baptist University of the Americas,,San Antonio,TX,444398,bua.edu
+Beis Medrash Heichal Dovid,,Far Rockaway,NY,444413,heichaldovid.org
+Charlotte Christian College and Theological Seminary,,Charlotte,NC,444778,charlottechristian.edu
+Toyota Technological Institute at Chicago,,Chicago,IL,445054,ttic.edu
+University of California-Merced,,Merced,CA,445188,ucmerced.edu
+Central Methodist University-College of Graduate and Extended Studies,,Fayette,MO,445267,centralmethodist.edu
+Johnson & Wales University-Charlotte,,Charlotte,NC,445708,jwu.edu
+Roseman University of Health Sciences,,Henderson,NV,445735,roseman.edu
+Divine Mercy University,,Sterling,VA,445869,divinemercy.edu
+Ave Maria University,,Ave Maria,FL,446048,avemaria.edu
+Ecclesia College,,Springdale,AR,446233,ecollege.edu
+Uta Mesivta of Kiryas Joel,,Monroe,NY,446604,utam.edu
+Harrisburg University of Science and Technology,,Harrisburg,PA,446640,harrisburgu.edu
+Colorado State University-System Office,,Denver,CO,446978,csusystem.edu
+Georgia Gwinnett College,,Lawrenceville,GA,447689,ggc.edu
+SUM Bible College and Theological Seminary,,El Dorado Hills,CA,447953,sum.edu
+Arkansas State University System,,Little Rock,AR,448336,asusystem.edu
+International Institute for Restorative Practices,,Bethlehem,PA,448691,iirp.edu
+Dewey University-Juana DÃ­az,,Juana Diaz,PR,449135,dewey.edu
+Huntsville Bible College,,Huntsville,AL,449348,huntsvillebiblecollege.org
+Dragon Rises College of Oriental Medicine,,Gainesville,FL,449481,dragonrises.edu
+Bais Medrash Toras Chesed,,Lakewood,NJ,449658,bmtc.edu
+Visible Music College,,Memphis,TN,449764,visible.edu
+Virginia Beach Theological Seminary,,Virginia Beach,VA,449834,vbts.edu
+University of the West,,Rosemead,CA,449870,uwest.edu
+Appalachian College of Pharmacy,,Oakwood,VA,449922,acp.edu
+Brite Divinity School,,Fort Worth,TX,450304,brite.edu
+Academy for Five Element Acupuncture,,Gainesville,FL,451079,acupuncturist.edu
+Yeshivas Be'er Yitzchok,,Elizabeth,NJ,451370,yeshivasbeeryitzchok.org
+Yeshiva Toras Chaim,,Lakewood,NJ,451398,ytclakewood.com
+Talmudical Seminary of Bobov,,Brooklyn,NY,451404,independentrabbinicalcolleges.org
+Bryant & Stratton College-Wauwatosa,,Wauwatosa,WI,451750,bryantstratton.edu
+Remington College-Shreveport Campus,,Shreveport,LA,451866,remingtoncollege.edu
+Patrick Henry College,,Purcellville,VA,451927,phc.edu
+The King's College,,New York,NY,454184,tkc.edu
+Ottawa University-Online,,Overland Park,KS,454582,ottawa.edu
+Institute of Taoist Education and Acupuncture,,Louisville,CO,454838,itea.edu
+Urshan Graduate School of Theology,,Wentzville,MO,455099,ugst.edu
+Yeshiva of Machzikai Hadas,,Brooklyn,NY,455257,yeshivaofmachzikaihadas.com
+Pacific Northwest University of Health Sciences,,Yakima,WA,455406,pnwu.edu
+The Chicago School at Anaheim,,Anaheim,CA,455433,thechicagoschool.edu
+The Chicago School at Los Angeles,,Los Angeles,CA,455664,thechicagoschool.edu
+Providence Christian College,,Pasadena,CA,455770,providencecc.edu
+Institute of World Politics,,Washington,DC,455804,iwp.edu
+Pontifical John Paul II Institute for Studies on Marriage and Family,,Washington,DC,455813,johnpaulii.edu
+Vermont College of Fine Arts,,Montpelier,VT,455992,vcfa.edu
+Urbana Theological Seminary,,Urbana,IL,456171,urbanatheologicalseminary.org
+Polytechnic University of Puerto Rico-Miami,,Miami,FL,456481,pupr.edu
+Polytechnic University of Puerto Rico-Orlando,,Orlando,FL,456490,pupr.edu
+Geisinger Commonwealth School of Medicine,,Scranton,PA,456542,geisinger.edu
+University of Minnesota-Rochester,,Rochester,MN,456959,r.umn.edu
+Homestead Schools,,Torrance,CA,457086,homesteadschools.net
+Horizon University,,Indianapolis,IN,457226,horizonuniversity.edu
+Academy for Jewish Religion California,,Los Angeles,CA,457271,ajrca.edu
+University of Fort Lauderdale,,Lauderhill,FL,457402,uftl.edu
+Pacific Rim Christian University,,Honolulu,HI,457484,pacrim.edu
+City Vision University,,Kansas City,MO,457697,cityvision.edu
+Ascent College,,Gainesville,VA,458113,ascent.edu
+Compass College of Film and Media,,Grand Rapids,MI,459417,
+Touro University Worldwide,,Los Alamitos,CA,459727,tuw.edu
+Touro University California,,Vallejo,CA,459736,tu.edu
+The Chicago School at Washington DC,,Washington,DC,459745,thechicagoschool.edu
+Touro University Nevada,,Henderson,NV,459824,tun.touro.edu
+Herzing University-Kenosha,,Kenosha,WI,459842,herzing.edu
+Herzing University-Brookfield,,Brookfield,WI,459851,herzing.edu
+Texas A&M University-San Antonio,,San Antonio,TX,459949,tamusa.edu
+Johnson & Wales University-Online,,Providence,RI,460349,online.jwu.edu
+Fairfax University of America,,Fairfax,VA,460376,fxua.edu
+Carolina College of Biblical Studies,,Fayetteville,NC,461032,ccbs.edu
+Omega Graduate School,,Dayton,TN,461120,ogs.edu
+Jung Tao School of Classical Chinese Medicine,,Sugar Grove,NC,461139,jungtao.edu
+Shepherds Theological Seminary,,Cary,NC,461485,shepherds.edu
+Manna University,,Fayetteville,NC,461528,manna.edu
+Bergin University of Canine Studies,,Penngrove,CA,461643,berginu.edu
+Simmons College of Kentucky,,Louisville,KY,461759,simmonscollegeky.edu
+North American University,,Stafford,TX,461795,na.edu
+Keser Torah-Mayan Hatalmud,,Lakewood,NJ,461847,mayanhatalmud.org
+Institute for Doctoral Studies in the Visual Arts,,Portland,ME,462044,idsva.edu
+John Paul the Great Catholic University,,Escondido,CA,462354,jpcatholic.edu
+University of Connecticut-Hartford Campus,,Hartford,CT,463056,hartford.uconn.edu
+Ottawa University-Surprise,,Surprise,AZ,464226,ottawa.edu
+Dewey University-Manati,,Manati,PR,469416,dewey.edu
+Los Angeles Pacific University,,San Dimas,CA,474863,lapu.edu
+Relay Graduate School of Education,,New York,NY,475033,relay.edu
+Whitworth University-Adult Degree Programs,,Spokane,WA,475200,whitworth.edu
+The Colleges of Law at Santa Barbara,,Santa Barbara,CA,475228,collegesoflaw.edu
+The University of America,,Temecula,CA,475237,ua-edu.us
+"Springfield College-Regional, Online, and Continuing Education",,Springfield,MA,475273,springfield.edu
+Catholic Distance University,,Charles Town,WV,475398,cdu.edu
+Criswell College,,Dallas,TX,475608,criswell.edu
+Bais HaMedrash and Mesivta of Baltimore,,Baltimore,MD,476601,bhmb.edu
+Yeshiva Gedolah Zichron Leyma,,Union,NJ,476692,yzl.edu
+Be'er Yaakov Talmudic Seminary,,Spring Valley,NY,476717,byts.edu
+Colorado State University Global,,Aurora,CO,476975,csuglobal.edu
+Pennsylvania State University-World Campus,,University Park,PA,479956,worldcampus.psu.edu
+Bryant & Stratton College-Online,,Orchard Park,NY,480091,bryantstratton.edu
+Warner Pacific University Professional and Graduate Studies,,Portland,OR,480198,warnerpacific.edu
+Florida Institute of Technology-Online,,Melbourne,FL,480569,fit.edu
+Midwives College of Utah,,Salt Lake City,UT,480985,midwifery.edu
+Future Generations University,,Franklin,WV,481030,future.edu
+Grace Mission University,,Fullerton,CA,481058,gm.edu
+Mid-South Christian College,,Memphis,TN,481225,midsouthchristian.edu
+Grace School of Theology,,Conroe,TX,481401,gsot.edu
+Yeshiva Gedolah Kesser Torah,,Monsey,NY,481410,yeshivagedolahkessertorah.com
+Yeshiva Yesodei Hatorah,,Lakewood,NJ,481438,yeshivayesodeihatorahlakewood.com
+Sanford Burnham Prebys Medical Discovery Institute,,La Jolla,CA,481535,sbpdiscovery.org
+Augusta University,,Augusta,GA,482149,augusta.edu
+Middle Georgia State University,,Macon,GA,482158,mga.edu
+Veritas Baptist College,,Lawrenceburg,IN,482228,vbc.edu
+University of North Georgia,,Dahlonega,GA,482680,ung.edu
+South Georgia State College,,Douglas,GA,482699,sgsc.edu
+Northeastern University Professional Programs,,Boston,MA,482705,northeastern.edu
+Florida Polytechnic University,,Lakeland,FL,482936,floridapoly.edu
+Antioch College,,Yellow Springs,OH,483018,antiochcollege.edu
+Texas A&M University-Central Texas,,Killeen,TX,483036,tamuct.edu
+Arizona State University Digital Immersion,,Scottsdale,AZ,483124,asu.edu
+Ana G. Mendez University,,Orlando,FL,483595,agmu.edu
+Alabama College of Osteopathic Medicine,,Dothan,AL,483975,acom.edu
+University of Florida-Online,,Gainesville,FL,484473,ufonline.ufl.edu
+Minerva University,,San Francisco,CA,484844,minerva.edu
+Rabbinical College Ohr Yisroel,,Brooklyn,NY,484871,rabbinicalcollegeohryisroel.com
+University of North Texas at Dallas,,Dallas,TX,484905,untdallas.edu
+Georgia Military College,,Milledgeville,GA,485111,gmc.edu
+High Tech High Graduate School of Education,,San Diego,CA,485403,hthgse.edu
+American College of the Building Arts,,Charleston,SC,485698,acba.edu
+Bet Medrash Gadol Ateret Torah,,Brooklyn,NY,485999,betmedrashgadolaterettorah.com
+Yeshiva Ohr Yisrael,,Brooklyn,NY,486017,yoy.edu
+Yeshiva Sholom Shachna,,Brooklyn,NY,486026,yeshivasholomshachna.com
+Bethlehem College & Seminary,,Minneapolis,MN,486053,bcsmn.edu
+Elmezzi Graduate School of Molecular Medicine,,Manhasset,NY,486080,northwell.edu
+Beth Medrash Meor Yitzchok,,Monsey,NY,486196,bethmedrashmeoryitzchok.com
+Valor Christian College,,Canal Winchester,OH,486257,valorcollege.edu
+Bethany Global University,,Bloomington,MN,486284,bethanygu.edu
+Presidio Graduate School,,San Francisco,CA,486433,presidio.edu
+Wright Graduate University for the Realization of Human Potential,,Elkhorn,WI,486460,
+California Jazz Conservatory,,Berkeley,CA,486488,cjc.edu
+Kennesaw State University,,Kennesaw,GA,486840,kennesaw.edu
+Milligan University,,Milligan,TN,486901,milligan.edu
+The University of Tennessee Health Science Center,,Memphis,TN,487010,uthsc.edu
+The Chicago School at Xavier University of Louisiana,,New Orleans,LA,487153,thechicagoschool.edu
+Husson University,,Bangor,ME,487524,husson.edu
+Northwest University-Center for Online and Extended Education,,Kirkland,WA,487603,northwestu.edu
+California Institute of Advanced Management,,Alhambra,CA,487649,ciam.edu
+Yeshiva Zichron Aryeh,,Far Rockaway,NY,487746,yeshivazichronaryeh.com
+Central Yeshiva Beth Joseph,,Brooklyn,NY,488004,centralyeshivabethjoseph.com
+Elim Bible Institute and College,,Lima,NY,488305,elim.edu
+Beth Medrash of Asbury Park,,Lakewood,NJ,488314,baismedrashzichronmeir.com
+Yeshiva Gedolah Shaarei Shmuel,,Lakewood,NJ,488350,yeshivagedolahshaareishmuel.com
+Claremont Lincoln University,,Claremont,CA,488387,claremontlincoln.edu
+Arkansas Colleges of Health Education,,Fort Smith,AR,488527,achehealth.edu
+Indiana Wesleyan University-National & Global,,Marion,IN,488679,indwes.edu
+NationsUniversity,,New Orleans,LA,488721,nationsu.edu
+University of Saint Katherine,,San Marcos,CA,488785,usk.edu
+Teachers College of San Joaquin,,Stockton,CA,488800,teacherscollegesj.edu
+University of the People,,Pasadena,CA,488846,uopeople.edu
+Wongu University of Oriental Medicine,,Las Vegas,NV,488907,wongu.edu
+Institute of Buddhist Studies,,Berkeley,CA,489335,shin-ibs.edu
+Purdue University Global,,West Lafayette,IN,489779,purdueglobal.edu
+Carolina University,,Winston-Salem,NC,489937,carolinau.edu
+Presbyterian Theological Seminary in America,,Santa Fe Springs,CA,490045,ch.ptsa.edu
+America Evangelical University,,Gardena,CA,490081,aeu.edu
+Virginia University of Integrative Medicine,,Vienna,VA,490106,vuim.edu
+Bolivar Technical College,,Bolivar,MO,490203,bolivarcollege.edu
+Reformed University,,Lawrenceville,GA,490230,runiv.edu
+Yeshiva Shaar Ephraim,,Monsey,NY,490276,shaarephraim.org
+Yeshiva Bais Aharon,,Lakewood,NJ,490319,yeshivabaisaharon.com
+Mechon L'hoyroa,,Monsey,NY,490328,mechonlhoyroa.com
+Western Michigan University Homer Stryker M.D. School of Medicine,,Kalamazoo,MI,490373,wmed.edu
+Yeshiva Ohr Naftoli,,New Windsor,NY,490504,yeshivaohrnaftoli.com
+Bais Medrash Mayan Hatorah,,Lakewood,NJ,490513,baismedrashmayanhatorah.com
+Kansas City University,,Joplin,MO,490601,
+Maine Media College,,Rockport,ME,490753,mainemedia.edu
+Purdue University Northwest,,Hammond,IN,490805,pnw.edu
+Yeshiva Kollel Tifereth Elizer,,Brooklyn,NY,491057,yeshivakolleltiferethelizer.com
+The Chicago School at San Diego,,San Diego,CA,491190,thechicagoschool.edu
+University of Wisconsin-Milwaukee Flex,,Milwaukee,WI,491288,flex.wisconsin.edu
+University of Wisconsin-Parkside Flex,,Kenosha,WI,491297,flex.wisconsin.edu
+Union Bible College,,Westfield,IN,491525,ubca.org
+Yeshiva Gedolah Tiferes Boruch,,North Plainfield,NJ,491613,yeshivagedolahtiferesboruch.com
+Yeshiva Chemdas Hatorah,,Lakewood,NJ,491622,yeshivachemdashatorah.com
+Women's Institute of Torah Seminary and College,,Baltimore,MD,491631,wits.edu
+Yeshiva Gedolah Keren Hatorah,,Lakewood,NJ,491640,yeshivagedolahkerenhatorah.com
+Yeshiva Gedolah of Cliffwood,,Keyport,NJ,491710,yeshivagedolahcliffwood.com
+Yeshivas Emek Hatorah,,Howell,NJ,491765,yeshivasemekhatorah.com
+Yeshiva Gedola Tiferes Yerachmiel,,Lakewood,NJ,491914,yeshivagedolatiferesyerachmiel.com
+Champion Christian College,,Hot Springs,AR,492069,champion.edu
+The Continents States University,,St. Louis,MO,492087,continents.us
+Reiss-Davis Graduate School,,Los Angeles,CA,492209,reissdavis.edu
+The University of Tennessee System Office,,Knoxville,TN,492263,tennessee.edu
+EDP University of Puerto Rico-Villalba,,Villalba,PR,492476,edpuniversity.edu
+The Chicago School at Dallas,,Richardson,TX,492607,thechicagoschool.edu
+Texas Tech University Health Sciences Center-El Paso,,El Paso,TX,492689,elpaso.ttuhsc.edu
+Drury University-College of Continuing Professional Studies,,Springfield,MO,492801,drury.edu
+Indiana Institute of Technology-College of Professional Studies,,Fort Wayne,IN,492962,cps.indianatech.edu
+Institute of Lutheran Theology,,Brookings,SD,493363,ilt.edu
+Yeshiva of Ocean,,Greenfield Park,NY,493594,yeshivaofocean.com
+Congregation Talmidei Mesivta Tiferes Shmiel Aleksander,,Brooklyn,NY,493600,yeshivaaleksander.org
+Yeshivat Hechal Shemuel,,Brooklyn,NY,493664,hechalshemuel.com
+Yeshiva Gedolah of Woodlake Village,,Lakewood,NJ,493707,yeshivaohrzechariah.com
+Yeshiva Gedola Tiferes Yaakov Yitzchok,,Lakewood,NJ,493716,yeshivatyy.com
+College Unbound,,Providence,RI,493822,collegeunbound.edu
+College of Athens,,Watkinsville,GA,493974,collegeofathens.edu
+EDP University of Puerto Rico-Humacao,,Humacao,PR,494278,edpuniversity.edu
+EDP University of Puerto Rico-Manati,,Manati,PR,494287,edpuniversity.edu
+Sattler College,,Boston,MA,494542,sattler.edu
+Glasgow Caledonian New York College,,New York,NY,494551,gcnyc.edu
+Faith Theological Seminary and Christian College,,Tampa,FL,494597,ftscc.org
+The Southwestern Baptist Theological Seminary,,Fort Worth,TX,494603,swbts.edu
+Christ Mission College,,San Antonio,TX,494630,cmctx.edu
+Urshan College,,Wentzville,MO,494685,urshancollege.org
+Yeshiva Yesoda Hatorah Vetz Chaim,,Brooklyn,NY,494737,yeshivayh.org
+Bais Medrash of Dexter Park,,Chestnut Ridge,NY,495031,bmdpark.com
+Oak Valley College,,Rialto,CA,495059,oakvalley.edu
+Alder Graduate School of Education,,Redwood City,CA,495192,aldergse.edu
+Indian Bible College,,Flagstaff,AZ,495280,indianbible.org
+Hackensack Meridian School of Medicine,,Nutley,NJ,495314,hmsom.org
+Pathways College,,Phoenix,AZ,495916,pathwayscollege.edu
+California University of Science and Medicine,,Colton,CA,496043,cusm.org
+Agape College of Business and Science,,Fresno,CA,496399,acbscollege.org
+Daybreak University,,Anaheim,CA,496469,daybreak.edu
+Lakewood University,,Cleveland Heights,OH,496706,lakewood.edu
+NewU University,,Washington,DC,496803,newu.university
+Herzing University-Tampa,,Tampa,FL,496973,herzing.edu
+Remington College-Online Dallas,,Dallas,TX,497000,remingtoncollege.edu
+Abilene Christian University-Undergraduate Online,,Addison,TX,497037,acu.edu
+University of Silicon Andhra,,Milpitas,CA,497107,uofsa.edu
+Great Northern University,,Spokane,WA,497213,greatnorthernu.org
+Bridges Christian College,,New Orleans,LA,497408,bcc.edu
+Jackson Theological Seminary,,North Little Rock,AR,497453,jtseminary.edu
+Redeemers University North America,,Greenville,TX,497462,rccgnaseminary.org
+Reach University,,Oakland,CA,497480,reach.edu
+California University-Silicon Valley,,Sunnyvale,CA,497666,cusv.edu
+Kansas Health Science Center,,Wichita,KS,497693,kansascom.kansashsc.org
+Academy for Jewish Religion,,Yonkers,NY,497718,ajr.edu
+Evangel University-College of Online Learning,,Springfield,MO,497824,evangel.edu
+Marian University-Ancilla,,Plymouth,IN,497833,marian.edu
+Larkin University,,Miami,FL,498234,ularkin.org
+Pathways College-Arizona,,Phoenix,AZ,498243,pathwayscollege.edu
+Pontifex University,,Atlanta,GA,498289,pontifex.university
+Commonwealth University of Pennsylvania,,Bloomsburg,PA,498562,commonwealthu.edu
+Pennsylvania Western University,,California,PA,498571,pennwest.edu
+Yeshiva of Kasho,,Brooklyn,NY,498809,yokny.org
+Yeshivas Sanz Klauzenburg,,Brooklyn,NY,498906,yeshivasanzk.org
+Agora University,,Burke,VA,498915,agora.edu
+Herzing University-Nashville,,Nashville,TN,499149,herzing.edu
+EDP University of Puerto Rico-Caguas,,Caguas,PR,499635,edpuniversity.edu

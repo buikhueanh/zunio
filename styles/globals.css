@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+/* Single source of truth for the Zunio design system. Change any value here
+   to restyle the whole app — no inline styles, no ad-hoc hex in components.
+   lib/design-tokens.ts mirrors these same values for the one context that
+   can't read CSS custom properties: email HTML in lib/resend.ts. Keep both
+   in sync if you change a color here. */
+:root {
+  --color-brand-emerald: #00503d;
+  --color-brand-emerald-light: #e8f5f0;
+  --color-brand-emerald-hover: #003d2f;
+  --color-brand-emerald-dark: #003828;
+  --color-brand-cream: #fde7d4;
+  --color-brand-cream-light: #fff8f0;
+  --color-brand-light-brown: #9f785d;
+  --color-brand-blue: #213f65;
+  --color-brand-blue-light: #2a4f7a;
+  --color-brand-dark-brown: #4d301b;
+  --color-brand-white: #ffffff;
+  --color-brand-gray-50: #faf9f7;
+  --color-brand-gray-100: #f5f3f0;
+  --color-brand-gray-200: #e8e4df;
+  --color-brand-gray-300: #d4cec7;
+  --color-brand-gray-400: #a8a095;
+  --color-brand-gray-500: #7a7268;
+  --color-brand-gray-600: #5c554d;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --shadow-sm: 0 1px 2px rgba(77, 48, 27, 0.04);
+  --shadow-md: 0 4px 12px rgba(77, 48, 27, 0.08);
+  --shadow-lg: 0 8px 30px rgba(33, 63, 101, 0.15);
+  --shadow-xl: 0 20px 50px rgba(33, 63, 101, 0.18);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-plus-jakarta-sans);
+}
+
+@theme inline {
+  --color-brand-emerald: var(--color-brand-emerald);
+  --color-brand-emerald-light: var(--color-brand-emerald-light);
+  --color-brand-emerald-hover: var(--color-brand-emerald-hover);
+  --color-brand-emerald-dark: var(--color-brand-emerald-dark);
+  --color-brand-cream: var(--color-brand-cream);
+  --color-brand-cream-light: var(--color-brand-cream-light);
+  --color-brand-light-brown: var(--color-brand-light-brown);
+  --color-brand-blue: var(--color-brand-blue);
+  --color-brand-blue-light: var(--color-brand-blue-light);
+  --color-brand-dark-brown: var(--color-brand-dark-brown);
+  --color-brand-white: var(--color-brand-white);
+  --color-brand-gray-50: var(--color-brand-gray-50);
+  --color-brand-gray-100: var(--color-brand-gray-100);
+  --color-brand-gray-200: var(--color-brand-gray-200);
+  --color-brand-gray-300: var(--color-brand-gray-300);
+  --color-brand-gray-400: var(--color-brand-gray-400);
+  --color-brand-gray-500: var(--color-brand-gray-500);
+  --color-brand-gray-600: var(--color-brand-gray-600);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
+
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+}
+
+body {
+  background: var(--color-brand-cream-light);
+  color: var(--color-brand-dark-brown);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
