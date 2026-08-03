@@ -5,6 +5,7 @@ import { signUpSchema } from '@/lib/validations'
 import { generateSlug } from '@/utils/slug'
 import { generateVerificationToken } from '@/utils/token'
 import { sendEmailVerification } from '@/lib/resend'
+import { getOrCreateSchool } from '@/lib/schools'
 
 const profanityFilter = new Filter()
 
@@ -19,7 +20,7 @@ export async function POST(request: Request) {
     )
   }
 
-  const { email, password, display_name, school_id } = parsed.data
+  const { email, password, display_name, school_directory_id } = parsed.data
 
   if (profanityFilter.isProfane(display_name)) {
     return NextResponse.json(
@@ -44,13 +45,23 @@ export async function POST(request: Request) {
     )
   }
 
-  const slug = generateSlug(display_name)
   const serviceClient = createServiceClient()
+
+  let schoolId: string
+  try {
+    // Sign-up allows any school in the directory, not just launched ones —
+    // creates an inactive `schools` row on first use if needed.
+    schoolId = await getOrCreateSchool(serviceClient, school_directory_id)
+  } catch {
+    return NextResponse.json({ error: 'Unrecognized school' }, { status: 400 })
+  }
+
+  const slug = generateSlug(display_name)
   const { error: insertError } = await serviceClient.from('users').insert({
     id: authData.user.id,
     display_name,
     slug,
-    school_id,
+    school_id: schoolId,
     contact_email: email,
   })
 
@@ -61,7 +72,7 @@ export async function POST(request: Request) {
   const token = generateVerificationToken()
   const { error: tokenError } = await serviceClient
     .from('email_verifications')
-    .insert({ user_id: authData.user.id, token })
+    .insert({ user_id: authData.user.id, token, email })
 
   if (!tokenError) {
     try {

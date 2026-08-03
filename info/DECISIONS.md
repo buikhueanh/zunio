@@ -158,4 +158,13 @@ REJECTED: Manually minting a session via Supabase's admin API right after sign-u
 
 ---
 
+**[2026-08-03] Sign-up allows any school; posting requires domain-matched school-email verification**
+DECIDED: Two related changes to the auth/school model:
+1. Sign-up's school picker searches the full `schools_directory` (~2,510 schools), not just launched ones. `users.school_id` still FKs to `schools` as before, but the sign-up route now auto-creates an inactive `schools` row (`active: false`, `directory_id` set) the first time someone picks a school with no row yet, via `getOrCreateSchool()` in `lib/schools.ts`.
+2. Posting (`is_seller_verified`) is now decoupled from generic email verification (`email_verified_at`). When a verification link is clicked, the route checks whether the verified email's domain matches the user's school's domain (`schools_directory.domain`) and only then sets `is_seller_verified`. A new `/account/add-school-email` flow lets an account originally signed up with a personal email later verify a matching school email and unlock posting, without re-verifying their original email.
+REASON: The previous design (sign-up restricted to launched schools; any verified email unlocked posting) had two real problems, both raised by the user: (a) it blocked legitimate use cases — a real student who happens to be near/interested in a school we haven't launched (e.g., an internship, a visiting student, a friend elsewhere) couldn't even create an account; school-launch status should only gate the *browse* experience, not account creation. (b) it was a genuine trust/safety gap — `is_seller_verified` already existed in the schema specifically to mean "verified school email" (see the pre-existing "Adding .edu after sign-up" decision), but no code ever set it; the posting gate was actually checking generic email ownership, meaning anyone with any email could post, undermining the "every seller is a verified student" premise the whole product is pitched on.
+REJECTED: Making `users.school_id` nullable for buyers with no campus affiliation — considered and rejected; buying/messaging a seller already doesn't require `is_seller_verified`, only a session, so a non-student buyer isn't blocked by anything meaningful today. Picking *a* school at sign-up is just "which feed do you land on by default," not a claim of affiliation, so a nullable column wasn't worth the ripple effect into browse/profile/school-switcher logic for a benefit that's already achieved another way.
+
+---
+
 *Append new decisions below as they are made. Never delete or modify existing entries.*

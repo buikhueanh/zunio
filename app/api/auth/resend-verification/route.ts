@@ -17,7 +17,7 @@ export async function POST() {
   const serviceClient = createServiceClient()
   const { error: tokenError } = await serviceClient
     .from('email_verifications')
-    .upsert({ user_id: user.id, token }, { onConflict: 'user_id' })
+    .upsert({ user_id: user.id, token, email: user.email }, { onConflict: 'user_id' })
 
   if (tokenError) {
     return NextResponse.json({ error: 'Could not resend verification email' }, { status: 500 })

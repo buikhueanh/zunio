@@ -1,8 +1,9 @@
 import { createServerClient, type CookieOptions } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 
-// Posting requires a verified email; everything else under the matcher below
-// only requires a session. See CLAUDE.md "Unverified account state — decided".
+// Posting requires a verified *school* email (is_seller_verified), not just
+// any verified email — everything else under the matcher below only
+// requires a session. See DECISIONS.md "Own email verification system".
 const VERIFIED_ONLY_PATHS = ['/listings/new']
 const VERIFIED_ONLY_PATTERN = /^\/listings\/[^/]+\/edit$/
 
@@ -44,15 +45,13 @@ export async function middleware(request: NextRequest) {
     VERIFIED_ONLY_PATHS.includes(pathname) || VERIFIED_ONLY_PATTERN.test(pathname)
 
   if (requiresVerification) {
-    // Our own email_verified_at, not Supabase's built-in confirmed_at — see
-    // DECISIONS.md on why Supabase's confirm-email gate is disabled project-wide.
     const { data: profile } = await supabase
       .from('users')
-      .select('email_verified_at')
+      .select('is_seller_verified')
       .eq('id', session.user.id)
       .maybeSingle()
 
-    if (!profile?.email_verified_at) {
+    if (!profile?.is_seller_verified) {
       return NextResponse.redirect(new URL('/check-email', request.url))
     }
   }

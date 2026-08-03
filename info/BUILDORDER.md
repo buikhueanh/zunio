@@ -163,6 +163,15 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
          test user (bypasses Supabase's built-in mailer, which has a strict rate limit
          that blocked live end-to-end testing after ~2 attempts — expected free-tier
          behavior, not a bug). Test data cleaned up after.
+         [2026-08-03 UPDATE] Reverted the ActiveSchoolSelect-only restriction — sign-up now
+         searches the full schools_directory again (like SchoolCombobox, but with the
+         "isn't listed" free-text option disabled via a new `allowUnlisted` prop, since
+         accounts must always FK to a real school). Signing up at a school with no `schools`
+         row yet auto-creates one (active: false) via lib/schools.ts's getOrCreateSchool().
+         School-launch status now only matters for browsing, never for who can sign up.
+         See DECISIONS.md "Sign-up allows any school..." for the reasoning.
+         ActiveSchoolSelect.tsx is unused now but kept — still the right component for the
+         future browse-page school switcher (1.5), where active-only makes sense.
 
 [x] 1.3  Supabase Auth — sign in + session handling
          Sign in page
@@ -215,6 +224,26 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
          as clicking the emailed link) → banner disappears → /listings/new no longer
          redirects (404 instead, expected — page doesn't exist until 1.8) → /account still
          accessible with just a session, no verification required. Test data cleaned up.
+
+         [2026-08-03 CORRECTION] Initial version gated posting on email_verified_at (any
+         verified email) — a real trust/safety gap, since is_seller_verified (verified
+         SCHOOL email specifically) already existed in the schema for exactly this purpose
+         but nothing set it. Fixed: verify-email route now checks whether the verified
+         email's domain matches the user's school's domain (schools_directory.domain) and
+         only then sets is_seller_verified; middleware and the banner both switched to
+         checking is_seller_verified instead. email_verifications gained an `email` column
+         so a token can target either the original signup email or a later-added one.
+         Added a minimal /account/add-school-email flow (page + route + form) so accounts
+         that signed up with a personal email have an actual way to unlock posting later —
+         this doesn't fully replace the future full account settings page (2.6), just the
+         one piece needed to make the sign-up copy's "add a school email later" promise true.
+         Verified end-to-end live with a real non-launched school (Amherst College, no prior
+         schools row): sign-up with a personal Gmail → schools row auto-created (active:
+         false) → banner shows "verify your email" → verified → banner switches to "add a
+         school email" (is_seller_verified still false, correct) → added a matching
+         @amherst.edu address via the new flow → is_seller_verified flips true, original
+         email_verified_at timestamp preserved (not overwritten) → banner gone →
+         /listings/new no longer redirects. Test data cleaned up after.
 
 [ ] 1.5  school-switcher component (browse page)
          Prominent at top of browse page (not nav)

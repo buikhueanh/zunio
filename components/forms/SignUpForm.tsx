@@ -2,8 +2,8 @@
 
 import { useState, type FormEvent } from 'react'
 import { useRouter } from 'next/navigation'
-import ActiveSchoolSelect from '@/components/ui/ActiveSchoolSelect'
-import type { SchoolDirectoryResult } from '@/lib/schools'
+import SchoolCombobox from '@/components/ui/SchoolCombobox'
+import type { SchoolSelection } from '@/lib/schools'
 
 type SubmitState = 'idle' | 'submitting' | 'error'
 
@@ -16,7 +16,7 @@ export default function SignUpForm() {
   const [displayName, setDisplayName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [school, setSchool] = useState<SchoolDirectoryResult | null>(null)
+  const [school, setSchool] = useState<SchoolSelection>(null)
   const [state, setState] = useState<SubmitState>('idle')
   const [errorMessage, setErrorMessage] = useState('')
 
@@ -25,11 +25,12 @@ export default function SignUpForm() {
     isValidEmail(email) &&
     password.length >= 6 &&
     school !== null &&
+    'schoolId' in school &&
     state !== 'submitting'
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault()
-    if (!canSubmit || !school) return
+    if (!canSubmit || !school || !('schoolId' in school)) return
 
     setState('submitting')
     setErrorMessage('')
@@ -42,7 +43,7 @@ export default function SignUpForm() {
           email,
           password,
           display_name: displayName,
-          school_id: school.id,
+          school_directory_id: school.schoolId,
         }),
       })
 
@@ -73,14 +74,20 @@ export default function SignUpForm() {
         className="w-full rounded-md border border-brand-gray-200 bg-brand-white px-5 py-4 text-sm text-brand-dark-brown placeholder:text-brand-gray-400 outline-none transition focus:border-brand-emerald focus:ring-4 focus:ring-brand-emerald-light"
       />
 
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="Email"
-        required
-        className="w-full rounded-md border border-brand-gray-200 bg-brand-white px-5 py-4 text-sm text-brand-dark-brown placeholder:text-brand-gray-400 outline-none transition focus:border-brand-emerald focus:ring-4 focus:ring-brand-emerald-light"
-      />
+      <div className="flex flex-col gap-1">
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Email"
+          required
+          className="w-full rounded-md border border-brand-gray-200 bg-brand-white px-5 py-4 text-sm text-brand-dark-brown placeholder:text-brand-gray-400 outline-none transition focus:border-brand-emerald focus:ring-4 focus:ring-brand-emerald-light"
+        />
+        <p className="px-1 text-xs text-brand-gray-400">
+          Have a school email? Use it to post listings right away. Any email works to browse
+          and message sellers — add a school email later if you want to sell.
+        </p>
+      </div>
 
       <input
         type="password"
@@ -92,7 +99,12 @@ export default function SignUpForm() {
         className="w-full rounded-md border border-brand-gray-200 bg-brand-white px-5 py-4 text-sm text-brand-dark-brown placeholder:text-brand-gray-400 outline-none transition focus:border-brand-emerald focus:ring-4 focus:ring-brand-emerald-light"
       />
 
-      <ActiveSchoolSelect value={school} onChange={setSchool} />
+      <div className="flex flex-col gap-1">
+        <SchoolCombobox value={school} onChange={setSchool} allowUnlisted={false} />
+        <p className="px-1 text-xs text-brand-gray-400">
+          This sets your default browsing feed — you can look at other schools anytime.
+        </p>
+      </div>
 
       <button
         type="submit"

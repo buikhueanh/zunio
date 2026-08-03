@@ -1,4 +1,6 @@
+import type { SupabaseClient } from '@supabase/supabase-js'
 import { createClient } from '@/lib/supabase/client'
+import { generateSlug } from '@/utils/slug'
 
 export type SchoolDirectoryResult = {
   id: string
@@ -64,4 +66,45 @@ export async function getActiveSchools(): Promise<SchoolDirectoryResult[]> {
       city: row.schools_directory!.city,
       state: row.schools_directory!.state,
     }))
+}
+
+// Server-only — sign-up can select any of the ~2,510 schools in
+// schools_directory, not just launched ones (see DECISIONS.md). This
+// resolves a directory pick to a real schools.id, creating an inactive
+// `schools` row on first use if one doesn't exist yet. Takes a service-role
+// client since it writes to `schools`, which has no client-facing INSERT policy.
+export async function getOrCreateSchool(
+  supabase: SupabaseClient,
+  directoryId: string
+): Promise<string> {
+  const { data: existing } = await supabase
+    .from('schools')
+    .select('id')
+    .eq('directory_id', directoryId)
+    .maybeSingle()
+
+  if (existing) return existing.id
+
+  const { data: directory, error: directoryError } = await supabase
+    .from('schools_directory')
+    .select('name')
+    .eq('id', directoryId)
+    .single()
+
+  if (directoryError || !directory) {
+    throw new Error(`Unknown school directory id: ${directoryId}`)
+  }
+
+  const slug = generateSlug(directory.name)
+  const { data: created, error: insertError } = await supabase
+    .from('schools')
+    .insert({ directory_id: directoryId, slug, active: false })
+    .select('id')
+    .single()
+
+  if (insertError || !created) {
+    throw new Error(`Could not create school for directory id: ${directoryId}`)
+  }
+
+  return created.id
 }

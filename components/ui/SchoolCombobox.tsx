@@ -6,6 +6,9 @@ import { searchSchoolsDirectory, type SchoolDirectoryResult, type SchoolSelectio
 interface SchoolComboboxProps {
   value: SchoolSelection
   onChange: (selection: SchoolSelection) => void
+  // Account creation must always FK to a real school — never free text (see
+  // DECISIONS.md). Only the waitlist, which stores school_name_raw, allows it.
+  allowUnlisted?: boolean
 }
 
 const DEBOUNCE_MS = 250
@@ -15,7 +18,7 @@ function formatSchoolLabel(school: SchoolDirectoryResult): string {
   return location ? `${school.name} — ${location}` : school.name
 }
 
-export default function SchoolCombobox({ value, onChange }: SchoolComboboxProps) {
+export default function SchoolCombobox({ value, onChange, allowUnlisted = true }: SchoolComboboxProps) {
   const [query, setQuery] = useState('')
   const [results, setResults] = useState<SchoolDirectoryResult[]>([])
   const [isOpen, setIsOpen] = useState(false)
@@ -118,13 +121,15 @@ export default function SchoolCombobox({ value, onChange }: SchoolComboboxProps)
         </ul>
       )}
 
-      <button
-        type="button"
-        onClick={toggleUnlisted}
-        className="w-fit text-xs font-medium text-brand-blue underline-offset-2 hover:underline"
-      >
-        My school isn&apos;t listed
-      </button>
+      {allowUnlisted && (
+        <button
+          type="button"
+          onClick={toggleUnlisted}
+          className="w-fit text-xs font-medium text-brand-blue underline-offset-2 hover:underline"
+        >
+          My school isn&apos;t listed
+        </button>
+      )}
     </div>
   )
 }
