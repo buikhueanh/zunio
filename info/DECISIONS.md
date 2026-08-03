@@ -137,4 +137,25 @@ REJECTED: Using only Inter everywhere (loses the brand identity signal from the 
 
 ---
 
+**[2026-07-23] Start Phase 1 before Phase 0 fully deployed**
+DECIDED: Begin Phase 1 (Foundation — auth, browse page, listing creation) starting with item 1.2, even though Phase 0 items 0.9b (account migration), 0.10 (Vercel deploy), and 0.11 (launch email draft) are not yet done. This deviates from the explicit BUILDORDER.md rule: "Do not start a phase until the previous phase is complete and deployed."
+REASON: The remaining Phase 0 items are blocked on external, non-technical dependencies — domain purchase and DNS access from a friend, and account-ownership transfers — not on undone engineering work. Phase 1 work (Supabase Auth, browse page, listings) doesn't require the production domain or a live deploy; it works fine locally and on Vercel preview URLs. Sitting idle while waiting on other people has no upside.
+REJECTED: Waiting for 0.9b/0.10/0.11 to complete before starting any Phase 1 work (idle time with no technical reason to wait).
+
+---
+
+**[2026-07-23] Sign-up school picker cannot reuse the teaser's SchoolCombobox**
+DECIDED: Built a separate `ActiveSchoolSelect` component for the sign-up form, querying the `schools` table (active/launched only) directly, rather than reusing `SchoolCombobox` (which searches `schools_directory`, the full ~2,510-school IPEDS list). Fetches the full active-schools list once and filters client-side, rather than debounce-searching per keystroke, since `schools` is small and manually curated by design.
+REASON: `waitlist.school_id` FKs to `schools_directory.id`; `users.school_id` FKs to `schools.id`. These are different UUID spaces. BUILDORDER item 0.6 said the combobox would be "used on teaser page AND main app sign-up form (same component)" — this was incorrect given the canonical schema's split-table design (documented separately as "Schools architecture — decided"). Passing a `schools_directory.id` into `users.school_id` would violate the FK constraint. Caught this before shipping by verifying the insert against the real FK constraint via a one-off test (see BUILDORDER 1.2 notes), not by inspection alone.
+REJECTED: Reusing SchoolCombobox as originally speced (would break sign-up for every user — FK violation on every insert), collapsing schools/schools_directory to avoid the mismatch (already rejected elsewhere in this log — feed scoping needs the split).
+
+---
+
+**[2026-08-03] Own email verification system, not Supabase Auth's built-in confirmation**
+DECIDED: Disabled Supabase's "Confirm email" project setting entirely (`supabase/config.toml` → `[auth.email] enable_confirmations = false`, pushed via `supabase config push`). Sessions now issue immediately on sign-up. Built a separate, custom verification system: `users.email_verified_at` (nullable timestamp, publicly readable like the rest of a profile) plus a new `email_verifications` table (`user_id`, `token`) holding the single-use token — that table has RLS enabled with **no policies at all**, service-role only, matching the existing `negotiation_preferences` pattern, specifically so the token never leaks through the `users` table's public "read user profiles" policy. Verification emails send via Resend (`lib/resend.ts`), not Supabase's built-in mailer.
+REASON: Supabase's confirm-email gate is all-or-nothing at the project level — with it on, GoTrue refuses to issue *any* session (sign-up or sign-in) until the user clicks Supabase's own confirmation link. That directly contradicts the already-decided UX ("Unverified account state" section of this file): browse freely while unverified, blocked only from posting. There is no supported way to get "session now, still flagged unverified" out of Supabase's own confirmation system — the only action that grants a session (completing confirmation) is the same action that marks the account confirmed. Using Resend instead of Supabase's mailer also sidesteps Supabase's free-tier mailer limit (2 emails/hour), which blocked live testing multiple times earlier in this project (see docs/CHANGELOG.md) and is a real risk for actual users at launch, not just during dev.
+REJECTED: Manually minting a session via Supabase's admin API right after sign-up while leaving Supabase's own `email_confirmed_at` unset (investigated and rejected — every documented way to get GoTrue to issue a token for a user is itself a confirmation action, so there's no clean way to decouple "has a session" from "Supabase considers them confirmed"). Accepting Supabase's default (no session until their link is clicked) — rejected because it silently drops the "browse while unverified" decision already made and documented, not just a implementation simplification.
+
+---
+
 *Append new decisions below as they are made. Never delete or modify existing entries.*

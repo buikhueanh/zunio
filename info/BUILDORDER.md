@@ -142,22 +142,79 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
          Install: @supabase/supabase-js @supabase/ssr resend zod bad-words
          Set up lib/supabase/client.ts and lib/supabase/server.ts
 
-[ ] 1.2  Supabase Auth — sign up
+[x] 1.2  Supabase Auth — sign up
          Form: email, display name, school (school-combobox from 0.6), optional photo
          API route: validate inputs (Zod + bad-words for display_name)
          Create auth.users record (Supabase handles)
          Create users record with generated slug, contact_email = auth_email, school_id
          Redirect to browse with unverified banner
+         Files: app/api/auth/sign-up/route.ts, app/(auth)/sign-up/page.tsx,
+         components/forms/SignUpForm.tsx, components/ui/ActiveSchoolSelect.tsx,
+         utils/slug.ts
+         Photo upload deferred — no Storage bucket exists yet, will build once for both
+         sign-up and listing photos together when Storage is set up (fits 1.8's scope).
+         IMPORTANT correction from 0.6's spec: does NOT reuse SchoolCombobox as-is. That
+         component searches schools_directory (~2,510 IPEDS schools); users.school_id FKs
+         to schools (active/launched only, currently 1 row). Built a separate
+         ActiveSchoolSelect component querying the correct table — see DECISIONS.md.
+         Verified end-to-end: Zod validation (400s), profanity filter, Supabase Auth
+         signUp wiring all confirmed via real GoTrue responses. Full DB insert path
+         (slug generation + FK-correct users insert) verified via a one-off Admin-API
+         test user (bypasses Supabase's built-in mailer, which has a strict rate limit
+         that blocked live end-to-end testing after ~2 attempts — expected free-tier
+         behavior, not a bug). Test data cleaned up after.
 
-[ ] 1.3  Supabase Auth — sign in + session handling
+[x] 1.3  Supabase Auth — sign in + session handling
          Sign in page
          Session cookies via @supabase/ssr (server client reads cookies on every request)
          Protected route middleware (redirect to sign-in if no session)
+         Files: app/(auth)/sign-in/page.tsx, components/forms/SignInForm.tsx, middleware.ts
+         Sign-in done client-side via lib/supabase/client.ts's signInWithPassword (no API
+         route needed — no extra server-side logic beyond what Supabase Auth itself does,
+         unlike sign-up which needs the users-table insert).
+         Middleware matcher scoped to /account/:path*, /listings/new, /listings/:id/edit
+         only — browsing stays open, per CLAUDE.md's "no login wall" decision. Add new
+         protected paths here as those pages get built.
+         Verified end-to-end: unauthenticated request to /account redirects to /sign-in;
+         root / unaffected (no login wall); real sign-in (via Admin-API-created test user,
+         bypassing the mailer) sets the sb-*-auth-token cookie and redirects to /; same
+         protected path then passes through with no redirect (404 instead, expected —
+         /account/page.tsx doesn't exist yet, that's item 2.6). Test user cleaned up after.
 
-[ ] 1.4  Email verification state
+[x] 1.4  Email verification state
          Unverified: show persistent banner "Verify your email to post listings"
          Clicking Post while unverified → "Check your email" page with resend button
          Verified: banner disappears, full access
+         MAJOR IMPLEMENTATION CHANGE — not Supabase's built-in email confirmation.
+         Supabase's "Confirm email" setting is all-or-nothing: with it on, NO session is
+         issued (not on sign-up, not on sign-in) until the user clicks Supabase's own
+         confirmation link — the "browse freely while unverified" UX this item specifies
+         is unreachable under that setting. Disabled it project-wide (supabase/config.toml
+         [auth.email] enable_confirmations = false, applied via `supabase config push`),
+         so sign-up now always issues a session immediately. Built our OWN verification
+         system instead: users.email_verified_at (public-readable column) + a separate
+         email_verifications table (token, service-role only — never exposed via the
+         public "read user profiles" RLS policy, unlike a token column on users would be).
+         Verification email sent via Resend (lib/resend.ts sendEmailVerification), not
+         Supabase's mailer — consistent with every other email in the app, and avoids
+         Supabase's very strict free-tier mailer rate limit (2/hour) hit repeatedly
+         during this project. See DECISIONS.md for full reasoning.
+         Files: supabase/migrations/005_email_verification.sql, utils/token.ts,
+         lib/resend.ts (sendEmailVerification), app/api/auth/verify-email/route.ts,
+         app/api/auth/resend-verification/route.ts, components/ui/EmailVerificationBanner.tsx,
+         app/(auth)/check-email/page.tsx, middleware.ts (checks users.email_verified_at,
+         not session.user.email_confirmed_at)
+         BUG CAUGHT DURING TESTING: banner was originally a client component using the
+         browser Supabase client's onAuthStateChange — this never fires when a SEPARATE
+         server-side client (our sign-up API route) sets the session cookie, since browser
+         and server client instances don't sync automatically. Banner silently never
+         appeared after sign-up. Fixed by converting it to an async Server Component that
+         reads cookies directly — correctly re-renders on every router.refresh().
+         Verified end-to-end live: sign-up → banner shows → /listings/new redirects to
+         /check-email → visiting the real verify-email link (token pulled from DB, same
+         as clicking the emailed link) → banner disappears → /listings/new no longer
+         redirects (404 instead, expected — page doesn't exist until 1.8) → /account still
+         accessible with just a session, no verification required. Test data cleaned up.
 
 [ ] 1.5  school-switcher component (browse page)
          Prominent at top of browse page (not nav)
@@ -198,12 +255,15 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
          "Mark as sold" button (owner only)
          "Report this listing" link
 
-[ ] 1.10 Database migrations for main schema
+[x] 1.10 Database migrations for main schema
          supabase/migrations/004_main_schema.sql
          (users, listings, contact_requests, blocked_users,
           listing_matches, negotiation_preferences,
           conversations, conversation_participants, messages,
           triggers, RLS policies)
+         Pulled forward to unblock 1.2 (users table needed for sign-up). Full canonical
+         schema applied as one migration since later tables (listings, contact_requests)
+         FK to users anyway. Verified via REST: users table queryable, FK constraints work.
 ```
 
 ---

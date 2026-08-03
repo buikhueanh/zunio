@@ -33,3 +33,35 @@ export async function searchSchoolsDirectory(query: string): Promise<SchoolDirec
   }
   return data
 }
+
+// Active/launched campuses only — this is what users.school_id FKs to, not
+// schools_directory. The `schools` table is small and manually curated by
+// design, so we fetch it in full rather than debounce-searching per keystroke.
+type ActiveSchoolRow = {
+  id: string
+  schools_directory: { name: string; campus: string | null; city: string | null; state: string | null } | null
+}
+
+export async function getActiveSchools(): Promise<SchoolDirectoryResult[]> {
+  const supabase = createClient()
+  const { data, error } = await supabase
+    .from('schools')
+    .select('id, schools_directory(name, campus, city, state)')
+    .eq('active', true)
+    .returns<ActiveSchoolRow[]>()
+
+  if (error) {
+    console.error('getActiveSchools failed', error)
+    return []
+  }
+
+  return data
+    .filter((row) => row.schools_directory !== null)
+    .map((row) => ({
+      id: row.id,
+      name: row.schools_directory!.name,
+      campus: row.schools_directory!.campus,
+      city: row.schools_directory!.city,
+      state: row.schools_directory!.state,
+    }))
+}
