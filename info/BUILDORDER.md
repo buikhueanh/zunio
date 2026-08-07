@@ -381,6 +381,42 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
          [ ] Test full seller flow on mobile: sign up → post listing → receive message email
          [ ] Confirm GitHub repo, Supabase project, Resend account, and Vercel project are
              all owned by the zunio account, not a personal account (see 0.9b)
+         [ ] Abuse protection on the two fully-public POST routes (/api/waitlist,
+             /api/auth/sign-up) — see "Abuse protection deferred" note below
+
+--- ABUSE PROTECTION DEFERRED (decided 2026-08-07) ---
+Cloudflare Turnstile + per-IP rate limiting were scoped in detail but deliberately
+NOT built yet. Gated on 2.13 above — must land before flipping live.
+
+Why deferred: the original concern (one person spamming the submit button) turned
+out to be already covered three ways — both forms disable the button while
+submitting; waitlist.email has a unique constraint and duplicates return success
+BEFORE reaching the send; sign-up gets a 409 from Supabase on an existing email
+with no second send. So repeat-submit costs nothing. The only real remaining gap
+is a bot submitting many UNIQUE fake emails (junk rows + burned Resend quota).
+At 3 signups with no public awareness that's low-probability, bounded, recoverable,
+and — since the 2026-08-05 email-tracking work — actually visible via
+confirmation_sent_at/sent_at staying NULL plus real error logs. Browse page
+(1.5/1.6) is the higher-value work; revisit this before real traffic.
+
+Preferred approach when built:
+- Cloudflare Turnstile over Google reCAPTCHA. Turnstile is usually invisible (no
+  conversion friction on a form whose whole job is conversion), doesn't feed
+  student behavior to Google ad-tech, and avoids the privacy-policy obligation
+  reCAPTCHA drags along.
+- Turnstile is arguably the better SINGLE choice here vs. IP rate limiting: an
+  entire dorm shares one campus-wifi public IP, so per-IP limits risk blocking
+  real students en masse on launch day. Turnstile is IP-agnostic.
+- If also doing rate limiting: `rate_limits (id, key, created_at)` table, RLS on
+  with NO policies (service-role only, same pattern as email_verifications /
+  negotiation_preferences). Key on "<route>:<ip>" from x-forwarded-for. Limit
+  generous enough for dorm traffic (~20/hr, NOT 5). Note: no local
+  x-forwarded-for, so dev requests share one bucket.
+- Turnstile needs a Cloudflare account — create it under the ZUNIO account from
+  day one, not personal (see 0.9b account-ownership debt).
+- Turnstile does NOT require moving DNS to Cloudflare. Do not migrate zunio.org's
+  DNS before launch — Resend domain verification depends on the DKIM/SPF records
+  currently at the registrar, and recreating them wrong silently breaks email.
 
 [ ] 2.14 Flip to launched
          Set NEXT_PUBLIC_LAUNCHED=true in Vercel env vars
