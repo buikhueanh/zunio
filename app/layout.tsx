@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Plus_Jakarta_Sans } from 'next/font/google'
 import { siteConfig } from '@/config/site'
+import EmailVerificationBanner from '@/components/ui/EmailVerificationBanner'
 import '@/styles/globals.css'
 
 const inter = Inter({
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${plusJakartaSans.variable} font-sans antialiased`}>
+        <EmailVerificationBanner />
         {children}
       </body>
     </html>

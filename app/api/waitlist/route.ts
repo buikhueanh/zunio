@@ -35,8 +35,15 @@ export async function POST(request: Request) {
 
   try {
     await sendWaitlistConfirmation(email)
-  } catch {
-    // Signup already succeeded; don't fail the request over a flaky email send.
+    await supabase
+      .from('waitlist')
+      .update({ confirmation_sent_at: new Date().toISOString() })
+      .eq('email', email)
+  } catch (err) {
+    // They ARE on the list — the row exists, which is what they actually wanted.
+    // Don't fail the request over the confirmation email. confirmation_sent_at
+    // stays null so failed sends stay findable and retryable.
+    console.error('[waitlist] confirmation email failed', { email, err })
   }
 
   return NextResponse.json({ success: true })

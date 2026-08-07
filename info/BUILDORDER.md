@@ -51,11 +51,12 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
          returns success silently with no second row. Test rows cleaned up after.
          RESEND_API_KEY set 2026-07-09. Confirmation email send verified end-to-end via
          Resend's sandbox sender (onboarding@resend.dev) — real send accepted, id returned.
-         from address in lib/resend.ts hits `hello@zunio.app` (updated from the old
-         `unimarket.app` placeholder when the product name was finalized to Zunio), which is
-         NOT a verified Resend domain yet, so production sends will 403 until the real domain
-         is picked and verified at resend.com/domains (blocks 0.10 deploy step — do this
-         before going live). Email send failures are caught so signup still succeeds either way.
+         [2026-08-XX UPDATE] Real domain zunio.org purchased and verified in Resend.
+         EMAIL_FROM=team@zunio.org set in .env.local (still needs to be added in Vercel's
+         production env vars before deploy — see 0.10). Confirmed live: a direct send from
+         team@zunio.org via the Resend API succeeded (200, real message id), no longer
+         blocked. lib/resend.ts's fallback default updated to team@zunio.org to match.
+         Email send failures are still caught so signup succeeds either way regardless.
 
 [x] 0.6  school-combobox component
          Searches schools_directory table via Supabase query (client-side filtered)
@@ -142,22 +143,108 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
          Install: @supabase/supabase-js @supabase/ssr resend zod bad-words
          Set up lib/supabase/client.ts and lib/supabase/server.ts
 
-[ ] 1.2  Supabase Auth — sign up
+[x] 1.2  Supabase Auth — sign up
          Form: email, display name, school (school-combobox from 0.6), optional photo
          API route: validate inputs (Zod + bad-words for display_name)
          Create auth.users record (Supabase handles)
          Create users record with generated slug, contact_email = auth_email, school_id
          Redirect to browse with unverified banner
+         Files: app/api/auth/sign-up/route.ts, app/(auth)/sign-up/page.tsx,
+         components/forms/SignUpForm.tsx, components/ui/ActiveSchoolSelect.tsx,
+         utils/slug.ts
+         Photo upload deferred — no Storage bucket exists yet, will build once for both
+         sign-up and listing photos together when Storage is set up (fits 1.8's scope).
+         IMPORTANT correction from 0.6's spec: does NOT reuse SchoolCombobox as-is. That
+         component searches schools_directory (~2,510 IPEDS schools); users.school_id FKs
+         to schools (active/launched only, currently 1 row). Built a separate
+         ActiveSchoolSelect component querying the correct table — see DECISIONS.md.
+         Verified end-to-end: Zod validation (400s), profanity filter, Supabase Auth
+         signUp wiring all confirmed via real GoTrue responses. Full DB insert path
+         (slug generation + FK-correct users insert) verified via a one-off Admin-API
+         test user (bypasses Supabase's built-in mailer, which has a strict rate limit
+         that blocked live end-to-end testing after ~2 attempts — expected free-tier
+         behavior, not a bug). Test data cleaned up after.
+         [2026-08-03 UPDATE] Reverted the ActiveSchoolSelect-only restriction — sign-up now
+         searches the full schools_directory again (like SchoolCombobox, but with the
+         "isn't listed" free-text option disabled via a new `allowUnlisted` prop, since
+         accounts must always FK to a real school). Signing up at a school with no `schools`
+         row yet auto-creates one (active: false) via lib/schools.ts's getOrCreateSchool().
+         School-launch status now only matters for browsing, never for who can sign up.
+         See DECISIONS.md "Sign-up allows any school..." for the reasoning.
+         ActiveSchoolSelect.tsx is unused now but kept — still the right component for the
+         future browse-page school switcher (1.5), where active-only makes sense.
 
-[ ] 1.3  Supabase Auth — sign in + session handling
+[x] 1.3  Supabase Auth — sign in + session handling
          Sign in page
          Session cookies via @supabase/ssr (server client reads cookies on every request)
          Protected route middleware (redirect to sign-in if no session)
+         Files: app/(auth)/sign-in/page.tsx, components/forms/SignInForm.tsx, middleware.ts
+         Sign-in done client-side via lib/supabase/client.ts's signInWithPassword (no API
+         route needed — no extra server-side logic beyond what Supabase Auth itself does,
+         unlike sign-up which needs the users-table insert).
+         Middleware matcher scoped to /account/:path*, /listings/new, /listings/:id/edit
+         only — browsing stays open, per CLAUDE.md's "no login wall" decision. Add new
+         protected paths here as those pages get built.
+         Verified end-to-end: unauthenticated request to /account redirects to /sign-in;
+         root / unaffected (no login wall); real sign-in (via Admin-API-created test user,
+         bypassing the mailer) sets the sb-*-auth-token cookie and redirects to /; same
+         protected path then passes through with no redirect (404 instead, expected —
+         /account/page.tsx doesn't exist yet, that's item 2.6). Test user cleaned up after.
 
-[ ] 1.4  Email verification state
+[x] 1.4  Email verification state
          Unverified: show persistent banner "Verify your email to post listings"
          Clicking Post while unverified → "Check your email" page with resend button
          Verified: banner disappears, full access
+         MAJOR IMPLEMENTATION CHANGE — not Supabase's built-in email confirmation.
+         Supabase's "Confirm email" setting is all-or-nothing: with it on, NO session is
+         issued (not on sign-up, not on sign-in) until the user clicks Supabase's own
+         confirmation link — the "browse freely while unverified" UX this item specifies
+         is unreachable under that setting. Disabled it project-wide (supabase/config.toml
+         [auth.email] enable_confirmations = false, applied via `supabase config push`),
+         so sign-up now always issues a session immediately. Built our OWN verification
+         system instead: users.email_verified_at (public-readable column) + a separate
+         email_verifications table (token, service-role only — never exposed via the
+         public "read user profiles" RLS policy, unlike a token column on users would be).
+         Verification email sent via Resend (lib/resend.ts sendEmailVerification), not
+         Supabase's mailer — consistent with every other email in the app, and avoids
+         Supabase's very strict free-tier mailer rate limit (2/hour) hit repeatedly
+         during this project. See DECISIONS.md for full reasoning.
+         Files: supabase/migrations/005_email_verification.sql, utils/token.ts,
+         lib/resend.ts (sendEmailVerification), app/api/auth/verify-email/route.ts,
+         app/api/auth/resend-verification/route.ts, components/ui/EmailVerificationBanner.tsx,
+         app/(auth)/check-email/page.tsx, middleware.ts (checks users.email_verified_at,
+         not session.user.email_confirmed_at)
+         BUG CAUGHT DURING TESTING: banner was originally a client component using the
+         browser Supabase client's onAuthStateChange — this never fires when a SEPARATE
+         server-side client (our sign-up API route) sets the session cookie, since browser
+         and server client instances don't sync automatically. Banner silently never
+         appeared after sign-up. Fixed by converting it to an async Server Component that
+         reads cookies directly — correctly re-renders on every router.refresh().
+         Verified end-to-end live: sign-up → banner shows → /listings/new redirects to
+         /check-email → visiting the real verify-email link (token pulled from DB, same
+         as clicking the emailed link) → banner disappears → /listings/new no longer
+         redirects (404 instead, expected — page doesn't exist until 1.8) → /account still
+         accessible with just a session, no verification required. Test data cleaned up.
+
+         [2026-08-03 CORRECTION] Initial version gated posting on email_verified_at (any
+         verified email) — a real trust/safety gap, since is_seller_verified (verified
+         SCHOOL email specifically) already existed in the schema for exactly this purpose
+         but nothing set it. Fixed: verify-email route now checks whether the verified
+         email's domain matches the user's school's domain (schools_directory.domain) and
+         only then sets is_seller_verified; middleware and the banner both switched to
+         checking is_seller_verified instead. email_verifications gained an `email` column
+         so a token can target either the original signup email or a later-added one.
+         Added a minimal /account/add-school-email flow (page + route + form) so accounts
+         that signed up with a personal email have an actual way to unlock posting later —
+         this doesn't fully replace the future full account settings page (2.6), just the
+         one piece needed to make the sign-up copy's "add a school email later" promise true.
+         Verified end-to-end live with a real non-launched school (Amherst College, no prior
+         schools row): sign-up with a personal Gmail → schools row auto-created (active:
+         false) → banner shows "verify your email" → verified → banner switches to "add a
+         school email" (is_seller_verified still false, correct) → added a matching
+         @amherst.edu address via the new flow → is_seller_verified flips true, original
+         email_verified_at timestamp preserved (not overwritten) → banner gone →
+         /listings/new no longer redirects. Test data cleaned up after.
 
 [ ] 1.5  school-switcher component (browse page)
          Prominent at top of browse page (not nav)
@@ -198,12 +285,15 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
          "Mark as sold" button (owner only)
          "Report this listing" link
 
-[ ] 1.10 Database migrations for main schema
+[x] 1.10 Database migrations for main schema
          supabase/migrations/004_main_schema.sql
          (users, listings, contact_requests, blocked_users,
           listing_matches, negotiation_preferences,
           conversations, conversation_participants, messages,
           triggers, RLS policies)
+         Pulled forward to unblock 1.2 (users table needed for sign-up). Full canonical
+         schema applied as one migration since later tables (listings, contact_requests)
+         FK to users anyway. Verified via REST: users table queryable, FK constraints work.
 ```
 
 ---
@@ -291,6 +381,42 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
          [ ] Test full seller flow on mobile: sign up → post listing → receive message email
          [ ] Confirm GitHub repo, Supabase project, Resend account, and Vercel project are
              all owned by the zunio account, not a personal account (see 0.9b)
+         [ ] Abuse protection on the two fully-public POST routes (/api/waitlist,
+             /api/auth/sign-up) — see "Abuse protection deferred" note below
+
+--- ABUSE PROTECTION DEFERRED (decided 2026-08-07) ---
+Cloudflare Turnstile + per-IP rate limiting were scoped in detail but deliberately
+NOT built yet. Gated on 2.13 above — must land before flipping live.
+
+Why deferred: the original concern (one person spamming the submit button) turned
+out to be already covered three ways — both forms disable the button while
+submitting; waitlist.email has a unique constraint and duplicates return success
+BEFORE reaching the send; sign-up gets a 409 from Supabase on an existing email
+with no second send. So repeat-submit costs nothing. The only real remaining gap
+is a bot submitting many UNIQUE fake emails (junk rows + burned Resend quota).
+At 3 signups with no public awareness that's low-probability, bounded, recoverable,
+and — since the 2026-08-05 email-tracking work — actually visible via
+confirmation_sent_at/sent_at staying NULL plus real error logs. Browse page
+(1.5/1.6) is the higher-value work; revisit this before real traffic.
+
+Preferred approach when built:
+- Cloudflare Turnstile over Google reCAPTCHA. Turnstile is usually invisible (no
+  conversion friction on a form whose whole job is conversion), doesn't feed
+  student behavior to Google ad-tech, and avoids the privacy-policy obligation
+  reCAPTCHA drags along.
+- Turnstile is arguably the better SINGLE choice here vs. IP rate limiting: an
+  entire dorm shares one campus-wifi public IP, so per-IP limits risk blocking
+  real students en masse on launch day. Turnstile is IP-agnostic.
+- If also doing rate limiting: `rate_limits (id, key, created_at)` table, RLS on
+  with NO policies (service-role only, same pattern as email_verifications /
+  negotiation_preferences). Key on "<route>:<ip>" from x-forwarded-for. Limit
+  generous enough for dorm traffic (~20/hr, NOT 5). Note: no local
+  x-forwarded-for, so dev requests share one bucket.
+- Turnstile needs a Cloudflare account — create it under the ZUNIO account from
+  day one, not personal (see 0.9b account-ownership debt).
+- Turnstile does NOT require moving DNS to Cloudflare. Do not migrate zunio.org's
+  DNS before launch — Resend domain verification depends on the DKIM/SPF records
+  currently at the registrar, and recreating them wrong silently breaks email.
 
 [ ] 2.14 Flip to launched
          Set NEXT_PUBLIC_LAUNCHED=true in Vercel env vars
