@@ -27,7 +27,9 @@ export async function POST(request: Request) {
 
   const { error: tokenError } = await serviceClient
     .from('email_verifications')
-    .upsert({ user_id: user.id, token, email }, { onConflict: 'user_id' })
+    // sent_at explicitly reset — otherwise a stale timestamp from an earlier
+    // successful send would survive the upsert and make a new failure look sent.
+    .upsert({ user_id: user.id, token, email, sent_at: null }, { onConflict: 'user_id' })
 
   if (tokenError) {
     return NextResponse.json({ error: 'Could not send verification email' }, { status: 500 })
@@ -35,9 +37,17 @@ export async function POST(request: Request) {
 
   try {
     await sendEmailVerification(email, token)
-  } catch {
+  } catch (err) {
+    // Sending the email IS this request — a failure here is a real failure, so
+    // say so rather than telling them to check an inbox nothing was sent to.
+    console.error('[add-school-email] email failed', { email, err })
     return NextResponse.json({ error: 'Could not send verification email' }, { status: 500 })
   }
+
+  await serviceClient
+    .from('email_verifications')
+    .update({ sent_at: new Date().toISOString() })
+    .eq('user_id', user.id)
 
   return NextResponse.json({ success: true })
 }

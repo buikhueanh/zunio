@@ -51,11 +51,12 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
          returns success silently with no second row. Test rows cleaned up after.
          RESEND_API_KEY set 2026-07-09. Confirmation email send verified end-to-end via
          Resend's sandbox sender (onboarding@resend.dev) — real send accepted, id returned.
-         from address in lib/resend.ts hits `hello@zunio.app` (updated from the old
-         `unimarket.app` placeholder when the product name was finalized to Zunio), which is
-         NOT a verified Resend domain yet, so production sends will 403 until the real domain
-         is picked and verified at resend.com/domains (blocks 0.10 deploy step — do this
-         before going live). Email send failures are caught so signup still succeeds either way.
+         [2026-08-XX UPDATE] Real domain zunio.org purchased and verified in Resend.
+         EMAIL_FROM=team@zunio.org set in .env.local (still needs to be added in Vercel's
+         production env vars before deploy — see 0.10). Confirmed live: a direct send from
+         team@zunio.org via the Resend API succeeded (200, real message id), no longer
+         blocked. lib/resend.ts's fallback default updated to team@zunio.org to match.
+         Email send failures are still caught so signup succeeds either way regardless.
 
 [x] 0.6  school-combobox component
          Searches schools_directory table via Supabase query (client-side filtered)

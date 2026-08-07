@@ -17,7 +17,12 @@ export async function POST() {
   const serviceClient = createServiceClient()
   const { error: tokenError } = await serviceClient
     .from('email_verifications')
-    .upsert({ user_id: user.id, token, email: user.email }, { onConflict: 'user_id' })
+    // sent_at explicitly reset — otherwise a stale timestamp from an earlier
+    // successful send would survive the upsert and make a new failure look sent.
+    .upsert(
+      { user_id: user.id, token, email: user.email, sent_at: null },
+      { onConflict: 'user_id' }
+    )
 
   if (tokenError) {
     return NextResponse.json({ error: 'Could not resend verification email' }, { status: 500 })
@@ -25,9 +30,17 @@ export async function POST() {
 
   try {
     await sendEmailVerification(user.email, token)
-  } catch {
+  } catch (err) {
+    // Sending the email IS this request — a failure here is a real failure, so
+    // say so rather than telling them to check an inbox nothing was sent to.
+    console.error('[resend-verification] email failed', { email: user.email, err })
     return NextResponse.json({ error: 'Could not resend verification email' }, { status: 500 })
   }
+
+  await serviceClient
+    .from('email_verifications')
+    .update({ sent_at: new Date().toISOString() })
+    .eq('user_id', user.id)
 
   return NextResponse.json({ success: true })
 }

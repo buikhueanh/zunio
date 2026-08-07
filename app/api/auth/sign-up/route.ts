@@ -77,8 +77,15 @@ export async function POST(request: Request) {
   if (!tokenError) {
     try {
       await sendEmailVerification(email, token)
-    } catch {
-      // Signup already succeeded; the user can resend from /check-email.
+      await serviceClient
+        .from('email_verifications')
+        .update({ sent_at: new Date().toISOString() })
+        .eq('user_id', authData.user.id)
+    } catch (err) {
+      // The account exists and they're signed in — failing here would strand
+      // them (a retry would hit "email already exists"). They can resend from
+      // /check-email; sent_at stays null so the failure stays findable.
+      console.error('[sign-up] verification email failed', { email, err })
     }
   }
 
