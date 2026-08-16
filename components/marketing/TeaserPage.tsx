@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import Logo from '@/components/ui/Logo'
 import WaitlistForm from '@/components/forms/WaitlistForm'
 
@@ -41,7 +42,12 @@ export default function TeaserPage() {
       </div>
 
       <footer className="mx-auto mt-16 flex w-full max-w-6xl items-center justify-between border-t border-brand-gray-200 pt-6">
-        <p className="text-xs text-brand-gray-400">© 2026 Zunio. For students, by students.</p>
+        <div className="flex items-center gap-4">
+          <p className="text-xs text-brand-gray-400">© 2026 Zunio. For students, by students.</p>
+          <Link href="/about" className="text-xs font-medium text-brand-blue hover:underline">
+            About us
+          </Link>
+        </div>
         <Logo size="md" />
       </footer>
     </div>
