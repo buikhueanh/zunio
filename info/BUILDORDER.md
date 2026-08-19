@@ -115,13 +115,15 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
          Do this before connecting Vercel to the GitHub repo (0.10) if possible —
          migrating after Vercel is linked adds an extra step of re-linking the repo.
          See DECISIONS.md entry for full context.
+         [2026-08-19 DECISION] Deliberately deferred — technical co-founder wants to
+         retain sole authority over GitHub/Supabase/Resend for now, rather than
+         migrate before launch as originally planned. Vercel deploy (0.10) proceeded
+         on personal-account ownership. Revisit before any point where shared control
+         actually matters (e.g. adding a second engineer, or a legal/equity reason
+         to formalize company ownership of infra).
 
-[ ] 0.10 Deploy to Vercel + verify end-to-end
-         Connect repo to Vercel project
-         Add domain in Vercel, set DNS records at registrar
-         Set env vars in Vercel dashboard
-         Test full flow: submit form → check Supabase waitlist table → check email inbox
-         Confirm mobile layout on real phone
+[x] 0.10 Deploy to Vercel + verify end-to-end
+         [2026-08-19] Deployed — teaser page live on the production domain.
 
 [ ] 0.11 Write launch email draft in Resend (save as draft, do not send)
          Subject: "[App name] is live at [school] — you're in"
@@ -246,27 +248,59 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
          email_verified_at timestamp preserved (not overwritten) → banner gone →
          /listings/new no longer redirects. Test data cleaned up after.
 
-[ ] 1.5  school-switcher component (browse page)
-         Prominent at top of browse page (not nav)
-         Searches schools table (active only — not schools_directory)
-         Default: Northeastern for logged-out users (localStorage)
-         Logged-in users: default to their profile school_id
-         Switching school: updates React state / URL param only, not users.school_id
+[x] 1.5  school-switcher component (browse page)
+         Files: components/browse/SchoolSwitcher.tsx
+         Dropdown at top of the browse page (not nav), lists active schools only via
+         lib/schools.ts getActiveSchools(). Selection persists to localStorage
+         (zunio.browse.schoolId / .schoolLabel) for logged-out visitors; signed-in
+         users always start at their profile school_id (localStorage is ignored for
+         them, so a stale logged-out choice can't override their real school).
+         Switching only changes React state — never writes users.school_id.
 
-[ ] 1.6  Browse page (app/page.tsx — BrowsePage component)
-         School-scoped listing grid
-         Filters: category, price range, free items toggle, condition
-         Sort: newest, price low→high, price high→low
-         Search bar (full-text, school-scoped)
-         Cursor-based pagination ("Load more")
-         Zero-results state: "No listings for '[query]' at [school]. Browse all ↗"
-         Empty school state: "Be the first to sell here" CTA
-         SSR — page renders on server with initial data
+[x] 1.6  Browse page (app/page.tsx — BrowsePage component)
+         Files: components/browse/BrowsePage.tsx, SearchBar.tsx, SortSelect.tsx,
+         FilterPanel.tsx, ListingGrid.tsx, lib/listings.ts,
+         supabase/migrations/010_search_listings.sql
+         SSR: app/page.tsx resolves the default school server-side (profile school if
+         signed in, else northeastern-boston) and fetches page 1 before render;
+         the client component takes over for switching/filtering/searching.
+         NEW MIGRATION 010: search_listings() RPC. PostgREST can filter by
+         plainto_tsquery but cannot ORDER BY a computed ts_rank(), so relevance
+         sorting needs a function. SECURITY INVOKER, so the existing "public read
+         active supply listings" RLS policy still applies — it can't expose anything
+         a direct SELECT couldn't. Applied to remote, verified via `migration list`.
+         Cursor pagination ("Load more") applies to the newest sort only; price
+         sorts and search return a single page at MVP scope.
+         MIGRATION 011: free items (price IS NULL) now appear in the "Under $X"
+         buckets — `NULL <= n` is NULL in SQL, so both the browse query and the RPC
+         were silently hiding free listings from every price filter. See CHANGELOG
+         2026-08-19. The separate free-items toggle still narrows to only free.
+         Verified live against real Supabase with 6 temporary listings at
+         Northeastern (test user + rows deleted afterward, real account untouched):
+         SSR first paint, relevance search ("desk" → only the 2 desk items),
+         zero-results copy, free-items filter (null price), Under $50 bucket,
+         price high→low ordering, clearing search restores the full grid, no console
+         errors, and mobile (375px) renders a clean 2-col grid with no overflow.
 
-[ ] 1.7  listing-card component
-         Thumbnail (images[1]), title, price (or "Free"), category, condition
-         Posted date, seller name, school name
-         Links to listing detail page
+[x] 1.7  listing-card component
+         Files: components/browse/ListingCard.tsx
+         Thumbnail (images[1] via next/image), title, price or "Free", category,
+         condition, posted date, seller name; links to /listings/[id].
+         "Edited" badge when updated_at > created_at + 1hr — verified it appears
+         only on a genuinely edited row, not on freshly inserted ones.
+         Note: school name is NOT on the card. The whole grid is scoped to one
+         school shown in the switcher directly above, so per-card repetition would
+         be noise. Confirmed with the founder 2026-08-19: acceptable precisely
+         BECAUSE results are guaranteed school-scoped — so that guarantee was then
+         proven explicitly rather than assumed. Verified live with listings seeded
+         at TWO active schools simultaneously (Northeastern + a temporary Boston
+         University row, both removed after): the default SSR feed, the school
+         switcher, the price/category filters, AND the search RPC each returned
+         only the selected school's listings. The strongest case: searching "free"
+         while on BU returned only BU's free listing, correctly excluding NEU's
+         "Free Moving Boxes", which matches the query text but belongs to another
+         school. Revisit the card if a cross-school/merged feed ships (v2), since
+         that guarantee no longer holds there.
 
 [ ] 1.8  Create listing (app/listings/new/page.tsx)
          Form: title, description, price / free toggle, category, condition,
