@@ -43,9 +43,17 @@ export const control = {
   overlaySelect: 'absolute inset-0 h-full w-full cursor-pointer appearance-none opacity-0 disabled:cursor-not-allowed',
 } as const
 
+/**
+ * Shared height for inline controls that sit on one row (search input, school
+ * switcher). An explicit height rather than matched padding — padding plus
+ * differing font metrics and borders drift apart, and the mismatch is only
+ * visible once they're side by side.
+ */
+export const CONTROL_HEIGHT = 'h-11'
+
 /** Text inputs. */
 export const field =
-  'w-full rounded-md border border-brand-gray-200 bg-brand-white px-4 py-3 text-sm text-brand-dark-brown placeholder:text-brand-gray-400 outline-none transition focus:border-brand-emerald focus:ring-4 focus:ring-brand-emerald-light'
+  `w-full ${CONTROL_HEIGHT} rounded-md border border-brand-gray-200 bg-brand-white px-4 text-sm text-brand-dark-brown placeholder:text-brand-gray-400 outline-none transition focus:border-brand-emerald focus:ring-4 focus:ring-brand-emerald-light`
 
 /** Small read-only attribute chips on listing cards. */
 export const chip =

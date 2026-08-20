@@ -56,6 +56,8 @@ export default function BrowsePage({
   const [collapsed, setCollapsed] = useState(false)
   const isInitialRender = useRef(true)
   const sentinelRef = useRef<HTMLDivElement>(null)
+  const headerRef = useRef<HTMLElement>(null)
+  const [headerHeight, setHeaderHeight] = useState(72)
 
   // The marketing hero is for people deciding whether Zunio is real. Someone
   // already signed in knows — every pixel of pitch is friction on a daily visit.
@@ -87,6 +89,22 @@ export default function BrowsePage({
     observer.observe(sentinel)
     return () => observer.disconnect()
   }, [showHero])
+
+  // The sticky bar must park exactly below the header, so its offset is
+  // measured rather than hardcoded — the header's height changes between the
+  // signed-out nav (two buttons) and the signed-in one (button plus icons),
+  // and again at mobile widths. A fixed constant silently slid the bar
+  // underneath the header and swallowed its top padding.
+  useEffect(() => {
+    const header = headerRef.current
+    if (!header) return
+    const observer = new ResizeObserver(([entry]) =>
+      setHeaderHeight(Math.round(entry.contentRect.height))
+    )
+    observer.observe(header)
+    setHeaderHeight(Math.round(header.getBoundingClientRect().height))
+    return () => observer.disconnect()
+  }, [])
 
   useEffect(() => {
     if (userSchoolId) return
@@ -160,7 +178,10 @@ export default function BrowsePage({
 
   return (
     <div className="flex min-h-screen flex-col bg-brand-cream-light">
-      <header className="sticky top-0 z-50 border-b border-brand-gray-200 bg-brand-white/92 px-6 backdrop-blur-lg md:px-10">
+      <header
+        ref={headerRef}
+        className="sticky top-0 z-50 border-b border-brand-gray-200 bg-brand-white/92 px-6 backdrop-blur-lg md:px-10"
+      >
         <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 py-3.5">
           {/* Logo centred between two equal-width flanks, matching the design.
               flex-1 on both sides keeps it optically centred regardless of how
@@ -244,11 +265,17 @@ export default function BrowsePage({
         page never reflows mid-scroll and there is no layout shift.
       */}
       <div
-        className={`sticky top-[61px] z-40 border-b bg-brand-cream-light/95 px-6 backdrop-blur-lg transition-all duration-300 motion-reduce:transition-none md:px-10 ${
-          collapsed
-            ? 'border-brand-gray-200 py-2.5 shadow-sm'
-            : 'border-transparent py-4'
-        }`}
+        className={cx(
+          // White, matching the header above it. The bar is sticky, so it is
+          // chrome rather than content — sharing the header's surface makes the
+          // two read as one toolbar instead of two stacked strips in different
+          // colours meeting at a visible seam.
+          'sticky z-40 border-b bg-brand-white/95 px-6 backdrop-blur-lg transition-all duration-300 motion-reduce:transition-none md:px-10',
+          // pt- is larger than pb- on purpose: the bar sits directly beneath
+          // the header, and even padding made the controls look glued to it.
+          collapsed ? 'border-brand-gray-200 pb-3 pt-4 shadow-sm' : 'border-transparent py-4'
+        )}
+        style={{ top: headerHeight }}
       >
         <div className="mx-auto w-full max-w-7xl">
           <div
@@ -284,7 +311,15 @@ export default function BrowsePage({
         </div>
       </div>
 
-      <main className="mx-auto w-full max-w-7xl flex-1 px-6 py-8 md:px-10">
+      {/*
+        Padding on the OUTER element and max-width on the inner one — the same
+        structure the sticky bar, trust section and footer use. Putting both on
+        one element (max-w-7xl px-10) insets the content an extra 40px on wide
+        screens, which is why this section used to sit narrower than the
+        category pills and trust cards above and below it.
+      */}
+      <main className="w-full flex-1 px-6 py-8 md:px-10">
+        <div className="mx-auto w-full max-w-7xl">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <h2 className="font-display text-xl font-bold tracking-tight text-brand-dark-brown">
             {isSearching ? 'Search results' : 'Recently posted'}
@@ -312,6 +347,7 @@ export default function BrowsePage({
               onLoadMore={handleLoadMore}
             />
           )}
+          </div>
         </div>
       </main>
 

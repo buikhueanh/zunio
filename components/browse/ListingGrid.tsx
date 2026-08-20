@@ -44,7 +44,10 @@ export default function ListingGrid({
 
   return (
     <div className="flex flex-col gap-6">
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+      {/* Two per row on phones so cards stay legible at ~170px, four from
+          tablet up. Capped at four rather than five — beyond that the images
+          get small enough that browsing turns into squinting. */}
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
         {listings.map((listing) => (
           <ListingCard key={listing.id} listing={listing} />
         ))}

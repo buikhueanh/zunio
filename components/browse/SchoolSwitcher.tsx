@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { getActiveSchools, type SchoolDirectoryResult } from '@/lib/schools'
-import { dropdownPanel, dropdownItem, cx } from '@/lib/ui-classes'
+import { dropdownPanel, dropdownItem, cx, CONTROL_HEIGHT } from '@/lib/ui-classes'
 
 function formatSchoolLabel(school: SchoolDirectoryResult): string {
   const location = [school.campus, school.city, school.state].filter(Boolean).join(', ')
@@ -26,8 +26,8 @@ export default function SchoolSwitcher({
 }: SchoolSwitcherProps) {
   const triggerClass =
     variant === 'onDark'
-      ? 'flex w-fit items-center gap-2 rounded-md border-[1.5px] border-brand-white/25 bg-brand-white/15 px-4 py-2.5 text-sm font-semibold text-brand-cream backdrop-blur-sm transition hover:border-brand-white/40 hover:bg-brand-white/25'
-      : 'flex items-center gap-2 rounded-md border border-brand-gray-200 bg-brand-white px-4 py-2.5 text-sm font-semibold text-brand-dark-brown transition hover:border-brand-emerald'
+      ? `flex w-fit items-center gap-2 ${CONTROL_HEIGHT} rounded-md border-[1.5px] border-brand-white/25 bg-brand-white/15 px-4 text-sm font-semibold text-brand-cream backdrop-blur-sm transition hover:border-brand-white/40 hover:bg-brand-white/25`
+      : `flex items-center gap-2 ${CONTROL_HEIGHT} rounded-md border border-brand-gray-200 bg-brand-white px-4 text-sm font-semibold text-brand-dark-brown transition hover:border-brand-emerald`
   const [schools, setSchools] = useState<SchoolDirectoryResult[]>([])
   const [isOpen, setIsOpen] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)

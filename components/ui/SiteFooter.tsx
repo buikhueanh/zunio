@@ -1,6 +1,9 @@
 import Link from 'next/link'
 import Logo from '@/components/ui/Logo'
 
+// About deliberately omitted — it already sits in the top nav, and repeating a
+// link in both places just splits attention between two identical targets.
+
 // A gradient of dots bridging the blue trust section into the emerald footer.
 const BRIDGE_DOTS = [
   'bg-brand-blue',
@@ -33,9 +36,6 @@ export default function SiteFooter({ showBridge = false }: { showBridge?: boolea
           <Logo size="md" variant="reversed" />
 
           <nav className="flex flex-wrap items-center justify-center gap-7 text-sm font-medium">
-            <Link href="/about" className="text-brand-white/65 transition hover:text-brand-cream">
-              About
-            </Link>
             <a
               href="mailto:hello@zunio.org"
               className="text-brand-white/65 transition hover:text-brand-cream"
