@@ -1,6 +1,8 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import { Search } from 'lucide-react'
+import { field } from '@/lib/ui-classes'
 
 interface SearchBarProps {
   value: string
@@ -20,12 +22,21 @@ export default function SearchBar({ value, onChange }: SearchBarProps) {
   }
 
   return (
-    <input
-      type="text"
-      value={draft}
-      onChange={(e) => handleChange(e.target.value)}
-      placeholder="Search listings..."
-      className="w-full max-w-sm rounded-md border border-brand-gray-200 bg-brand-white px-4 py-2.5 text-sm text-brand-dark-brown placeholder:text-brand-gray-400 outline-none transition focus:border-brand-emerald focus:ring-4 focus:ring-brand-emerald-light"
-    />
+    <div className="relative w-full">
+      <input
+        type="text"
+        value={draft}
+        onChange={(e) => handleChange(e.target.value)}
+        placeholder="Search listings..."
+        aria-label="Search listings"
+        // Extra right padding reserves room for the trailing icon so long
+        // queries don't run underneath it.
+        className={`${field} pr-11`}
+      />
+      <Search
+        className="pointer-events-none absolute right-4 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-brand-gray-400"
+        aria-hidden
+      />
+    </div>
   )
 }

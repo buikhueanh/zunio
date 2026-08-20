@@ -1,6 +1,9 @@
 'use client'
 
+import { ArrowUpNarrowWide } from 'lucide-react'
 import type { SortOption } from '@/lib/listings'
+import { control } from '@/lib/ui-classes'
+import SelectShell from './SelectShell'
 
 const SORT_LABELS: Record<SortOption, string> = {
   newest: 'Newest',
@@ -16,17 +19,24 @@ interface SortSelectProps {
 
 export default function SortSelect({ value, onChange, disabled }: SortSelectProps) {
   return (
-    <select
-      value={value}
-      disabled={disabled}
-      onChange={(e) => onChange(e.target.value as SortOption)}
-      className="rounded-md border border-brand-gray-200 bg-brand-white px-3 py-2 text-sm text-brand-dark-brown outline-none focus:border-brand-emerald disabled:cursor-not-allowed disabled:opacity-50"
+    <SelectShell
+      icon={<ArrowUpNarrowWide className="h-4 w-4 shrink-0" aria-hidden />}
+      label={SORT_LABELS[value]}
+      active={value !== 'newest'}
     >
-      {(Object.keys(SORT_LABELS) as SortOption[]).map((s) => (
-        <option key={s} value={s}>
-          {SORT_LABELS[s]}
-        </option>
-      ))}
-    </select>
+      <select
+        value={value}
+        disabled={disabled}
+        aria-label="Sort listings"
+        onChange={(e) => onChange(e.target.value as SortOption)}
+        className={control.overlaySelect}
+      >
+        {(Object.keys(SORT_LABELS) as SortOption[]).map((s) => (
+          <option key={s} value={s}>
+            {SORT_LABELS[s]}
+          </option>
+        ))}
+      </select>
+    </SelectShell>
   )
 }

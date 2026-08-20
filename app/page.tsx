@@ -79,6 +79,7 @@ export default async function Home() {
       defaultSchoolId={schoolRow.id}
       defaultSchoolLabel={formatSchoolLabel(schoolRow)}
       userSchoolId={user ? schoolRow.id : null}
+      isSignedIn={Boolean(user)}
     />
   )
 }
