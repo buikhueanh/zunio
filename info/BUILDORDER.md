@@ -580,6 +580,28 @@ Preferred approach when built:
   DNS before launch — Resend domain verification depends on the DKIM/SPF records
   currently at the registrar, and recreating them wrong silently breaks email.
 
+[x] 2.14a Pre-launch route gate (added 2026-10-01)
+         middleware.ts now blocks every app route until NEXT_PUBLIC_LAUNCHED
+         is true. Before this, NEXT_PUBLIC_LAUNCHED only swapped the content of
+         `/` — /sign-up, /sign-in, /listings/new and /messages were all
+         publicly reachable on production while the homepage showed a teaser.
+         DENY BY DEFAULT: an allow-list names what stays open (`/`, `/about`,
+         POST /api/waitlist, static assets); everything else is blocked. The
+         inverse — listing what to block — is what let those routes leak in the
+         first place, and would leak every future route too.
+         API routes are gated alongside pages: blocking the /sign-up page while
+         POST /api/auth/sign-up stayed open would just move the door. Pages
+         redirect to `/`; APIs return a flat 404 (not 503, which advertises
+         that the endpoint exists and is worth retrying).
+         Verified in BOTH modes. Pre-launch: /, /about, /api/waitlist and all
+         static assets reachable; /sign-up, /sign-in, /listings/new, /messages,
+         /account, /check-email all 307 to `/`; the five app APIs all 404;
+         teaser renders with hero image and live school search intact.
+         Post-launch: those pages return 200 or redirect to /sign-in (the auth
+         gate, not the launch gate), and the APIs return 400/401/200 — never 404.
+         NOTE: this also blocks /api/auth/verify-email pre-launch, so any
+         verification link mailed before the flip will not work until after it.
+
 [ ] 2.14 Flip to launched
          Set NEXT_PUBLIC_LAUNCHED=true in Vercel env vars
          Redeploy
