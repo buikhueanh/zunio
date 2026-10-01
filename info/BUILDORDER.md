@@ -470,7 +470,35 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
          Does NOT update created_at
          Triggers updated_at via DB trigger
 
-[ ] 2.4  Mark as sold
+[x] 2.4  Mark as sold
+         Files: app/api/listings/[id]/route.ts (PATCH),
+         components/listings/MarkSoldButton.tsx, app/listings/[id]/page.tsx
+         Owner can close a listing and RELIST it — sales fall through, and
+         without reopening a seller would have to delete and repost, losing the
+         listing's age and every conversation attached to it.
+         SECURITY: the route writes with the service role, which bypasses RLS,
+         so ownership is checked explicitly rather than relied on. A non-owner
+         gets 404, not 403 — same response as a nonexistent listing, so the
+         endpoint cannot be used to probe which ids exist. Status is restricted
+         to active|sold: 'removed' is a moderation state and 'expired' belongs
+         to the cron, so neither is reachable here — otherwise a seller could
+         un-expire a listing forever or quietly revive one taken down for
+         breaking the AUP. Suspended and soft-deleted accounts are blocked.
+         Verified live: unauthenticated PATCH 401; non-owner 404; owner->sold
+         200; owner->removed and owner->expired both 400; owner->active 200.
+         After marking sold the listing 404s for logged-out visitors and drops
+         out of the browse feed (3 items -> 2), while the owner still sees it
+         with a banner and a "Relist this item" button.
+         TWO SIDE EFFECTS HANDLED:
+         - The updated_at trigger fires on a status change, which would have
+           branded every sold listing "Edited" when nothing about it changed.
+           The badge is now only evaluated while the listing is active.
+         - The thread page read the listing through the VIEWER's RLS, so the
+           moment a seller marked an item sold their buyer's conversation
+           header flipped to "Listing unavailable" — about an item that had
+           merely sold. It now re-fetches that one listing with the service
+           role (safe: RLS already proved participation by returning the
+           conversation) and shows a "Sold" chip instead.
          PATCH /api/listings/[id] with status='sold'
          Owner-only (RLS + API route ownership check)
 
@@ -528,7 +556,31 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
          Verify BOTH feeds look alive before flipping NEXT_PUBLIC_LAUNCHED.
 
 [ ] 2.13 Pre-launch checklist
-         [ ] AUP page written and linked from listing form checkbox
+         [x] AUP page written and linked from listing form checkbox
+             [2026-10-01] /aup, /terms and /privacy built (app/aup, app/terms,
+             app/privacy + components/legal/LegalPage.tsx). These fixed four
+             dead links the UI was already rendering: the listing form's
+             required AUP checkbox pointed at a 404, meaning sellers were
+             agreeing to a policy that did not exist — the legal shield was
+             pointing at nothing. The footer's Terms and Privacy links were
+             dead too.
+             All three are reachable PRE-launch (middleware allow-list) because
+             the teaser collects email addresses, and a privacy policy has to
+             be available wherever data is collected. The teaser footer now
+             links Privacy directly.
+             Content is drafted from what the product actually does, not
+             boilerplate — EXIF stripping, "your email is never shown to other
+             users", and the disclosure that staff can read messages when
+             investigating a report (previously undisclosed anywhere).
+             [ ] STILL NEEDED — a human must fill these before launch:
+                 {{LEGAL_ENTITY}}        who operates Zunio (Athenova? an LLC?)
+                 {{GOVERNING_LAW_STATE}} jurisdiction for the Terms
+                 {{LIABILITY_CAP}}       liability limit figure
+             [ ] STILL NEEDED — a lawyer should review the Terms' liability and
+                 warranty sections. These were drafted, not advised on.
+             [ ] STILL NEEDED — hello@zunio.org and moderation@zunio.org must
+                 be real monitored inboxes; both policy pages direct users
+                 there for data-deletion and safety reports.
          [ ] Resend upgraded to paid tier
          [ ] All env vars set in Vercel production
          [ ] Custom domain resolving correctly
@@ -579,6 +631,35 @@ Preferred approach when built:
 - Turnstile does NOT require moving DNS to Cloudflare. Do not migrate zunio.org's
   DNS before launch — Resend domain verification depends on the DKIM/SPF records
   currently at the registrar, and recreating them wrong silently breaks email.
+
+[x] 2.14b Preview access for testers/seeders (added 2026-10-01)
+         Files: lib/preview-access.ts, middleware.ts, app/page.tsx
+         Need: keep the gate up for the public, but hand the fully working app
+         to a handful of people so they can seed real listings before launch.
+         HOW: visiting any URL with ?access=<PREVIEW_ACCESS_CODE> sets an
+         httpOnly cookie (60 days) and redirects to the clean URL. Holders of
+         that cookie bypass the pre-launch gate entirely.
+         PREVIEW_ACCESS_CODE is SERVER-ONLY. It must never be renamed to
+         NEXT_PUBLIC_* — that prefix inlines the value into the client bundle
+         and would publish the code to anyone who opens devtools.
+         The code is stripped from the URL after redemption: left in place it
+         persists in browser history, leaks via Referer headers to any third
+         party, and shows up in every screenshot a tester sends. Comparison is
+         constant-time so it can't be recovered character by character.
+         Rotate/revoke by changing the env var and redeploying.
+         BUG CAUGHT WHILE TESTING: at first only middleware knew about preview
+         access, so an invited tester could reach /sign-up but the homepage
+         still rendered the teaser — the marketplace was unreachable through
+         the front door. app/page.tsx now checks the same cookie, via the
+         shared helper, so the two cannot disagree.
+         Verified: public sees teaser and is still gated; a wrong code does not
+         unlock; the correct code shows the real marketplace at /, opens
+         /sign-up, strips the code from the URL, and the cookie is invisible to
+         JavaScript (httpOnly).
+         /api/auth/verify-email was also opened pre-launch — a token only
+         exists if someone completed sign-up (which needs preview access), and
+         gating it would break verification links opened in a mail client's own
+         browser, where the cookie isn't present.
 
 [x] 2.14a Pre-launch route gate (added 2026-10-01)
          middleware.ts now blocks every app route until NEXT_PUBLIC_LAUNCHED
@@ -631,7 +712,38 @@ Preferred approach when built:
          Write matches to listing_matches table
          Send email notifications to matching sellers
 
-[ ] 3.4  User blocking UI
+[x] 3.4  User blocking UI — PULLED FORWARD 2026-10-01 (launch-blocking)
+         Files: supabase/migrations/021_blocked_users_rls.sql,
+         app/api/blocks/route.ts, components/chat/ThreadSafetyMenu.tsx,
+         app/api/messages/route.ts (send-time enforcement),
+         app/messages/[id]/page.tsx
+         Pulled out of v2 because realtime student-to-student DMs shipped
+         without any remedy for harassment.
+         THE BUG THIS FIXED: blocking was only ever checked when a conversation
+         was CREATED. That is the wrong place — people block the person
+         harassing them in an OPEN thread, not a stranger they have never
+         spoken to. Nothing was broken for users (blocking was unreachable:
+         no UI, no API, RLS with no policies), but the check sitting in
+         /api/conversations created false confidence that blocking was handled.
+         Enforcement now runs on every message SEND, in BOTH directions.
+         Both-directions matters: enforcing only against the blocker would stop
+         the victim while leaving the harasser free to keep sending — backwards
+         and worse than nothing.
+         PRIVACY: the 403 says "You can no longer send messages in this
+         conversation" and never reveals that a block exists or who set it —
+         confirming it invites retaliation and tells a harasser which account
+         to work around. The thread page likewise only reads "have I blocked
+         them", never "have they blocked me". RLS scopes blocked_users to the
+         blocker. A CHECK constraint rejects self-blocks (23514). The block
+         endpoint returns identical responses for real and nonexistent
+         usernames so it cannot be used to enumerate accounts.
+         Report lives in the same thread menu — mailto to moderationEmail with
+         the conversation id prefilled, matching CLAUDE.md's manual moderation.
+         Verified live on an EXISTING conversation: send 201 -> block 200 ->
+         send 403 -> unblock 200 -> send 201; and signed in as the BLOCKED
+         party, send 403 with no disclosure that a block exists.
+         KNOWN LIMIT: blocking stops messaging, not listing visibility — a
+         blocked user can still see the other person's listings in the feed.
          Block button on profile and listing detail pages
          blocked_users table already in DB
          Contact and browse queries already check this table

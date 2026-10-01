@@ -68,6 +68,30 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Conversation not found' }, { status: 404 })
   }
 
+  // Blocking is checked HERE, on every send — not only when the conversation
+  // was created. Checking at creation alone meant blocking someone you were
+  // already talking to did nothing, which is the case that actually matters:
+  // people block the person harassing them in an open thread, not a stranger.
+  // Checked in BOTH directions, so a blocked sender cannot keep messaging and
+  // a blocker is not pulled back into a thread they walked away from.
+  const { data: blocks } = await service
+    .from('blocked_users')
+    .select('blocker_id')
+    .or(
+      `and(blocker_id.eq.${recipient.user_id},blocked_id.eq.${user.id}),` +
+        `and(blocker_id.eq.${user.id},blocked_id.eq.${recipient.user_id})`
+    )
+
+  if (blocks && blocks.length > 0) {
+    // Deliberately does not say who blocked whom, or that a block exists at
+    // all — confirming it invites retaliation and tells a harasser exactly
+    // which account to work around.
+    return NextResponse.json(
+      { error: 'You can no longer send messages in this conversation.' },
+      { status: 403 }
+    )
+  }
+
   const hourAgo = new Date(Date.now() - 60 * 60 * 1000).toISOString()
   const { count } = await service
     .from('messages')

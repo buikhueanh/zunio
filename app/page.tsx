@@ -1,7 +1,9 @@
+import { cookies } from 'next/headers'
 import TeaserPage from '@/components/marketing/TeaserPage'
 import BrowsePage from '@/components/browse/BrowsePage'
 import { createClient } from '@/lib/supabase/server'
 import { fetchListings } from '@/lib/listings'
+import { PREVIEW_COOKIE, matchesPreviewCode } from '@/lib/preview-access'
 
 const LAUNCHED = process.env.NEXT_PUBLIC_LAUNCHED === 'true'
 const DEFAULT_SCHOOL_SLUG = 'northeastern-boston'
@@ -24,7 +26,11 @@ function formatSchoolLabel(row: SchoolRow): string {
 }
 
 export default async function Home() {
-  if (!LAUNCHED) return <TeaserPage />
+  // An invited tester holding the preview cookie sees the real marketplace
+  // here, not the waitlist form. Without this the middleware bypass only got
+  // them as far as /sign-up — the front door still showed a teaser.
+  const previewing = matchesPreviewCode(cookies().get(PREVIEW_COOKIE)?.value)
+  if (!LAUNCHED && !previewing) return <TeaserPage />
 
   const supabase = createClient()
 

@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 import Logo from '@/components/ui/Logo'
 import ListingGallery from '@/components/listings/ListingGallery'
 import MessageSellerButton from '@/components/listings/MessageSellerButton'
+import MarkSoldButton from '@/components/listings/MarkSoldButton'
 import { createClient } from '@/lib/supabase/server'
 import { listingImageUrl } from '@/lib/images'
 import { siteConfig } from '@/config/site'
@@ -112,7 +113,10 @@ export default async function ListingDetailPage({ params }: { params: { id: stri
     ? [directory.name, directory.campus].filter(Boolean).join(' — ')
     : null
   const images = listing.images ?? []
-  const isEdited = wasEdited(listing.created_at, listing.updated_at)
+  // Only meaningful while the listing is live: marking it sold bumps
+  // updated_at via the DB trigger, which would otherwise brand every sold
+  // listing as "Edited" when nothing about it was.
+  const isEdited = listing.status === 'active' && wasEdited(listing.created_at, listing.updated_at)
   const isActive = listing.status === 'active'
 
   return (
@@ -217,22 +221,17 @@ export default async function ListingDetailPage({ params }: { params: { id: stri
             </div>
 
             {isOwner ? (
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap items-start gap-3">
                 <Link
                   href={`/listings/${listing.id}/edit`}
                   className="rounded-md border border-brand-gray-200 px-6 py-3 text-sm font-semibold text-brand-dark-brown transition hover:border-brand-emerald hover:text-brand-emerald"
                 >
                   Edit listing
                 </Link>
-                {isActive && (
-                  <button
-                    type="button"
-                    disabled
-                    title="Available once mark-as-sold ships"
-                    className="rounded-md bg-brand-emerald px-6 py-3 text-sm font-semibold text-brand-white transition hover:bg-brand-emerald-hover disabled:cursor-not-allowed disabled:opacity-50"
-                  >
-                    Mark as sold
-                  </button>
+                {/* Shown for sold listings too, so a seller whose buyer fell
+                    through can relist rather than repost from scratch. */}
+                {(isActive || listing.status === 'sold') && (
+                  <MarkSoldButton listingId={listing.id} status={listing.status} />
                 )}
               </div>
             ) : (
