@@ -136,12 +136,17 @@ async function seedActiveSchools() {
       )
     }
 
+    // launched_at is deliberately NOT set here. It records when a school's
+    // students actually get access — i.e. the NEXT_PUBLIC_LAUNCHED flip — not
+    // when this seed script happened to run. Stamping now() made Northeastern
+    // read as "launched 2026-07-10" while the site was still a teaser page,
+    // which would misreport launch dates in any later expansion analysis or
+    // "live since" copy. Set it at launch instead.
     const { error: upsertError } = await supabase.from('schools').upsert(
       {
         directory_id: directoryRow.id,
         slug: launch.slug,
         active: true,
-        launched_at: new Date().toISOString(),
       },
       { onConflict: 'slug' }
     )

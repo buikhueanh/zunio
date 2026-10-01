@@ -2,7 +2,6 @@ import { NextResponse } from 'next/server'
 import { Filter } from 'bad-words'
 import { createClient, createServiceClient } from '@/lib/supabase/server'
 import { signUpSchema } from '@/lib/validations'
-import { generateSlug } from '@/utils/slug'
 import { generateVerificationToken } from '@/utils/token'
 import { sendEmailVerification } from '@/lib/resend'
 import { getOrCreateSchool } from '@/lib/schools'
@@ -20,11 +19,16 @@ export async function POST(request: Request) {
     )
   }
 
-  const { email, password, display_name, school_directory_id } = parsed.data
+  const { email, password, first_name, last_name, username, school_directory_id } = parsed.data
 
-  if (profanityFilter.isProfane(display_name)) {
+  // Filter every user-authored identity field, not just one — all three are
+  // publicly visible on listings and profiles.
+  const profaneField = [first_name, last_name, username].find(
+    (value) => value && profanityFilter.isProfane(value)
+  )
+  if (profaneField) {
     return NextResponse.json(
-      { error: 'Display name contains inappropriate language' },
+      { error: 'Name or username contains inappropriate language' },
       { status: 400 }
     )
   }
@@ -56,16 +60,41 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Unrecognized school' }, { status: 400 })
   }
 
-  const slug = generateSlug(display_name)
+  // display_name is NOT set here — it is a generated column derived from
+  // first_name/last_name (migration 014), so it cannot drift out of sync.
   const { error: insertError } = await serviceClient.from('users').insert({
     id: authData.user.id,
-    display_name,
-    slug,
+    first_name,
+    last_name,
+    username,
     school_id: schoolId,
     contact_email: email,
   })
 
   if (insertError) {
+    // The auth user already exists at this point. Leaving it behind would
+    // strand the person in a half-created state: able to sign in, but with no
+    // profile row — and unable to sign up again, because the email is now
+    // taken (409). Roll it back so a retry actually works.
+    await serviceClient.auth.admin.deleteUser(authData.user.id).catch((err) => {
+      console.error('[sign-up] orphaned auth user, manual cleanup needed', {
+        userId: authData.user?.id,
+        err,
+      })
+    })
+
+    // 23505 = unique violation. The only unique constraint reachable here is
+    // users_username_lower_key: someone claimed the username between the
+    // client's availability check and this insert. The DB is the real
+    // guarantee — an application-level pre-check cannot win that race.
+    if (insertError.code === '23505') {
+      return NextResponse.json(
+        { error: 'That username was just taken. Please choose another.' },
+        { status: 409 }
+      )
+    }
+
+    console.error('[sign-up] profile insert failed', insertError)
     return NextResponse.json({ error: 'Could not create profile' }, { status: 500 })
   }
 

@@ -115,13 +115,15 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
          Do this before connecting Vercel to the GitHub repo (0.10) if possible —
          migrating after Vercel is linked adds an extra step of re-linking the repo.
          See DECISIONS.md entry for full context.
+         [2026-08-19 DECISION] Deliberately deferred — technical co-founder wants to
+         retain sole authority over GitHub/Supabase/Resend for now, rather than
+         migrate before launch as originally planned. Vercel deploy (0.10) proceeded
+         on personal-account ownership. Revisit before any point where shared control
+         actually matters (e.g. adding a second engineer, or a legal/equity reason
+         to formalize company ownership of infra).
 
-[ ] 0.10 Deploy to Vercel + verify end-to-end
-         Connect repo to Vercel project
-         Add domain in Vercel, set DNS records at registrar
-         Set env vars in Vercel dashboard
-         Test full flow: submit form → check Supabase waitlist table → check email inbox
-         Confirm mobile layout on real phone
+[x] 0.10 Deploy to Vercel + verify end-to-end
+         [2026-08-19] Deployed — teaser page live on the production domain.
 
 [ ] 0.11 Write launch email draft in Resend (save as draft, do not send)
          Subject: "[App name] is live at [school] — you're in"
@@ -246,44 +248,173 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
          email_verified_at timestamp preserved (not overwritten) → banner gone →
          /listings/new no longer redirects. Test data cleaned up after.
 
-[ ] 1.5  school-switcher component (browse page)
-         Prominent at top of browse page (not nav)
-         Searches schools table (active only — not schools_directory)
-         Default: Northeastern for logged-out users (localStorage)
-         Logged-in users: default to their profile school_id
-         Switching school: updates React state / URL param only, not users.school_id
+[x] 1.5  school-switcher component (browse page)
+         Files: components/browse/SchoolSwitcher.tsx
+         Dropdown at top of the browse page (not nav), lists active schools only via
+         lib/schools.ts getActiveSchools(). Selection persists to localStorage
+         (zunio.browse.schoolId / .schoolLabel) for logged-out visitors; signed-in
+         users always start at their profile school_id (localStorage is ignored for
+         them, so a stale logged-out choice can't override their real school).
+         Switching only changes React state — never writes users.school_id.
 
-[ ] 1.6  Browse page (app/page.tsx — BrowsePage component)
-         School-scoped listing grid
-         Filters: category, price range, free items toggle, condition
-         Sort: newest, price low→high, price high→low
-         Search bar (full-text, school-scoped)
-         Cursor-based pagination ("Load more")
-         Zero-results state: "No listings for '[query]' at [school]. Browse all ↗"
-         Empty school state: "Be the first to sell here" CTA
-         SSR — page renders on server with initial data
+[x] 1.6  Browse page (app/page.tsx — BrowsePage component)
+         Files: components/browse/BrowsePage.tsx, SearchBar.tsx, SortSelect.tsx,
+         FilterPanel.tsx, ListingGrid.tsx, lib/listings.ts,
+         supabase/migrations/010_search_listings.sql
+         SSR: app/page.tsx resolves the default school server-side (profile school if
+         signed in, else northeastern-boston) and fetches page 1 before render;
+         the client component takes over for switching/filtering/searching.
+         NEW MIGRATION 010: search_listings() RPC. PostgREST can filter by
+         plainto_tsquery but cannot ORDER BY a computed ts_rank(), so relevance
+         sorting needs a function. SECURITY INVOKER, so the existing "public read
+         active supply listings" RLS policy still applies — it can't expose anything
+         a direct SELECT couldn't. Applied to remote, verified via `migration list`.
+         Cursor pagination ("Load more") applies to the newest sort only; price
+         sorts and search return a single page at MVP scope.
+         MIGRATION 011: free items (price IS NULL) now appear in the "Under $X"
+         buckets — `NULL <= n` is NULL in SQL, so both the browse query and the RPC
+         were silently hiding free listings from every price filter. See CHANGELOG
+         2026-08-19. The separate free-items toggle still narrows to only free.
+         Verified live against real Supabase with 6 temporary listings at
+         Northeastern (test user + rows deleted afterward, real account untouched):
+         SSR first paint, relevance search ("desk" → only the 2 desk items),
+         zero-results copy, free-items filter (null price), Under $50 bucket,
+         price high→low ordering, clearing search restores the full grid, no console
+         errors, and mobile (375px) renders a clean 2-col grid with no overflow.
 
-[ ] 1.7  listing-card component
-         Thumbnail (images[1]), title, price (or "Free"), category, condition
-         Posted date, seller name, school name
-         Links to listing detail page
+[x] 1.7  listing-card component
+         Files: components/browse/ListingCard.tsx
+         Thumbnail (images[1] via next/image), title, price or "Free", category,
+         condition, posted date, seller name; links to /listings/[id].
+         "Edited" badge when updated_at > created_at + 1hr — verified it appears
+         only on a genuinely edited row, not on freshly inserted ones.
+         Note: school name is NOT on the card. The whole grid is scoped to one
+         school shown in the switcher directly above, so per-card repetition would
+         be noise. Confirmed with the founder 2026-08-19: acceptable precisely
+         BECAUSE results are guaranteed school-scoped — so that guarantee was then
+         proven explicitly rather than assumed. Verified live with listings seeded
+         at TWO active schools simultaneously (Northeastern + a temporary Boston
+         University row, both removed after): the default SSR feed, the school
+         switcher, the price/category filters, AND the search RPC each returned
+         only the selected school's listings. The strongest case: searching "free"
+         while on BU returned only BU's free listing, correctly excluding NEU's
+         "Free Moving Boxes", which matches the query text but belongs to another
+         school. Revisit the card if a cross-school/merged feed ships (v2), since
+         that guarantee no longer holds there.
 
-[ ] 1.8  Create listing (app/listings/new/page.tsx)
-         Form: title, description, price / free toggle, category, condition,
-               photos (up to 5), pickup hint, AUP checkbox
-         Image upload: client-side compress → Supabase Storage signed URL → upload
-         POST /api/listings route
-         Cap check: reject if user already has 10 active listings
-         listing_type defaults to 'supply', quantity NULL (v2 fields, not in UI)
+[x] 1.8  Create listing (app/listings/new/page.tsx)
+         Files: app/listings/new/page.tsx, components/forms/ListingForm.tsx,
+         app/api/listings/route.ts, app/api/listings/upload-url/route.ts,
+         lib/auth-guard.ts, lib/images.ts, lib/validations.ts (listingSchema),
+         next.config.mjs (image remotePatterns),
+         supabase/migrations/012_listing_images_storage.sql
 
-[ ] 1.9  Listing detail page (app/listings/[id]/page.tsx)
-         SSR
-         Title, description, price, condition, category, photos, pickup hint
-         Posted date, "Edited" badge if updated_at > created_at + 1hr
-         Seller card (name, school, member since, photo → links to profile)
-         "Message seller" button (requires login)
-         "Mark as sold" button (owner only)
-         "Report this listing" link
+         SECURITY MODEL (decided with the founder before building):
+         - middleware.ts does NOT match /api/*, so the page redirect is a UX
+           affordance, not a boundary. Both API routes call requireVerifiedSeller()
+           themselves: session + profile exists + not deleted + not suspended +
+           is_seller_verified. Shared helper so the two can't drift apart.
+         - user_id/school_id come from the session, never the request body.
+         - Uploads use SERVER-ISSUED signed URLs (chosen over direct client upload):
+           /api/listings/upload-url runs the same guard BEFORE issuing a URL, so an
+           unverified account cannot move a single byte into Storage. Filenames are
+           server-generated (uuid + extension from the validated content type), so a
+           client-supplied name can never shape the stored path.
+         - images[] is client-supplied text, so the route re-verifies every path is
+           under the caller's own {user_id}/ prefix AND actually exists in the bucket.
+           Without this, a "photo" could point at any URL — rendering third-party
+           content in the feed and leaking viewers' IPs to whoever hosts it.
+         - Bucket rejects image/svg+xml (SVG can carry <script>; served from the
+           Storage origin that would be stored XSS). 5 MB cap, raster types only.
+           Storage RLS restricts writes to the owner's own prefix as defense in depth.
+         - next.config.mjs allows ONLY the project's own Storage host for next/image,
+           so the ownership check can't be undone at the render layer.
+         - Client-side canvas compression strips EXIF: phone photos carry GPS, and a
+           student shooting a desk in their dorm would otherwise publish where they
+           sleep. Compression is the privacy fix, not just bandwidth — do not replace
+           it with a direct File upload.
+         - AUP checkbox enforced server-side (z.literal(true)) — it's the legal shield,
+           so a client that omits it must not be able to post.
+         - Profanity filter on TITLE only (founder's call): titles are public and
+           indexed; filtering descriptions would reject legitimate long text.
+         - Price: rejects 0 (schema wants NULL for free), negatives, >2 decimals, and
+           values that would overflow numeric(10,2) as a raw 500.
+         - KNOWN LIMITATION: the 10-listing cap is check-then-insert, so concurrent
+           requests could allow a couple extra. Accepted at MVP over row locking.
+
+         Verified live against real Supabase (all test users, listings, and Storage
+         objects deleted afterward): unauthenticated POST to both routes → 401;
+         signed-in but unverified → 403 on both; 9 validation cases (price 0/negative/
+         overflow/3-decimals, AUP false, AUP missing, bad category, short title, long
+         description) → 400; images pointing at another user's prefix, an external
+         URL, a path-traversal string, or an own-prefix path never uploaded → 400;
+         >5 images → 400; profane title → 400; user_id spoofed in the body → ignored,
+         listing stored under the session user; 11th active listing → 409.
+         Happy path through the real form with a GPS-tagged 2400x1600 JPEG: stored as
+         1600x1067 with ZERO EXIF keys and no GPS IFD (60.8 KB → 10.8 KB), path saved
+         under the seller's prefix, and the photo renders in the browse grid.
+         Two bugs found and fixed during this — see CHANGELOG 2026-08-19.
+
+[x] 1.9  Listing detail page (app/listings/[id]/page.tsx)
+         Files: app/listings/[id]/page.tsx, components/listings/ListingGallery.tsx,
+         lib/listing-format.ts, config/site.ts (moderationEmail),
+         supabase/migrations/013_owners_read_own_listings.sql
+
+         SSR server component; generateMetadata sets title/description/OG image so
+         listings are crawlable (CLAUDE.md wants Google indexing).
+         Shared display helpers extracted to lib/listing-format.ts and reused by
+         ListingCard, so the grid and detail page can't format price/labels/the
+         "Edited" rule two different ways.
+
+         NEW MIGRATION 013 — owners read own listings. The existing policy is
+         `status='active' AND deleted_at IS NULL AND listing_type='supply'`, which
+         applies to the OWNER too: a seller could not read their own listing once
+         it left active. The moment mark-as-sold (2.4) ships, a seller would mark an
+         item sold and immediately 404 on their own page, and the account page (2.6)
+         could not list sold items — both would look like data loss. Added
+         `USING (auth.uid() = user_id AND deleted_at IS NULL)`. deleted_at stays
+         excluded: soft deletes are moderation removals, invisible to the owner too.
+
+         Security notes:
+         - contact_email is never selected here; migration 009 revoked it so a
+           seller's address cannot leak through a public page. Verified: the
+           rendered HTML contains no email, contact_email, or seller flags.
+         - UUID-shaped guard before querying, so /listings/garbage returns a clean
+           404 instead of surfacing a Postgres 22P02 invalid-uuid error.
+         - Description renders as plain text with whitespace-pre-line. Deliberately
+           NOT auto-linked — turning seller-authored text into clickable links makes
+           the description a one-click phishing vector.
+         - Listings belonging to suspended/soft-deleted sellers vanish through the
+           !inner join, since the users RLS policy hides those rows.
+
+         Verified live: renders title/price/category/condition/posted date/pickup
+         hint/description with line breaks preserved; "Edited" badge appears only on
+         a genuinely edited row; NULL price renders "Free"; multi-photo gallery
+         switches the main image on thumbnail click. Access control across all three
+         viewer states — logged out sees "Sign in to message seller", signed-in
+         non-owner sees "Message seller", owner sees Edit + Mark as sold and no
+         message button. A sold listing 404s for the public AND for a signed-in
+         non-owner, but renders for the owner with an explanatory banner (013
+         working). Malformed UUID → 404, non-existent UUID → 404. Mobile (375px)
+         stacks with no horizontal overflow. All test users, listings, and Storage
+         objects removed afterward.
+
+         STUBBED, not built — these are 2.x items, and the buttons are wired to
+         match their real end state rather than pretending to work:
+         - "Mark as sold" renders disabled for the owner (2.4 builds the PATCH).
+         - "Message seller" links to /listings/[id]/contact, which does not exist
+           yet (2.1/2.2 build the contact flow + route).
+         - Seller card links to /u/[slug], which 404s until 2.5.
+         - "Report this listing" is a mailto: to config.site moderationEmail —
+           moderation is manual at MVP per CLAUDE.md. moderation@zunio.org MUST be
+           a real monitored inbox before launch (add to the 2.13 checklist).
+
+         KNOWN ISSUE for later: the seller card renders profile_photo through
+         next/image, but next.config.mjs only allows the /listing-images/** path on
+         the Supabase host. profile_photo is NULL everywhere today (photo upload was
+         deferred in 1.2), so nothing breaks — but whichever item ships profile
+         photos must add that bucket path to remotePatterns, or the whole page will
+         throw at render instead of just missing an avatar.
 
 [x] 1.10 Database migrations for main schema
          supabase/migrations/004_main_schema.sql
@@ -305,6 +436,21 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
 **Success criteria:** Complete buyer → seller flow works. Listing expiry works. Report flow works.
 
 ```
+[x] 2.1  SUPERSEDED BY REALTIME CHAT — see DECISIONS.md 2026-08-19.
+[x] 2.2  The email-relay contact flow was replaced with live in-app chat
+         (item 3.5 pulled forward at the founder's request). contact_requests
+         stays in the schema, unused.
+         Files: supabase/migrations/019_chat_rls_and_realtime.sql,
+         020_chat_notifications.sql, lib/chat.ts, app/api/conversations/route.ts,
+         app/api/messages/route.ts, components/chat/MessageThread.tsx,
+         components/listings/MessageSellerButton.tsx, app/messages/page.tsx,
+         app/messages/[id]/page.tsx, lib/resend.ts (escapeHtml +
+         sendMessageNotification)
+         TRAP: supabase.realtime.setAuth(token) is required before subscribing,
+         or the socket runs as anon, RLS filters everything, and the channel
+         reports SUBSCRIBED while delivering nothing. See DECISIONS.md.
+
+--- ORIGINAL 2.1/2.2 SPEC, KEPT FOR REFERENCE ---
 [ ] 2.1  Contact seller flow (POST /api/contact)
          Rate limit checks (3 per listing, 10 per hour)
          Blocked users check
@@ -366,10 +512,20 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
          Loading states
          Accessibility: keyboard navigation, focus rings, alt text on images
 
-[ ] 2.12 Seed listings for launch
-         Both co-founders post 20–30 real items
-         Recruit 10 friends to post items
-         Verify feed looks alive before flipping NEXT_PUBLIC_LAUNCHED
+[ ] 2.12 Seed listings for launch — BOTH schools (see DECISIONS.md 2026-08-19)
+         Launching at Northeastern AND DePauw means TWO feeds must look alive,
+         not one. 20–30 real items *per school*, not 20–30 total — a visitor
+         only ever sees their own school's grid, so a well-stocked Northeastern
+         feed does nothing for a DePauw student staring at "Be the first to
+         sell here."
+         Northeastern: Tanya is on campus — recruit directly.
+         DePauw: no co-founder on campus (Anh is an alum in NYC), so this needs
+         a named plan — specific friends still enrolled, a club, or a group
+         chat — rather than assuming momentum. Treat it as the harder of the two.
+         Reality check as of 2026-08-19: 6 waitlist signups total across 5
+         schools (NEU 2, DePauw 1). The launch blast reaches ~6 people, so
+         day-one inventory comes from seeding, not from the waitlist.
+         Verify BOTH feeds look alive before flipping NEXT_PUBLIC_LAUNCHED.
 
 [ ] 2.13 Pre-launch checklist
          [ ] AUP page written and linked from listing form checkbox
@@ -383,6 +539,12 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
              all owned by the zunio account, not a personal account (see 0.9b)
          [ ] Abuse protection on the two fully-public POST routes (/api/waitlist,
              /api/auth/sign-up) — see "Abuse protection deferred" note below
+         [ ] moderation@zunio.org exists and is monitored — the "Report this
+             listing" link (1.9) mails it, and moderation is manual at MVP, so an
+             unmonitored inbox means reports silently go nowhere
+         [ ] Stamp schools.launched_at for both launch schools at the flip —
+             seed.ts no longer sets it (see CHANGELOG 2026-08-19), so both rows
+             are NULL until launch day and must be set deliberately
 
 --- ABUSE PROTECTION DEFERRED (decided 2026-08-07) ---
 Cloudflare Turnstile + per-IP rate limiting were scoped in detail but deliberately
@@ -460,7 +622,15 @@ Preferred approach when built:
 
 [ ] 3.6  Seller ratings and reviews
 
-[ ] 3.7  Saved / wishlist items
+[ ] 3.7  Saved / wishlist items ("favorites")
+         DEFERRED FROM THE LANDING-PAGE REDESIGN (2026-08-19): the approved
+         design includes a heart/favorite button on every listing card. It was
+         deliberately LEFT OUT of the build rather than shipped as a dead
+         control — a heart that does nothing when tapped reads as broken.
+         When built: saved_items table (user_id, listing_id, created_at,
+         PK on both), RLS scoped to auth.uid(), a toggle route, and a saved
+         page. Add the button back to ListingCard at that point — the design
+         already has a slot for it in the card's top-right.
 ```
 
 ---
