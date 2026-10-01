@@ -146,3 +146,31 @@ export const uploadUrlSchema = z.object({
 })
 
 export type UploadUrlInput = z.infer<typeof uploadUrlSchema>
+
+/**
+ * Social links are user-supplied, so only these exact prefixes are allowed
+ * (CLAUDE.md). Validated again at RENDER time, not just on save: the column
+ * could have been set before this rule existed or written directly in the
+ * database, and an unchecked href is a one-click redirect to anywhere.
+ */
+export const ALLOWED_SOCIAL_PREFIXES = [
+  'https://instagram.com/',
+  'https://www.instagram.com/',
+  'https://linkedin.com/in/',
+  'https://www.linkedin.com/in/',
+  'https://twitter.com/',
+  'https://www.twitter.com/',
+  'https://x.com/',
+  'https://www.x.com/',
+] as const
+
+export function isAllowedSocialUrl(url: string | null | undefined): boolean {
+  if (!url) return false
+  const trimmed = url.trim().toLowerCase()
+  return ALLOWED_SOCIAL_PREFIXES.some((prefix) => trimmed.startsWith(prefix))
+}
+
+/** "instagram.com/someone" — the bare host+path, for display next to the link. */
+export function socialLabel(url: string): string {
+  return url.replace(/^https?:\/\/(www\.)?/i, '').replace(/\/$/, '')
+}

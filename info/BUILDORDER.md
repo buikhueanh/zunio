@@ -502,7 +502,35 @@ When an item is complete, mark it `[x]`. When you start an item, note it in a co
          PATCH /api/listings/[id] with status='sold'
          Owner-only (RLS + API route ownership check)
 
-[ ] 2.5  Seller profile page (app/u/[slug]/page.tsx)
+[x] 2.5  Seller profile page — app/u/[username]/page.tsx
+         Files: app/u/[username]/page.tsx, lib/validations.ts
+         (isAllowedSocialUrl / socialLabel)
+         The LAST dead link: every listing detail page rendered a seller card
+         linking to /u/<username>, which 404'd. Route is /u/[username], not
+         [slug] — migration 014 replaced users.slug with username.
+         SSR with generateMetadata, per CLAUDE.md's "SSR for Google indexing".
+         SECURITY:
+         - contact_email cannot leak by construction: migration 014's grant
+           never gives anon/authenticated that column, so the query cannot
+           select it even by mistake. Verified the rendered HTML contains no
+           email, no contact_email, no account flags.
+         - Suspended and soft-deleted sellers 404, enforced by the existing
+           "public read user profiles" RLS policy rather than an app check.
+           Verified live by suspending the test seller mid-run (404) and
+           restoring.
+         - social_url is re-validated AT RENDER against the approved prefix
+           list, not merely on save: the column predates that rule and could be
+           written directly in the database, and an unvalidated href is a
+           one-click redirect to anywhere. Rendered rel="noopener noreferrer".
+         - Username-shaped paths only, so junk URLs 404 without a DB round trip.
+         - Lookup is case-insensitive (ilike): people share profile links with
+           whatever casing they typed, and /u/ZunioTestSeller must resolve.
+         Avatar is initials, not next/image: profile_photo is always NULL until
+         photo upload ships, and next.config only allows the listing-images
+         path — an avatar hosted anywhere else would throw at render rather
+         than degrade. Revisit when profile photos ship.
+         Lists the seller's active listings across EVERY campus they sell into,
+         since a profile is about the person, not one feed.
          SSR for SEO
          Name, school, member since, bio, social link (validated), active listings grid
          One query (see reference query in CLAUDE.md)
