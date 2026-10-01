@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState, type FormEvent } from 'react'
+import { useEffect, useState, type FormEvent } from 'react'
 import { useRouter } from 'next/navigation'
 import SchoolCombobox from '@/components/ui/SchoolCombobox'
 import type { SchoolSelection } from '@/lib/schools'
