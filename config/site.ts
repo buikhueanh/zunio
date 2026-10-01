@@ -7,4 +7,7 @@ export const siteConfig = {
   // a report email, then an admin flips listings.status/users.is_suspended in
   // the Supabase dashboard. Must be a real, monitored inbox before launch.
   moderationEmail: 'moderation@zunio.org',
+  // Where account, privacy and data-deletion requests go. Referenced by the
+  // policy pages, so it must be a real monitored inbox before launch.
+  supportEmail: 'hello@zunio.org',
 } as const

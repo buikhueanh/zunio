@@ -1,28 +1,22 @@
 import { createServerClient, type CookieOptions } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
+import {
+  PREVIEW_COOKIE,
+  PREVIEW_COOKIE_MAX_AGE,
+  matchesPreviewCode,
+} from '@/lib/preview-access'
 
 const LAUNCHED = process.env.NEXT_PUBLIC_LAUNCHED === 'true'
 
-/**
- * Pre-launch gate.
- *
- * Until NEXT_PUBLIC_LAUNCHED is true, the only thing this site offers is the
- * teaser and its waitlist. Everything else — sign-up, sign-in, listings,
- * messages, account — is unreachable.
- *
- * DENY BY DEFAULT. The allow-list below names what stays open; anything not on
- * it is blocked. The inverse (listing what to block) silently exposes every
- * route added later, which is exactly how /sign-up and /listings/new ended up
- * publicly reachable on production while the homepage still showed a teaser.
- *
- * API routes are gated too, not just pages. Blocking the /sign-up page while
- * POST /api/auth/sign-up stays open just moves the door — an account could
- * still be created with a single curl.
- */
-const PUBLIC_PAGES = new Set(['/', '/about'])
+const PUBLIC_PAGES = new Set(['/', '/about', '/terms', '/privacy', '/aup'])
 
 // The waitlist form is the teaser's entire purpose, so its route stays open.
-const PUBLIC_API = new Set(['/api/waitlist'])
+//
+// verify-email is open too: a token only exists if someone completed sign-up,
+// which already requires preview access. Keeping it gated instead would break
+// verification links opened in a mail client's own browser, where the preview
+// cookie isn't present — a dead link for exactly the people we invited.
+const PUBLIC_API = new Set(['/api/waitlist', '/api/auth/verify-email'])
 
 function isAllowedPreLaunch(pathname: string): boolean {
   if (PUBLIC_PAGES.has(pathname)) return true
@@ -51,7 +45,27 @@ function requiresSession(pathname: string): boolean {
 export async function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname
 
-  if (!LAUNCHED && !isAllowedPreLaunch(pathname)) {
+  // Redeem ?access=<code> into a cookie, then bounce to the clean URL. The
+  // code is stripped from the address bar on purpose: left in place it ends up
+  // in browser history, in Referer headers to any third party, and in every
+  // screenshot a tester sends you.
+  if (matchesPreviewCode(request.nextUrl.searchParams.get('access'))) {
+    const clean = request.nextUrl.clone()
+    clean.searchParams.delete('access')
+    const response = NextResponse.redirect(clean)
+    response.cookies.set(PREVIEW_COOKIE, process.env.PREVIEW_ACCESS_CODE!, {
+      httpOnly: true,
+      sameSite: 'lax',
+      secure: process.env.NODE_ENV === 'production',
+      maxAge: PREVIEW_COOKIE_MAX_AGE,
+      path: '/',
+    })
+    return response
+  }
+
+  const hasPreviewAccess = matchesPreviewCode(request.cookies.get(PREVIEW_COOKIE)?.value)
+
+  if (!LAUNCHED && !hasPreviewAccess && !isAllowedPreLaunch(pathname)) {
     // APIs get a flat 404 rather than a redirect or a 503: a redirect is
     // meaningless to a fetch client, and "service unavailable" advertises that
     // the endpoint exists and is worth retrying later.

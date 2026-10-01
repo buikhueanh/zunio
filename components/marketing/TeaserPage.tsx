@@ -47,6 +47,11 @@ export default function TeaserPage() {
           <Link href="/about" className="text-xs font-medium text-brand-blue hover:underline">
             About us
           </Link>
+          {/* Required here, not just in the app: this page collects email
+              addresses, so the policy has to be reachable from it. */}
+          <Link href="/privacy" className="text-xs font-medium text-brand-blue hover:underline">
+            Privacy
+          </Link>
         </div>
         <Logo size="md" />
       </footer>
